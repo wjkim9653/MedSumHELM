@@ -1,0 +1,42 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:22,  7.57s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.00s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:20<00:06,  6.78s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  4.77s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.47s/it]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/spacy/pipeline/lemmatizer.py:188: UserWarning: [W108] The rule-based lemmatizer did not find POS annotation for one or more tokens. Check that your pipeline includes components that assign token.pos, typically 'tagger'+'attribute_ruler' or 'morphologizer'.
+  warnings.warn(Warnings.W108)
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:11<00:11, 11.42s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  6.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.56s/it]
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/bin/helm-run", line 8, in <module>
+    sys.exit(main())
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/benchmark/run.py", line 377, in main
+    return helm_run(args)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/common/hierarchical_logger.py", line 140, in wrapper
+    return fn(*args, **kwargs)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/benchmark/run.py", line 274, in helm_run
+    run_benchmarking(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/benchmark/run.py", line 127, in run_benchmarking
+    runner.run_all(run_specs)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/benchmark/runner.py", line 225, in run_all
+    raise RunnerError(f"Failed runs: [{failed_runs_str}]")
+helm.benchmark.runner.RunnerError: Failed runs: ["aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct", "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct"]

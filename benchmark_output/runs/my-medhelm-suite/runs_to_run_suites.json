@@ -1,5 +1,11 @@
 {
+  "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219": "my-medhelm-suite",
   "aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct": "my-medhelm-suite",
   "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct": "my-medhelm-suite",
-  "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct": "my-medhelm-suite"
+  "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct": "my-medhelm-suite",
+  "aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo": "my-medhelm-suite",
+  "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14": "my-medhelm-suite",
+  "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14": "my-medhelm-suite",
+  "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14": "my-medhelm-suite",
+  "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528": "my-medhelm-suite"
 }

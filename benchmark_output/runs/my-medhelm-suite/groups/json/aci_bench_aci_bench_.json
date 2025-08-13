@@ -1,0 +1,569 @@
+{
+  "title": "",
+  "header": [
+    {
+      "value": "Model",
+      "markdown": false,
+      "metadata": {}
+    },
+    {
+      "value": "Jury Score",
+      "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\nACI-Bench Jury Score: Measures the average score assigned by an LLM-based jury evaluating task performance.",
+      "markdown": false,
+      "lower_is_better": false,
+      "metadata": {
+        "metric": "Jury Score",
+        "run_group": "ACI-Bench"
+      }
+    },
+    {
+      "value": "Observed inference time (s)",
+      "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\nObserved inference runtime (s): Average observed time to process a request to the model (via an API, and thus depends on particular deployment).",
+      "markdown": false,
+      "lower_is_better": true,
+      "metadata": {
+        "metric": "Observed inference time (s)",
+        "run_group": "ACI-Bench"
+      }
+    },
+    {
+      "value": "# eval",
+      "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\n# eval: Number of evaluation instances.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# eval",
+        "run_group": "ACI-Bench"
+      }
+    },
+    {
+      "value": "# train",
+      "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\n# train: Number of training instances (e.g., in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "# train",
+        "run_group": "ACI-Bench"
+      }
+    },
+    {
+      "value": "truncated",
+      "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+      "markdown": false,
+      "metadata": {
+        "metric": "truncated",
+        "run_group": "ACI-Bench"
+      }
+    },
+    {
+      "value": "# prompt tokens",
+      "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\n# prompt tokens: Number of tokens in the prompt.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# prompt tokens",
+        "run_group": "ACI-Bench"
+      }
+    },
+    {
+      "value": "# output tokens",
+      "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\n# output tokens: Actual number of output tokens.",
+      "markdown": false,
+      "metadata": {
+        "metric": "# output tokens",
+        "run_group": "ACI-Bench"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "value": "Llama 3.1 Instruct (8B)",
+        "description": "",
+        "href": "?group=aci_bench&subgroup=&runSpecs=%5B%22aci_bench%3Amodel%3Dmeta_llama-3.1-8b-instruct%2Cmodel_deployment%3Dhuggingface_llama-3.1-8b-instruct%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct"
+        ]
+      },
+      {
+        "value": 3.7999999999999994,
+        "description": "min=3.8, mean=3.8, max=3.8, sum=3.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 66.88275079727173,
+        "description": "min=66.883, mean=66.883, max=66.883, sum=66.883 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1447.3,
+        "description": "min=1447.3, mean=1447.3, max=1447.3, sum=1447.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 402.6,
+        "description": "min=402.6, mean=402.6, max=402.6, sum=402.6 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 3.2 Instruct (1.23B)",
+        "description": "",
+        "href": "?group=aci_bench&subgroup=&runSpecs=%5B%22aci_bench%3Amodel%3Dmeta_llama-3.2-1b-instruct%2Cmodel_deployment%3Dhuggingface_llama-3.2-1b-instruct%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct"
+        ]
+      },
+      {
+        "value": 1.9000000000000004,
+        "description": "min=1.9, mean=1.9, max=1.9, sum=1.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.747730922698974,
+        "description": "min=19.748, mean=19.748, max=19.748, sum=19.748 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1447.3,
+        "description": "min=1447.3, mean=1447.3, max=1447.3, sum=1447.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 221.7,
+        "description": "min=221.7, mean=221.7, max=221.7, sum=221.7 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 3.2 Instruct (3B)",
+        "description": "",
+        "href": "?group=aci_bench&subgroup=&runSpecs=%5B%22aci_bench%3Amodel%3Dmeta_llama-3.2-3b-instruct%2Cmodel_deployment%3Dhuggingface_llama-3.2-3b-instruct%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct"
+        ]
+      },
+      {
+        "value": 3.3333333333333335,
+        "description": "min=3.333, mean=3.333, max=3.333, sum=3.333 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 51.62401144504547,
+        "description": "min=51.624, mean=51.624, max=51.624, sum=51.624 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1447.3,
+        "description": "min=1447.3, mean=1447.3, max=1447.3, sum=1447.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 362.4,
+        "description": "min=362.4, mean=362.4, max=362.4, sum=362.4 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "DeepSeek-R1-0528",
+        "description": "",
+        "href": "?group=aci_bench&subgroup=&runSpecs=%5B%22aci_bench%3Anum_output_tokens%3D4000%2Cmodel%3Ddeepseek-ai_deepseek-r1-0528%2Cmodel_deployment%3Dtogether_deepseek-r1-0528%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+        ]
+      },
+      {
+        "value": 4.433333333333334,
+        "description": "min=4.433, mean=4.433, max=4.433, sum=4.433 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 19.03376421928406,
+        "description": "min=19.034, mean=19.034, max=19.034, sum=19.034 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1433.1,
+        "description": "min=1433.1, mean=1433.1, max=1433.1, sum=1433.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Llama 3.3 Instruct Turbo (70B)",
+        "description": "",
+        "href": "?group=aci_bench&subgroup=&runSpecs=%5B%22aci_bench%3Amodel%3Dmeta_llama-3.3-70b-instruct-turbo%2Cmodel_deployment%3Dtogether_llama-3.3-70b-instruct-turbo%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo"
+        ]
+      },
+      {
+        "value": 4.166666666666667,
+        "description": "min=4.167, mean=4.167, max=4.167, sum=4.167 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 64.59834017753602,
+        "description": "min=64.598, mean=64.598, max=64.598, sum=64.598 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1447.3,
+        "description": "min=1447.3, mean=1447.3, max=1447.3, sum=1447.3 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 400.8,
+        "description": "min=400.8, mean=400.8, max=400.8, sum=400.8 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "Claude 3.7 Sonnet (20250219)",
+        "description": "",
+        "href": "?group=aci_bench&subgroup=&runSpecs=%5B%22aci_bench%3Amodel%3Danthropic_claude-3-7-sonnet-20250219%2Cmodel_deployment%3Danthropic_claude-3-7-sonnet-20250219%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219"
+        ]
+      },
+      {
+        "value": 4.7,
+        "description": "min=4.7, mean=4.7, max=4.7, sum=4.7 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 9.940697169303894,
+        "description": "min=9.941, mean=9.941, max=9.941, sum=9.941 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1515.8,
+        "description": "min=1515.8, mean=1515.8, max=1515.8, sum=1515.8 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 413.8,
+        "description": "min=413.8, mean=413.8, max=413.8, sum=413.8 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-4.1 (2025-04-14)",
+        "description": "",
+        "href": "?group=aci_bench&subgroup=&runSpecs=%5B%22aci_bench%3Amodel%3Dopenai_gpt-4.1-2025-04-14%2Cmodel_deployment%3Dopenai_gpt-4.1-2025-04-14%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14"
+        ]
+      },
+      {
+        "value": 4.533333333333333,
+        "description": "min=4.533, mean=4.533, max=4.533, sum=4.533 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 9.810245203971864,
+        "description": "min=9.81, mean=9.81, max=9.81, sum=9.81 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1399.9,
+        "description": "min=1399.9, mean=1399.9, max=1399.9, sum=1399.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 480.4,
+        "description": "min=480.4, mean=480.4, max=480.4, sum=480.4 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-4.1-mini (2025-04-14)",
+        "description": "",
+        "href": "?group=aci_bench&subgroup=&runSpecs=%5B%22aci_bench%3Amodel%3Dopenai_gpt-4.1-mini-2025-04-14%2Cmodel_deployment%3Dopenai_gpt-4.1-mini-2025-04-14%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14"
+        ]
+      },
+      {
+        "value": 4.4,
+        "description": "min=4.4, mean=4.4, max=4.4, sum=4.4 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 6.828373408317566,
+        "description": "min=6.828, mean=6.828, max=6.828, sum=6.828 (1)",
+        "style": {
+          "font-weight": "bold"
+        },
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1399.9,
+        "description": "min=1399.9, mean=1399.9, max=1399.9, sum=1399.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 403.8,
+        "description": "min=403.8, mean=403.8, max=403.8, sum=403.8 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ],
+    [
+      {
+        "value": "GPT-4.1-nano (2025-04-14)",
+        "description": "",
+        "href": "?group=aci_bench&subgroup=&runSpecs=%5B%22aci_bench%3Amodel%3Dopenai_gpt-4.1-nano-2025-04-14%2Cmodel_deployment%3Dopenai_gpt-4.1-nano-2025-04-14%22%5D",
+        "markdown": false,
+        "run_spec_names": [
+          "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14"
+        ]
+      },
+      {
+        "value": 4.1,
+        "description": "min=4.1, mean=4.1, max=4.1, sum=4.1 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 8.015656733512879,
+        "description": "min=8.016, mean=8.016, max=8.016, sum=8.016 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 10.0,
+        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 0.0,
+        "description": "min=0, mean=0, max=0, sum=0 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 1399.9,
+        "description": "min=1399.9, mean=1399.9, max=1399.9, sum=1399.9 (1)",
+        "style": {},
+        "markdown": false
+      },
+      {
+        "value": 387.5,
+        "description": "min=387.5, mean=387.5, max=387.5, sum=387.5 (1)",
+        "style": {},
+        "markdown": false
+      }
+    ]
+  ],
+  "links": [
+    {
+      "text": "LaTeX",
+      "href": "benchmark_output/runs/my-medhelm-suite/groups/latex/aci_bench_aci_bench_.tex"
+    },
+    {
+      "text": "JSON",
+      "href": "benchmark_output/runs/my-medhelm-suite/groups/json/aci_bench_aci_bench_.json"
+    }
+  ],
+  "name": "aci_bench_"
+}
