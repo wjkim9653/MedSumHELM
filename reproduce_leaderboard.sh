@@ -2,13 +2,13 @@
 export SUITE_NAME=my-medhelm-suite
 
 # Replace this with your model or models
-MODELS_TO_RUN="deepseek-ai/deepseek-r1-0528 anthropic/claude-3-7-sonnet-20250219 openai/gpt-4.1-2025-04-14 openai/gpt-4.1-mini-2025-04-14 openai/gpt-4.1-nano-2025-04-14 meta/llama-3.2-1b-instruct meta/llama-3.2-3b-instruct meta/llama-3.1-8b-instruct meta/llama-3.3-70b-instruct-turbo"
+MODELS_TO_RUN=meta/llama-3.2-1b-instruct  # "deepseek-ai/deepseek-r1-0528 anthropic/claude-3-7-sonnet-20250219 openai/gpt-4.1-2025-04-14 openai/gpt-4.1-mini-2025-04-14 openai/gpt-4.1-nano-2025-04-14 meta/llama-3.2-1b-instruct meta/llama-3.2-3b-instruct meta/llama-3.1-8b-instruct meta/llama-3.3-70b-instruct-turbo"
 
 # Get these from the list below
 export RUN_ENTRIES_CONF_PATH=run_entries_medhelm_public.conf
 export SCHEMA_PATH=schema_medhelm.yaml
 export NUM_TRAIN_TRIALS=1
-export MAX_EVAL_INSTANCES=10
+export MAX_EVAL_INSTANCES=120
 export PRIORITY=2
 
 # -------------------
