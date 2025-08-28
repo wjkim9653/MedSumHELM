@@ -20,7 +20,7 @@
     "instance_prefix": "\n",
     "substitutions": [],
     "max_train_instances": 0,
-    "max_eval_instances": 10,
+    "max_eval_instances": 120,
     "num_outputs": 1,
     "num_train_trials": 1,
     "num_trials": 1,

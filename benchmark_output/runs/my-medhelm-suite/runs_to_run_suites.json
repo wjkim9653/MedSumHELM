@@ -7,5 +7,6 @@
   "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14": "my-medhelm-suite",
   "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14": "my-medhelm-suite",
   "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14": "my-medhelm-suite",
-  "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528": "my-medhelm-suite"
+  "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528": "my-medhelm-suite",
+  "mtsamples_replicate:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14": "my-medhelm-suite"
 }

@@ -305,8 +305,8 @@
         "markdown": false
       },
       {
-        "value": 10.0,
-        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "value": 120.0,
+        "description": "min=120, mean=120, max=120, sum=120 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -332,8 +332,8 @@
         ]
       },
       {
-        "value": 1447.3,
-        "description": "min=1447.3, mean=1447.3, max=1447.3, sum=1447.3 (1)",
+        "value": 1629.5833333333333,
+        "description": "min=1629.583, mean=1629.583, max=1629.583, sum=1629.583 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -341,8 +341,8 @@
         ]
       },
       {
-        "value": 402.6,
-        "description": "min=402.6, mean=402.6, max=402.6, sum=402.6 (1)",
+        "value": 429.0833333333333,
+        "description": "min=429.083, mean=429.083, max=429.083, sum=429.083 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -493,8 +493,8 @@
         ]
       },
       {
-        "value": 221.7,
-        "description": "min=221.7, mean=221.7, max=221.7, sum=221.7 (1)",
+        "value": 216.0,
+        "description": "min=216, mean=216, max=216, sum=216 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -609,8 +609,8 @@
         "markdown": false
       },
       {
-        "value": 10.0,
-        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "value": 120.0,
+        "description": "min=120, mean=120, max=120, sum=120 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -636,8 +636,8 @@
         ]
       },
       {
-        "value": 1447.3,
-        "description": "min=1447.3, mean=1447.3, max=1447.3, sum=1447.3 (1)",
+        "value": 1629.5833333333333,
+        "description": "min=1629.583, mean=1629.583, max=1629.583, sum=1629.583 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -645,8 +645,8 @@
         ]
       },
       {
-        "value": 362.4,
-        "description": "min=362.4, mean=362.4, max=362.4, sum=362.4 (1)",
+        "value": 391.3833333333333,
+        "description": "min=391.383, mean=391.383, max=391.383, sum=391.383 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -761,8 +761,8 @@
         "markdown": false
       },
       {
-        "value": 10.0,
-        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "value": 120.0,
+        "description": "min=120, mean=120, max=120, sum=120 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -788,8 +788,8 @@
         ]
       },
       {
-        "value": 1433.1,
-        "description": "min=1433.1, mean=1433.1, max=1433.1, sum=1433.1 (1)",
+        "value": 1613.1666666666667,
+        "description": "min=1613.167, mean=1613.167, max=1613.167, sum=1613.167 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -913,8 +913,8 @@
         "markdown": false
       },
       {
-        "value": 10.0,
-        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "value": 120.0,
+        "description": "min=120, mean=120, max=120, sum=120 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -940,8 +940,8 @@
         ]
       },
       {
-        "value": 1447.3,
-        "description": "min=1447.3, mean=1447.3, max=1447.3, sum=1447.3 (1)",
+        "value": 1629.5833333333333,
+        "description": "min=1629.583, mean=1629.583, max=1629.583, sum=1629.583 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -949,8 +949,8 @@
         ]
       },
       {
-        "value": 400.8,
-        "description": "min=400.8, mean=400.8, max=400.8, sum=400.8 (1)",
+        "value": 429.7416666666667,
+        "description": "min=429.742, mean=429.742, max=429.742, sum=429.742 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1065,8 +1065,8 @@
         "markdown": false
       },
       {
-        "value": 10.0,
-        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "value": 120.0,
+        "description": "min=120, mean=120, max=120, sum=120 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1092,8 +1092,8 @@
         ]
       },
       {
-        "value": 1515.8,
-        "description": "min=1515.8, mean=1515.8, max=1515.8, sum=1515.8 (1)",
+        "value": 1674.0583333333334,
+        "description": "min=1674.058, mean=1674.058, max=1674.058, sum=1674.058 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1101,8 +1101,8 @@
         ]
       },
       {
-        "value": 413.8,
-        "description": "min=413.8, mean=413.8, max=413.8, sum=413.8 (1)",
+        "value": 455.95,
+        "description": "min=455.95, mean=455.95, max=455.95, sum=455.95 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1217,8 +1217,8 @@
         "markdown": false
       },
       {
-        "value": 10.0,
-        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "value": 120.0,
+        "description": "min=120, mean=120, max=120, sum=120 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1244,8 +1244,8 @@
         ]
       },
       {
-        "value": 1399.9,
-        "description": "min=1399.9, mean=1399.9, max=1399.9, sum=1399.9 (1)",
+        "value": 1573.6416666666667,
+        "description": "min=1573.642, mean=1573.642, max=1573.642, sum=1573.642 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1253,8 +1253,8 @@
         ]
       },
       {
-        "value": 480.4,
-        "description": "min=480.4, mean=480.4, max=480.4, sum=480.4 (1)",
+        "value": 511.8333333333333,
+        "description": "min=511.833, mean=511.833, max=511.833, sum=511.833 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1369,8 +1369,8 @@
         "markdown": false
       },
       {
-        "value": 10.0,
-        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "value": 120.0,
+        "description": "min=120, mean=120, max=120, sum=120 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1396,8 +1396,8 @@
         ]
       },
       {
-        "value": 1399.9,
-        "description": "min=1399.9, mean=1399.9, max=1399.9, sum=1399.9 (1)",
+        "value": 1573.6416666666667,
+        "description": "min=1573.642, mean=1573.642, max=1573.642, sum=1573.642 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1405,8 +1405,8 @@
         ]
       },
       {
-        "value": 403.8,
-        "description": "min=403.8, mean=403.8, max=403.8, sum=403.8 (1)",
+        "value": 435.7916666666667,
+        "description": "min=435.792, mean=435.792, max=435.792, sum=435.792 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1521,8 +1521,8 @@
         "markdown": false
       },
       {
-        "value": 10.0,
-        "description": "min=10, mean=10, max=10, sum=10 (1)",
+        "value": 120.0,
+        "description": "min=120, mean=120, max=120, sum=120 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1548,8 +1548,8 @@
         ]
       },
       {
-        "value": 1399.9,
-        "description": "min=1399.9, mean=1399.9, max=1399.9, sum=1399.9 (1)",
+        "value": 1573.6416666666667,
+        "description": "min=1573.642, mean=1573.642, max=1573.642, sum=1573.642 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [
@@ -1557,8 +1557,8 @@
         ]
       },
       {
-        "value": 387.5,
-        "description": "min=387.5, mean=387.5, max=387.5, sum=387.5 (1)",
+        "value": 426.6666666666667,
+        "description": "min=426.667, mean=426.667, max=426.667, sum=426.667 (1)",
         "style": {},
         "markdown": false,
         "run_spec_names": [

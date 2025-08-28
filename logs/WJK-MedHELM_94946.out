@@ -1,0 +1,629 @@
+2025-08-14 22:23:13,957 INFO     helm_run {
+2025-08-14 22:23:14,996 INFO       Reading tokenizer configs from /data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/config/tokenizer_configs.yaml...
+2025-08-14 22:23:15,159 INFO       Reading model deployments from /data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/config/model_deployments.yaml...
+2025-08-14 22:23:15,847 INFO       Reading tokenizer configs from prod_env/tokenizer_configs.yaml...
+2025-08-14 22:23:15,852 INFO       Reading model deployments from prod_env/model_deployments.yaml...
+2025-08-14 22:23:15,957 INFO       Read 10 run entries from run_entries_medhelm_public.conf
+2025-08-14 22:23:18,590 INFO       10 entries produced 1 run specs
+2025-08-14 22:23:18,590 INFO       run_specs {
+2025-08-14 22:23:18,590 INFO         RunSpec(name='aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct', scenario_spec=ScenarioSpec(class_name='helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario', args={}), adapter_spec=AdapterSpec(method='generation', global_prefix='', global_suffix='', instructions='Summarize the conversation to generate a clinical note with four sections:\n1. HISTORY OF PRESENT ILLNESS\n2. PHYSICAL EXAM\n3. RESULTS\n4. ASSESSMENT AND PLAN\n\nThe conversation is:\n', input_prefix='Conversation: ', input_suffix='\n', reference_prefix='A. ', reference_suffix='\n', chain_of_thought_prefix='', chain_of_thought_suffix='\n', output_prefix='Clinical Note: ', output_suffix='\n', instance_prefix='\n', substitutions=[], max_train_instances=0, max_eval_instances=120, num_outputs=1, num_train_trials=1, num_trials=1, sample_train=True, model_deployment='huggingface/llama-3.2-3b-instruct', model='meta/llama-3.2-3b-instruct', temperature=0.0, max_tokens=768, stop_sequences=[], random=None, multi_label=False, image_generation_parameters=None, reeval_parameters=None, eval_splits=None), metric_specs=[MetricSpec(class_name='helm.benchmark.metrics.summarization_metrics.SummarizationMetric', args={'task': 'aci_bench', 'device': 'cuda', 'bertscore_model': 'distilbert-base-uncased', 'rescale_with_baseline': False}), MetricSpec(class_name='helm.benchmark.metrics.basic_metrics.BasicGenerationMetric', args={'names': []}), MetricSpec(class_name='helm.benchmark.metrics.basic_metrics.BasicReferenceMetric', args={}), MetricSpec(class_name='helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric', args={}), MetricSpec(class_name='helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric', args={})], data_augmenter_spec=DataAugmenterSpec(perturbation_specs=[], should_augment_train_instances=False, should_include_original_train=False, should_skip_unchanged_train=False, should_augment_eval_instances=False, should_include_original_eval=False, should_skip_unchanged_eval=False, seeds_per_instance=1), groups=['clinical', 'aci_bench'], annotators=[AnnotatorSpec(class_name='helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator', args={})])
+2025-08-14 22:23:18,590 INFO       } [0.0s]
+2025-08-14 22:23:18,590 INFO       Running in local mode with base path: prod_env
+Looking in path: prod_env
+2025-08-14 22:23:18,612 INFO       AutoTokenizer: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-08-14 22:23:18,612 INFO       AutoClient: file_storage_path = prod_env/cache
+2025-08-14 22:23:18,613 INFO       AutoClient: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-08-14 22:23:18,613 INFO       AutoTokenizer: cache_backend_config = BlackHoleCacheBackendConfig()
+Looking in path: prod_env
+2025-08-14 22:23:18,632 INFO       AnnotatorFactory: file_storage_path = prod_env/cache
+2025-08-14 22:23:18,632 INFO       AnnotatorFactory: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-08-14 22:23:18,635 INFO       Running aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct {
+2025-08-14 22:23:18,638 INFO         scenario.get_instances {
+2025-08-14 22:23:18,638 INFO           ensure_file_downloaded {
+2025-08-14 22:23:18,641 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/train_full.json because benchmark_output/scenarios/aci_bench/aci_bench_train.json already exists
+2025-08-14 22:23:18,641 INFO           } [0.002s]
+2025-08-14 22:23:18,646 INFO           ensure_file_downloaded {
+2025-08-14 22:23:18,649 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/clinicalnlp_taskB_test1_full.json because benchmark_output/scenarios/aci_bench/aci_bench_test_1.json already exists
+2025-08-14 22:23:18,649 INFO           } [0.002s]
+2025-08-14 22:23:18,652 INFO           ensure_file_downloaded {
+2025-08-14 22:23:18,653 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/clef_taskC_test3_full.json because benchmark_output/scenarios/aci_bench/aci_bench_test_2.json already exists
+2025-08-14 22:23:18,654 INFO           } [0.001s]
+2025-08-14 22:23:18,657 INFO           ensure_file_downloaded {
+2025-08-14 22:23:18,658 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/clinicalnlp_taskC_test2_full.json because benchmark_output/scenarios/aci_bench/aci_bench_test_3.json already exists
+2025-08-14 22:23:18,658 INFO           } [0.001s]
+2025-08-14 22:23:18,661 INFO         } [0.022s]
+2025-08-14 22:23:18,663 INFO         187 instances, 67 train instances, 120/120 eval instances
+2025-08-14 22:23:18,663 INFO         DataPreprocessor.preprocess {
+2025-08-14 22:23:18,663 INFO         } [0.0s]
+2025-08-14 22:23:18,666 INFO         GenerationAdapter.adapt {
+2025-08-14 22:23:18,666 INFO           187 instances, choosing 0/67 train instances, 120 eval instances
+2025-08-14 22:23:18,666 INFO           Adapting with train_trial_index=0 {
+2025-08-14 22:23:18,667 INFO             Sampled 0 examples for trial #0.
+2025-08-14 22:23:18,667 INFO             Parallelizing computation on 120 items over 4 threads {
+2025-08-14 22:23:21,225 INFO               Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:23:21,225 INFO               Loading meta-llama/Llama-3.2-3B-Instruct (kwargs={}) for HELM tokenizer meta/llama-3.2-3b-instruct with Hugging Face Transformers {
+2025-08-14 22:23:21,226 INFO                 Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:23:21,226 INFO                 Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:23:21,226 INFO                 Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:23:21,787 INFO               } [0.561s]
+2025-08-14 22:23:25,434 INFO             } [6.766s]
+2025-08-14 22:23:25,434 INFO             Sample prompts {
+2025-08-14 22:23:25,434 INFO               reference index = None, request_mode = None {
+2025-08-14 22:23:25,434 INFO                 Summarize the conversation to generate a clinical note with four sections:
+2025-08-14 22:23:25,434 INFO                 1. HISTORY OF PRESENT ILLNESS
+2025-08-14 22:23:25,434 INFO                 2. PHYSICAL EXAM
+2025-08-14 22:23:25,434 INFO                 3. RESULTS
+2025-08-14 22:23:25,434 INFO                 4. ASSESSMENT AND PLAN
+2025-08-14 22:23:25,434 INFO                 
+2025-08-14 22:23:25,434 INFO                 The conversation is:
+2025-08-14 22:23:25,434 INFO                 
+2025-08-14 22:23:25,434 INFO                 Conversation: Doctor-patient dialogue:
+2025-08-14 22:23:25,434 INFO                 
+2025-08-14 22:23:25,434 INFO                 [doctor] hi , andrew . how are you ?
+2025-08-14 22:23:25,435 INFO                 [patient] hey , good to see you .
+2025-08-14 22:23:25,435 INFO                 [doctor] i'm doing well , i'm doing well .
+2025-08-14 22:23:25,435 INFO                 [patient] good .
+2025-08-14 22:23:25,435 INFO                 [doctor] so , i know the nurse told you about dax . i'd like to tell dax a little bit about you .
+2025-08-14 22:23:25,435 INFO                 [patient] sure .
+2025-08-14 22:23:25,435 INFO                 [doctor] uh , so , andrew is a 59-year-old male with a past medical history , significant for depression , type two diabetes , and hypertension who presents today with an upper respiratory infection . so , andrew , what's going on ?
+2025-08-14 22:23:25,435 INFO                 [patient] yeah . we were doing a bit of work out in the yard in the last week or so and i started to feel really tired , was short of breath . um , we- we're not wearing masks as much at the end of the summer and i think i caught my first cold and i think it just got worse .
+2025-08-14 22:23:25,435 INFO                 [doctor] okay . all right . um , now , have you had your covid vaccines ?
+2025-08-14 22:23:25,435 INFO                 [patient] yeah , both .
+2025-08-14 22:23:25,435 INFO                 [doctor] okay . all right . and , um , do you have any history of any seasonal allergies at all ?
+2025-08-14 22:23:25,435 INFO                 [patient] none whatsoever .
+2025-08-14 22:23:25,435 INFO                 [doctor] okay . all right . and when you say you're having some shortness of breath , did you feel short of breath walking around or at rest ?
+2025-08-14 22:23:25,435 INFO                 [patient] uh , usually , it was lifting or carrying something . we were doing some landscaping , so i was carrying some heavy bags of soil and i , i got really winded . it really surprised me .
+2025-08-14 22:23:25,435 INFO                 [doctor] okay . and are you coughing up anything ?
+2025-08-14 22:23:25,435 INFO                 [patient] not yet , but i feel like that's next .
+2025-08-14 22:23:25,435 INFO                 [doctor] okay . and fevers ?
+2025-08-14 22:23:25,435 INFO                 [patient] uh , i felt a little warm , but i , i just thought it was because i was exerting myself .
+2025-08-14 22:23:25,435 INFO                 [doctor] okay . all right . and any other symptoms like muscle aches , joint pain , fatigue ?
+2025-08-14 22:23:25,435 INFO                 [patient] my elbows hurt quite a bit and my knees were pretty tired . l- like i said , i really felt some tension around my knees , but , uh , i think that was a lot to do with , uh , lifting the bags .
+2025-08-14 22:23:25,435 INFO                 [doctor] okay . all right . um , so , you know , how about , how are you doing in terms of your other medical problems , like your depression ? how are you doing with that ? i know we've , you know , talked about not putting you on medication for it because you're on medication for other things . what's going on ?
+2025-08-14 22:23:25,435 INFO                 [patient] i- it's been kind of a crazy year and a half . i was a little concerned about that but , for the most part , i've been , been doing well with it . my , my wife got me into barre classes , to help me relax and i think it's working .
+2025-08-14 22:23:25,435 INFO                 [doctor] okay . all right , great . and , and in terms of your diabetes , how are you doing watching your , your diet and your sugar intake ?
+2025-08-14 22:23:25,435 INFO                 [patient] uh , i've been monitoring my sugar levels while i am going to work during the week . uh , not so , uh , if its saturday or sunday i usually don't remember . uh , the diet's been pretty good for the most part , except for , you know , some house parties and things like that . but , uh , been good for the most part .
+2025-08-14 22:23:25,435 INFO                 [doctor] okay and have they been elevated at all since this episode of your-
+2025-08-14 22:23:25,435 INFO                 [patient] no .
+2025-08-14 22:23:25,435 INFO                 [doctor] okay . and then , how , lastly , for your high blood pressure , have you been monitoring your blood pressures at home ? did you buy the cuff like i suggested ?
+2025-08-14 22:23:25,436 INFO                 [patient] uh , same thing . during the while i'm going to work, i'm regular about monitoring it, but if its a saturday or sunday, not so much . but , uh , it's , it's been under control .
+2025-08-14 22:23:25,436 INFO                 [doctor] but you're taking your medication ?
+2025-08-14 22:23:25,436 INFO                 [patient] yes .
+2025-08-14 22:23:25,436 INFO                 [doctor] okay . all right . well , you know , i know that , you know , you've endorsed , you know , the shortness of breath and some joint pain . um , how about any other symptoms ? nausea or vomiting ? diarrhea ?
+2025-08-14 22:23:25,436 INFO                 [patient] no .
+2025-08-14 22:23:25,436 INFO                 [doctor] anything like that ?
+2025-08-14 22:23:25,436 INFO                 [patient] no .
+2025-08-14 22:23:25,436 INFO                 [doctor] okay . all right . well , i wan na go ahead and do a quick physical exam , all right ? hey , dragon , show me the vital signs . so , your vital signs here in the office look quite good .
+2025-08-14 22:23:25,436 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,436 INFO                 [doctor] you know , everything's looking normal , you do n't have a fever , which is really good . um , i'm just gon na go ahead and listen to your heart and your lungs and , kind of , i'll let you know what i hear , okay ?
+2025-08-14 22:23:25,436 INFO                 [patient] sure .
+2025-08-14 22:23:25,436 INFO                 [doctor] okay . so , on your physical exam , you know , your heart sounds nice and strong . your lungs , you do have scattered ronchi bilaterally on your lung exam . uh , it clears with cough . um , i do notice a little bit of , um , some edema of your lower extremities and you do have some pain to palpation of your elbows bilaterally . um , so , let's go ahead , i want to look at some of your results , okay ?
+2025-08-14 22:23:25,436 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,436 INFO                 [doctor] hey , dragon . show me the chest x-ray .
+2025-08-14 22:23:25,436 INFO                 [doctor] so , i reviewed the results of your chest x-ray and everything looks good . there's no airspace disease , there's no pneumonia , so that's all very , very good , okay ?
+2025-08-14 22:23:25,436 INFO                 [patient] good .
+2025-08-14 22:23:25,436 INFO                 [doctor] hey , dragon . show me the diabetic labs .
+2025-08-14 22:23:25,436 INFO                 [doctor] and here , looking at your diabetic labs , you know , your hemoglobin a1c is a little elevated at eight .
+2025-08-14 22:23:25,436 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,436 INFO                 [doctor] i'd like to see that a little bit better , around six or seven , if possible .
+2025-08-14 22:23:25,436 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,436 INFO                 [doctor] um , so let's talk a little bit about my assessment and my plan for you .
+2025-08-14 22:23:25,436 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,436 INFO                 [doctor] so , for your first problem , this upper respiratory infection , i believe you , you have a viral syndrome , okay ? we'll go ahead and we'll send a covid test , just to make sure that you do n't have covid .
+2025-08-14 22:23:25,436 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,436 INFO                 [doctor] uh , but overall , i think that , um , you know , this will resolve in a couple of days . i do n't think you have covid , you do n't have any exposures , that type of thing .
+2025-08-14 22:23:25,437 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,437 INFO                 [doctor] so , i think that this will improve . i'll give you some robitussin for your cough and i would encourage you take some ibuprofen , tylenol for any fever , okay ?
+2025-08-14 22:23:25,437 INFO                 [patient] you got it .
+2025-08-14 22:23:25,437 INFO                 [doctor] for your next problem , your depression , you know , it sounds like you're doing well with that , but again , i'm happy to start on a med- , a medical regiment or ...
+2025-08-14 22:23:25,437 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,437 INFO                 [doctor] . refer you to psychotherapy , if you think that that would be helpful .
+2025-08-14 22:23:25,437 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,437 INFO                 [doctor] would you like that ?
+2025-08-14 22:23:25,437 INFO                 [patient] u- u- um , maybe not necessarily . maybe in a , uh , few months we'll check on that .
+2025-08-14 22:23:25,437 INFO                 [doctor] okay . all right .
+2025-08-14 22:23:25,437 INFO                 [doctor] for your third problem , your type two diabetes , i want to go ahead and increase your metformin to 1000 milligrams , twice daily .
+2025-08-14 22:23:25,437 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,437 INFO                 [doctor] and i'm gon na get an- another hemoglobin a1c in four months , okay ?
+2025-08-14 22:23:25,437 INFO                 [patient] okay , sure .
+2025-08-14 22:23:25,437 INFO                 [doctor] hey , dragon . order a hemoglobin a1c .
+2025-08-14 22:23:25,437 INFO                 [doctor] and lastly , for your high blood pressure , it looks like you're doing a really good job managing that . i want to go ahead and continue you on the , um , lisinopril , 20 milligrams a day .
+2025-08-14 22:23:25,437 INFO                 [patient] mm-hmm .
+2025-08-14 22:23:25,437 INFO                 [doctor] and i'm gon na go ahead and order a lipid panel , okay ?
+2025-08-14 22:23:25,437 INFO                 [patient] sure .
+2025-08-14 22:23:25,437 INFO                 [doctor] do you need a refill of the lisinopril ?
+2025-08-14 22:23:25,437 INFO                 [patient] actually , i do .
+2025-08-14 22:23:25,437 INFO                 [doctor] okay . hey , dragon . order lisinopril , 20 milligrams daily .
+2025-08-14 22:23:25,437 INFO                 [doctor] so , the nurse will be in , she'll help you , uh , make a follow-up appointment with me . i want to see you again in about four months .
+2025-08-14 22:23:25,437 INFO                 [patient] okay .
+2025-08-14 22:23:25,437 INFO                 [doctor] let me know if your symptoms worsen and we can talk more about it , okay ?
+2025-08-14 22:23:25,437 INFO                 [patient] you got it .
+2025-08-14 22:23:25,437 INFO                 [doctor] all right . hey , dragon . finalize the note .
+2025-08-14 22:23:25,438 INFO                 Clinical Note:
+2025-08-14 22:23:25,438 INFO               } [0.003s]
+2025-08-14 22:23:25,438 INFO             } [0.003s]
+2025-08-14 22:23:25,438 INFO           } [6.771s]
+2025-08-14 22:23:25,438 INFO           120 requests
+2025-08-14 22:23:25,438 INFO         } [6.771s]
+2025-08-14 22:23:25,438 INFO         Executor.execute {
+2025-08-14 22:23:25,438 INFO           Parallelizing computation on 120 items over 4 threads {
+2025-08-14 22:23:25,457 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:23:25,457 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:23:25,458 WARNING          Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-08-14 22:23:25,462 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:23:25,463 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:23:25,463 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:23:25,489 INFO             Loading meta-llama/Llama-3.2-3B-Instruct (kwargs={'torch_dtype': 'float16'}) for HELM model meta/llama-3.2-3b-instruct with Hugging Face Transformers {
+2025-08-14 22:23:25,489 WARNING          Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-08-14 22:23:25,489 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-08-14 22:23:25,489 WARNING            Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-08-14 22:23:25,489 INFO               Loading Hugging Face model meta-llama/Llama-3.2-3B-Instruct {
+2025-08-14 22:23:25,490 WARNING              Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-08-14 22:23:30,137 INFO               } [4.646s]
+2025-08-14 22:23:30,137 INFO             } [4.648s]
+2025-08-14 22:24:17,986 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:24:29,165 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:24:31,061 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:24:42,656 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:25:03,593 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:25:26,578 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:25:31,182 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:25:34,806 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:25:52,263 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:26:19,911 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:26:20,860 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:26:50,011 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:27:01,800 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:27:20,240 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:27:31,201 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:27:42,155 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:27:55,119 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:28:24,584 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:28:27,079 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:28:31,514 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:28:55,653 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:29:25,546 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:29:26,194 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:29:35,859 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:29:49,335 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:30:22,019 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:30:25,366 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:30:29,581 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:30:40,759 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:31:23,648 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:31:33,545 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:31:33,589 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:31:35,588 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:32:17,444 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:32:20,753 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:32:43,325 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:32:43,881 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:33:13,325 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:33:15,561 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:33:42,366 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:33:43,036 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:34:03,687 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:34:25,560 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:34:35,011 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:34:41,661 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:34:57,641 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:35:28,131 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:35:30,926 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:35:39,698 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:36:06,761 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:36:23,269 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:36:31,860 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:36:32,055 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:37:08,368 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:37:25,820 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:37:26,663 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:37:32,222 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:38:04,766 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:38:17,829 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:38:24,521 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:38:26,186 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:39:01,812 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:39:17,490 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:39:20,226 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:39:27,596 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:40:03,156 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:40:20,100 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:40:22,233 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:40:32,151 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:41:06,179 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:41:28,218 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:41:37,899 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:41:47,741 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:42:01,823 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:42:19,971 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:42:34,792 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:42:41,085 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:42:57,208 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:43:13,676 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:43:44,295 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:43:50,492 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:44:02,087 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:44:28,109 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:44:40,044 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:44:41,422 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:45:06,554 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:45:24,752 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:45:38,408 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:45:41,617 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:46:00,367 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:46:30,202 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:46:42,421 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:46:43,394 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:47:21,119 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:47:31,777 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:47:37,419 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:47:47,896 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:48:30,234 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:48:30,924 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:48:36,492 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:48:43,667 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:49:27,344 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:49:42,170 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:49:48,114 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:49:48,815 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:50:23,657 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:50:30,290 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:50:49,751 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:50:54,675 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:51:35,785 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:51:40,055 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:51:40,427 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:51:58,286 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:52:31,435 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:52:40,029 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:52:42,413 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:52:57,605 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:53:18,361 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:53:21,511 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:53:25,101 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-08-14 22:53:25,102 INFO           } [29m59.663s]
+2025-08-14 22:53:25,102 INFO           Processed 120 requests
+2025-08-14 22:53:25,102 INFO         } [29m59.664s]
+2025-08-14 22:53:25,102 INFO         AnnotationExecutor.execute {
+2025-08-14 22:53:25,109 INFO           AutoTokenizer: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-08-14 22:53:25,110 INFO           AutoClient: file_storage_path = prod_env/cache
+2025-08-14 22:53:25,110 INFO           AutoClient: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-08-14 22:53:25,110 INFO           Parallelizing computation on 120 items over 4 threads {
+2025-08-14 22:53:26,213 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:53:26,213 INFO             Using host_organization api key defined in credentials.conf: openaiApiKey
+2025-08-14 22:53:26,213 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:53:26,214 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:53:26,214 INFO             Using host_organization api key defined in credentials.conf: openaiApiKey
+2025-08-14 22:53:26,215 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:53:26,216 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:53:26,216 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:53:26,217 INFO             Using host_organization api key defined in credentials.conf: openaiApiKey
+2025-08-14 22:53:26,217 INFO             Using host_organization api key defined in credentials.conf: openaiApiKey
+2025-08-14 22:53:26,217 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:53:26,217 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-08-14 22:53:57,512 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:54:13,087 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:54:16,982 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:54:32,086 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:54:35,042 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:54:53,937 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:55:12,437 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:55:18,769 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:55:23,849 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:55:49,378 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:56:03,742 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:56:08,076 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:56:20,326 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:56:38,513 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:56:39,892 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:56:47,892 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:57:14,585 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:57:33,852 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:57:41,433 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:58:06,716 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:58:14,015 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:58:34,729 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:58:37,327 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:59:00,887 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:59:02,572 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:59:05,877 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:59:26,025 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:59:39,549 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 22:59:49,181 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:00:03,628 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:00:08,586 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:00:26,790 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:00:26,963 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:00:49,605 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:00:50,985 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:01:07,401 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:01:16,834 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:01:22,702 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:01:27,178 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:01:51,810 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:02:15,226 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:02:15,887 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:02:32,160 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:02:48,768 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:02:49,892 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:02:59,413 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:03:13,741 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:03:31,310 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:03:41,525 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:03:46,068 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:03:47,808 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:04:16,120 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:04:19,656 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:04:35,699 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:04:43,807 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:04:56,065 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:05:00,674 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:05:34,123 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:05:35,658 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:05:48,002 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:05:58,294 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:06:09,602 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:06:22,953 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:06:28,905 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:06:32,827 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:06:53,175 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:07:14,917 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:07:24,005 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:07:24,658 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:07:39,779 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:07:45,296 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:08:09,977 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:08:11,975 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:08:14,144 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:08:24,566 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:08:40,995 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:08:42,850 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:09:05,286 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:09:08,534 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:09:16,642 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:09:44,297 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:09:56,189 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:10:00,989 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:10:06,004 WARNING          JSON decoding error from openai/gpt-5-2025-08-07: Invalid \escape: line 8 column 168 (char 680). Model output: {
+    "accuracy": {
+        "score": 4,
+        "explanation": "The note accurately captures the mechanism of injury, absence of radicular symptoms, exam-provoked pain with twisting, normal x-ray aside from prior fusion, diagnosis of lumbar strain, and plan (Motrin 800 mg TID with food, ice/heat, walking, follow-up if not improving). However, it introduces \"physical therapy,\" which was not discussed, and conflates imaging findings within the physical exam."
+    },
+    "completeness": {
+        "score": 3,
+        "explanation": "Key elements are present (injury details, lack of leg pain, normal imaging, diagnosis, and treatment plan). Missing details include the patient\'s PMH of anxiety, right-sided pain localization, positional aggravation (worse lying flat), and specific exam findings such as negative straight leg raise and intact sensation. It also does not clearly document prior lumbar fusion hardware status."
+    },
+    "clarity": {
+        "score": 4,
+        "explanation": "The note is generally well organized with clear headings (HPI, Physical Exam, Results, Assessment and Plan). Minor issues include placing imaging findings under \"Physical Exam,\" inclusion of an extraneous comment, and absence of dedicated PMH/PSH/medication sections, which would improve standard clinical clarity."
+    }
+}
+2025-08-14 23:10:06,004 INFO             Failed model annotations: {'gpt-5': 1}
+2025-08-14 23:10:22,761 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:10:33,931 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:10:37,770 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:11:00,809 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:11:09,849 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:11:10,068 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:11:20,321 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:11:46,011 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:12:00,560 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:12:03,887 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:12:14,054 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:12:24,671 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:12:45,798 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:12:51,689 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:12:55,078 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:13:17,757 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:13:33,591 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:13:37,407 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:13:48,841 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:14:14,233 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:14:15,806 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:14:18,691 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:14:29,964 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:14:58,609 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:15:04,352 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:15:04,565 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:15:12,607 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:15:25,937 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:15:35,190 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:15:46,168 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:15:51,302 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:16:09,470 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:16:16,677 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:16:22,748 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:16:33,618 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:16:46,443 INFO             Failed model annotations: {'gpt-5': 0}
+2025-08-14 23:16:46,444 INFO           } [23m21.333s]
+2025-08-14 23:16:46,444 INFO           Annotated 120 requests
+2025-08-14 23:16:46,444 INFO         } [23m21.341s]
+2025-08-14 23:16:50,554 INFO         5 metrics {
+2025-08-14 23:16:50,554 INFO           <helm.benchmark.metrics.summarization_metrics.SummarizationMetric object at 0x7f0add7fbfd0> {
+2025-08-14 23:16:50,554 INFO             Setting parallelism from 4 to 1, since evaluating faithfulness with parallelism > 1 errors.
+2025-08-14 23:16:50,554 INFO             Parallelizing computation on 120 items over 1 threads {
+2025-08-14 23:16:50,555 INFO               ensure_file_downloaded {
+2025-08-14 23:16:50,556 INFO                 Not downloading https://storage.googleapis.com/crfm-helm-public/source_datasets/metrics/summarization_metrics/qafacteval.pk because benchmark_output/runs/my-medhelm-suite/eval_cache/qafacteval.pk already exists
+2025-08-14 23:16:50,557 INFO               } [0.001s]
+2025-08-14 23:24:13,347 INFO             } [7m22.792s]
+2025-08-14 23:24:13,442 INFO           } [7m22.887s]
+2025-08-14 23:24:13,442 INFO           BasicMetric() {
+2025-08-14 23:24:13,442 INFO             Parallelizing computation on 120 items over 4 threads {
+2025-08-14 23:24:14,323 INFO             } [0.881s]
+2025-08-14 23:24:14,492 INFO           } [1.049s]
+2025-08-14 23:24:14,492 INFO           BasicReferenceMetric {
+2025-08-14 23:24:14,492 INFO             Parallelizing computation on 120 items over 4 threads {
+2025-08-14 23:24:14,496 INFO             } [0.004s]
+2025-08-14 23:24:14,497 INFO           } [0.004s]
+2025-08-14 23:24:14,497 INFO           <helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric object at 0x7f0ac019b100> {
+2025-08-14 23:24:14,497 INFO           } [0.0s]
+2025-08-14 23:24:14,497 INFO           <helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric object at 0x7f0ac019b190> {
+2025-08-14 23:24:14,497 INFO             Parallelizing computation on 120 items over 4 threads {
+2025-08-14 23:24:14,504 INFO             } [0.006s]
+2025-08-14 23:24:14,514 INFO           } [0.016s]
+2025-08-14 23:24:14,514 INFO         } [7m23.96s]
+2025-08-14 23:24:14,514 INFO         Generated 90 stats.
+2025-08-14 23:24:14,515 INFO         Writing 2530 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct/run_spec.json
+2025-08-14 23:24:14,519 INFO         Writing 567 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct/scenario.json
+2025-08-14 23:24:15,336 INFO         Writing 8661157 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct/scenario_state.json
+2025-08-14 23:24:15,378 INFO         Writing 33225 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct/stats.json
+2025-08-14 23:24:15,597 INFO         Writing 1140463 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct/per_instance_stats.json
+2025-08-14 23:24:15,601 INFO         CacheStats.print_status {
+2025-08-14 23:24:15,602 INFO           disabled_cache: 840 queries, 840 computes
+2025-08-14 23:24:15,602 INFO         } [0.0s]
+2025-08-14 23:24:15,602 INFO       } [1h56.966s]
+2025-08-14 23:24:15,602 INFO       Done.
+2025-08-14 23:24:15,602 INFO     } [1h1m1.644s]
+2025-08-14 23:24:23,177 INFO     summarize: summarize {
+2025-08-14 23:24:24,295 INFO       Reading tokenizer configs from /data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/config/tokenizer_configs.yaml...
+2025-08-14 23:24:24,461 INFO       Reading model deployments from /data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/config/model_deployments.yaml...
+2025-08-14 23:24:25,259 INFO       Reading tokenizer configs from prod_env/tokenizer_configs.yaml...
+2025-08-14 23:24:25,265 INFO       Reading model deployments from prod_env/model_deployments.yaml...
+2025-08-14 23:24:25,285 INFO       Reading schema file schema_medhelm.yaml...
+2025-08-14 23:24:25,549 WARNING    benchmark_output doesn't have run_spec.json or stats.json, skipping
+2025-08-14 23:24:25,549 INFO       Summarizer.check_metrics_defined {
+2025-08-14 23:24:25,550 INFO       } [0.0s]
+2025-08-14 23:24:25,550 INFO       Parallelizing computation on 9 items over 8 threads {
+2025-08-14 23:24:25,550 INFO         write_run_display_json {
+2025-08-14 23:24:25,551 INFO           write_run_display_json {
+2025-08-14 23:24:25,551 INFO             write_run_display_json {
+2025-08-14 23:24:25,552 INFO               write_run_display_json {
+2025-08-14 23:24:25,552 INFO                 write_run_display_json {
+2025-08-14 23:24:25,553 INFO                   write_run_display_json {
+2025-08-14 23:24:25,553 INFO                     write_run_display_json {
+2025-08-14 23:24:25,554 INFO                       write_run_display_json {
+2025-08-14 23:24:26,378 INFO                         Writing 83790 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct/instances.json
+2025-08-14 23:24:26,386 INFO                         Writing 83790 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct/instances.json
+2025-08-14 23:24:26,821 INFO                         Writing 139464 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct/display_predictions.json
+2025-08-14 23:24:27,024 INFO                         Writing 158212 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct/display_predictions.json
+2025-08-14 23:24:27,059 INFO                         Writing 63533 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct/display_requests.json
+2025-08-14 23:24:27,180 INFO                       } [1.62s]
+2025-08-14 23:24:27,181 INFO                       Writing 63533 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct/display_requests.json
+2025-08-14 23:24:27,236 INFO                       write_run_display_json {
+2025-08-14 23:24:27,604 INFO                       } [0.022s]
+2025-08-14 23:24:27,620 INFO                       Writing 1160506 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo/instances.json
+2025-08-14 23:24:27,663 INFO                       Writing 1160506 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct/instances.json
+2025-08-14 23:24:27,801 INFO                       Writing 1160506 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14/instances.json
+2025-08-14 23:24:27,866 INFO                       Writing 1160506 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14/instances.json
+2025-08-14 23:24:27,926 INFO                       Writing 1160506 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14/instances.json
+2025-08-14 23:24:27,942 INFO                       Writing 2050849 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct/display_predictions.json
+2025-08-14 23:24:27,950 INFO                       Writing 2085405 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo/display_predictions.json
+2025-08-14 23:24:28,038 INFO                       Writing 2118401 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14/display_predictions.json
+2025-08-14 23:24:28,049 INFO                       Writing 2159106 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14/display_predictions.json
+2025-08-14 23:24:28,067 INFO                       Writing 2112708 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14/display_predictions.json
+2025-08-14 23:24:28,080 INFO                       Writing 884238 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct/display_requests.json
+2025-08-14 23:24:28,098 INFO                       Writing 1160506 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219/instances.json
+2025-08-14 23:24:28,112 INFO                       Writing 885558 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo/display_requests.json
+2025-08-14 23:24:28,139 INFO                       Writing 884358 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14/display_requests.json
+2025-08-14 23:24:28,160 INFO                       Writing 883158 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14/display_requests.json
+2025-08-14 23:24:28,206 INFO                     } [2.652s]
+2025-08-14 23:24:28,211 INFO                   } [2.658s]
+2025-08-14 23:24:28,220 INFO                 } [2.667s]
+2025-08-14 23:24:28,235 INFO               } [2.682s]
+2025-08-14 23:24:28,242 INFO               Writing 1160506 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528/instances.json
+2025-08-14 23:24:28,246 INFO               Writing 884358 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14/display_requests.json
+2025-08-14 23:24:28,250 INFO               Writing 2090760 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219/display_predictions.json
+2025-08-14 23:24:28,275 INFO             } [2.724s]
+2025-08-14 23:24:28,284 INFO             Writing 885798 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219/display_requests.json
+2025-08-14 23:24:28,299 INFO             Writing 2489709 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528/display_predictions.json
+2025-08-14 23:24:28,321 INFO           } [2.769s]
+2025-08-14 23:24:28,324 INFO           Writing 883638 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528/display_requests.json
+2025-08-14 23:24:28,331 INFO         } [2.78s]
+2025-08-14 23:24:28,332 INFO       } [2.781s]
+2025-08-14 23:24:28,341 INFO       Writing 83175 characters to benchmark_output/runs/my-medhelm-suite/schema.json
+2025-08-14 23:24:28,343 INFO       Summarizer.write_executive_summary {
+2025-08-14 23:24:28,343 INFO         Writing 99 characters to benchmark_output/runs/my-medhelm-suite/summary.json
+2025-08-14 23:24:28,344 INFO       } [0.001s]
+2025-08-14 23:24:28,408 INFO       Writing 376835 characters to benchmark_output/runs/my-medhelm-suite/runs.json
+2025-08-14 23:24:28,414 INFO       Writing 24346 characters to benchmark_output/runs/my-medhelm-suite/run_specs.json
+2025-08-14 23:24:28,415 INFO       Writing 1107 characters to benchmark_output/runs/my-medhelm-suite/runs_to_run_suites.json
+2025-08-14 23:24:28,416 WARNING    group clinical mentioned in run spec aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,417 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,417 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,417 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,417 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,417 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,417 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,417 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,417 WARNING    group clinical mentioned in run spec aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,418 WARNING    group clinical mentioned in run spec aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,418 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,418 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,419 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,419 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,419 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,419 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,419 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,419 WARNING    group clinical mentioned in run spec aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,420 WARNING    group clinical mentioned in run spec aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,420 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,420 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,421 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,421 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,421 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,421 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,421 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,421 WARNING    group clinical mentioned in run spec aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,432 INFO       Writing 41612 characters to benchmark_output/runs/my-medhelm-suite/groups.json
+2025-08-14 23:24:28,435 INFO       Writing 24387 characters to benchmark_output/runs/my-medhelm-suite/groups_metadata.json
+2025-08-14 23:24:28,437 WARNING    group clinical mentioned in run spec aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,437 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,437 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,437 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,437 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,437 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,437 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,437 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,438 WARNING    group clinical mentioned in run spec aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,829 INFO       Writing 762 characters to benchmark_output/runs/my-medhelm-suite/groups/latex/medhelm_scenarios_accuracy.tex
+2025-08-14 23:24:28,841 INFO       Writing 58147 characters to benchmark_output/runs/my-medhelm-suite/groups/json/medhelm_scenarios_accuracy.json
+2025-08-14 23:24:28,843 INFO       Writing 784 characters to benchmark_output/runs/my-medhelm-suite/groups/latex/medhelm_scenarios_efficiency.tex
+2025-08-14 23:24:28,855 INFO       Writing 61054 characters to benchmark_output/runs/my-medhelm-suite/groups/json/medhelm_scenarios_efficiency.json
+2025-08-14 23:24:28,857 INFO       Writing 1047 characters to benchmark_output/runs/my-medhelm-suite/groups/latex/medhelm_scenarios_general_information.tex
+2025-08-14 23:24:28,907 INFO       Writing 266918 characters to benchmark_output/runs/my-medhelm-suite/groups/json/medhelm_scenarios_general_information.json
+2025-08-14 23:24:28,981 INFO       Writing 410923 characters to benchmark_output/runs/my-medhelm-suite/groups/medhelm_scenarios.json
+2025-08-14 23:24:28,984 WARNING    group clinical mentioned in run spec aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,984 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,984 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,985 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,985 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,985 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,985 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,985 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:28,985 WARNING    group clinical mentioned in run spec aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:29,057 INFO       Writing 776 characters to benchmark_output/runs/my-medhelm-suite/groups/latex/clinical_note_generation_accuracy.tex
+2025-08-14 23:24:29,061 INFO       Writing 13713 characters to benchmark_output/runs/my-medhelm-suite/groups/json/clinical_note_generation_accuracy.json
+2025-08-14 23:24:29,062 INFO       Writing 798 characters to benchmark_output/runs/my-medhelm-suite/groups/latex/clinical_note_generation_efficiency.tex
+2025-08-14 23:24:29,066 INFO       Writing 14175 characters to benchmark_output/runs/my-medhelm-suite/groups/json/clinical_note_generation_efficiency.json
+2025-08-14 23:24:29,067 INFO       Writing 1061 characters to benchmark_output/runs/my-medhelm-suite/groups/latex/clinical_note_generation_general_information.tex
+2025-08-14 23:24:29,076 INFO       Writing 54787 characters to benchmark_output/runs/my-medhelm-suite/groups/json/clinical_note_generation_general_information.json
+2025-08-14 23:24:29,091 INFO       Writing 87825 characters to benchmark_output/runs/my-medhelm-suite/groups/clinical_note_generation.json
+2025-08-14 23:24:29,093 WARNING    group clinical mentioned in run spec aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:29,093 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:29,093 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:29,093 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:29,093 WARNING    group clinical mentioned in run spec aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:29,093 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:29,093 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:29,093 WARNING    group clinical mentioned in run spec aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:29,094 WARNING    group clinical mentioned in run spec aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528 but undefined in schema_medhelm.yaml, skipping
+2025-08-14 23:24:29,112 INFO       Writing 1363 characters to benchmark_output/runs/my-medhelm-suite/groups/latex/aci_bench_aci_bench_.tex
+2025-08-14 23:24:29,116 INFO       Writing 19790 characters to benchmark_output/runs/my-medhelm-suite/groups/json/aci_bench_aci_bench_.json
+2025-08-14 23:24:29,120 INFO       Writing 20932 characters to benchmark_output/runs/my-medhelm-suite/groups/aci_bench.json
+2025-08-14 23:24:29,121 INFO       Summarizer.write_cost_report {
+2025-08-14 23:24:29,122 INFO         Writing 2 characters to benchmark_output/runs/my-medhelm-suite/costs.json
+2025-08-14 23:24:29,123 INFO       } [0.001s]
+2025-08-14 23:24:29,123 INFO       Symlinking benchmark_output/runs/my-medhelm-suite to latest.
+2025-08-14 23:24:29,123 INFO       Done.
+2025-08-14 23:24:29,123 INFO     } [5.946s]
+===== Benchmark Results =====
+Model                             Jury Score            Observed inference time (s)    # eval    # train    truncated    # prompt tokens       # output tokens
+Claude 3.7 Sonnet (20250219)      4.547222222222223     16.05382503668467              120.0                             1674.0583333333334    455.95
+GPT-4.1 (2025-04-14)              4.477777777777777     13.234592833121617             120.0                             1573.6416666666667    511.8333333333333
+DeepSeek-R1-0528                  4.419444444444446     18.903887156645457             120.0                             1613.1666666666667 
+GPT-4.1-mini (2025-04-14)         4.366666666666666     8.03999240597089               120.0                             1573.6416666666667    435.7916666666667
+GPT-4.1-nano (2025-04-14)         4.099999999999998     5.970380202929179              120.0                             1573.6416666666667    426.6666666666667
+Llama 3.3 Instruct Turbo (70B)    4.050000000000001     29.972085070610046             120.0                             1629.5833333333333    429.7416666666667
+Llama 3.1 Instruct (8B)           3.7999999999999994    66.88275079727173              10.0                              1447.3                402.6
+Llama 3.2 Instruct (3B)           3.244444444444444     59.51362446546555              120.0                             1629.5833333333333    391.3833333333333
+Llama 3.2 Instruct (1.23B)        1.9000000000000004    19.747730922698974             10.0                              1447.3                221.7

@@ -28,7 +28,7 @@ MODELS_TO_RUN="meta/llama-3.2-1b-instruct" # meta/llama-3.2-3b-instruct meta/lla
 export RUN_ENTRIES_CONF_PATH=run_entries_medhelm_public.conf
 export SCHEMA_PATH=schema_medhelm.yaml
 export NUM_TRAIN_TRIALS=1
-export MAX_EVAL_INSTANCES=120
+export MAX_EVAL_INSTANCES=10
 export PRIORITY=2
 
 # -------------------
