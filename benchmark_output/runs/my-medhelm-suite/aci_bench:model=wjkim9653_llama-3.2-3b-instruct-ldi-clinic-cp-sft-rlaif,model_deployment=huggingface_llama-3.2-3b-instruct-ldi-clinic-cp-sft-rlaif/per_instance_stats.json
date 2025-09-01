@@ -1,0 +1,8562 @@
+[
+  {
+    "instance_id": "id115",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.42895442359249325,
+        "sum_squared": 0.18400189751956814,
+        "min": 0.42895442359249325,
+        "max": 0.42895442359249325,
+        "mean": 0.42895442359249325,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.23180592991913743,
+        "sum_squared": 0.05373398914567605,
+        "min": 0.23180592991913743,
+        "max": 0.23180592991913743,
+        "mean": 0.23180592991913743,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.27882037533512066,
+        "sum_squared": 0.07774080170201757,
+        "min": 0.27882037533512066,
+        "max": 0.27882037533512066,
+        "mean": 0.27882037533512066,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7445255474452555,
+        "sum_squared": 0.5543182907986574,
+        "min": 0.7445255474452555,
+        "max": 0.7445255474452555,
+        "mean": 0.7445255474452555,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2.9927007299270074,
+        "sum_squared": 8.956257658905644,
+        "min": 2.9927007299270074,
+        "max": 2.9927007299270074,
+        "mean": 2.9927007299270074,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 8.05109489051095,
+        "sum_squared": 64.82012893601151,
+        "min": 8.05109489051095,
+        "max": 8.05109489051095,
+        "mean": 8.05109489051095,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.20327589246961805,
+        "sum_squared": 0.04132108845931972,
+        "min": -0.20327589246961805,
+        "max": -0.20327589246961805,
+        "mean": -0.20327589246961805,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.89009690284729,
+        "sum_squared": 0.7922724964583381,
+        "min": 0.89009690284729,
+        "max": 0.89009690284729,
+        "mean": 0.89009690284729,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7434296011924744,
+        "sum_squared": 0.5526875719292015,
+        "min": 0.7434296011924744,
+        "max": 0.7434296011924744,
+        "mean": 0.7434296011924744,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8101789355278015,
+        "sum_squared": 0.6563899075729616,
+        "min": 0.8101789355278015,
+        "max": 0.8101789355278015,
+        "mean": 0.8101789355278015,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id161",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.42130750605326883,
+        "sum_squared": 0.17750001465682516,
+        "min": 0.42130750605326883,
+        "max": 0.42130750605326883,
+        "mean": 0.42130750605326883,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.15048543689320387,
+        "sum_squared": 0.022645866716938447,
+        "min": 0.15048543689320387,
+        "max": 0.15048543689320387,
+        "mean": 0.15048543689320387,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.23970944309927356,
+        "sum_squared": 0.05746061711096387,
+        "min": 0.23970944309927356,
+        "max": 0.23970944309927356,
+        "mean": 0.23970944309927356,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.9777777777777777,
+        "sum_squared": 0.9560493827160493,
+        "min": 0.9777777777777777,
+        "max": 0.9777777777777777,
+        "mean": 0.9777777777777777,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 43.41587301587302,
+        "sum_squared": 1884.9380297304108,
+        "min": 43.41587301587302,
+        "max": 43.41587301587302,
+        "mean": 43.41587301587302,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 5.574603174603174,
+        "sum_squared": 31.076200554295788,
+        "min": 5.574603174603174,
+        "max": 5.574603174603174,
+        "mean": 5.574603174603174,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.31443568638392855,
+        "sum_squared": 0.09886980087173226,
+        "min": -0.31443568638392855,
+        "max": -0.31443568638392855,
+        "mean": -0.31443568638392855,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8436651229858398,
+        "sum_squared": 0.7117708397427123,
+        "min": 0.8436651229858398,
+        "max": 0.8436651229858398,
+        "mean": 0.8436651229858398,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8068296313285828,
+        "sum_squared": 0.6509740539898168,
+        "min": 0.8068296313285828,
+        "max": 0.8068296313285828,
+        "mean": 0.8068296313285828,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8248363137245178,
+        "sum_squared": 0.6803549444386512,
+        "min": 0.8248363137245178,
+        "max": 0.8248363137245178,
+        "mean": 0.8248363137245178,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id162",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.42386831275720166,
+        "sum_squared": 0.17966434655963692,
+        "min": 0.42386831275720166,
+        "max": 0.42386831275720166,
+        "mean": 0.42386831275720166,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.21487603305785125,
+        "sum_squared": 0.04617170958267878,
+        "min": 0.21487603305785125,
+        "max": 0.21487603305785125,
+        "mean": 0.21487603305785125,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.2921810699588478,
+        "sum_squared": 0.08536977764229711,
+        "min": 0.2921810699588478,
+        "max": 0.2921810699588478,
+        "mean": 0.2921810699588478,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.9401197604790419,
+        "sum_squared": 0.8838251640431711,
+        "min": 0.9401197604790419,
+        "max": 0.9401197604790419,
+        "mean": 0.9401197604790419,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 7.0119760479041915,
+        "sum_squared": 49.16780809638208,
+        "min": 7.0119760479041915,
+        "max": 7.0119760479041915,
+        "mean": 7.0119760479041915,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 5.497005988023952,
+        "sum_squared": 30.217074832371186,
+        "min": 5.497005988023952,
+        "max": 5.497005988023952,
+        "mean": 5.497005988023952,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.22005844116210938,
+        "sum_squared": 0.048425717526697554,
+        "min": -0.22005844116210938,
+        "max": -0.22005844116210938,
+        "mean": -0.22005844116210938,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8745200634002686,
+        "sum_squared": 0.7647853412896097,
+        "min": 0.8745200634002686,
+        "max": 0.8745200634002686,
+        "mean": 0.8745200634002686,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7632694244384766,
+        "sum_squared": 0.5825802142826433,
+        "min": 0.7632694244384766,
+        "max": 0.7632694244384766,
+        "mean": 0.7632694244384766,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8151162266731262,
+        "sum_squared": 0.6644144629858353,
+        "min": 0.8151162266731262,
+        "max": 0.8151162266731262,
+        "mean": 0.8151162266731262,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id75",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4788029925187033,
+        "sum_squared": 0.22925230564486543,
+        "min": 0.4788029925187033,
+        "max": 0.4788029925187033,
+        "mean": 0.4788029925187033,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.2255639097744361,
+        "sum_squared": 0.050879077392729954,
+        "min": 0.2255639097744361,
+        "max": 0.2255639097744361,
+        "mean": 0.2255639097744361,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.30423940149625933,
+        "sum_squared": 0.09256161342280209,
+        "min": 0.30423940149625933,
+        "max": 0.30423940149625933,
+        "mean": 0.30423940149625933,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.6739130434782609,
+        "sum_squared": 0.45415879017013233,
+        "min": 0.6739130434782609,
+        "max": 0.6739130434782609,
+        "mean": 0.6739130434782609,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.673913043478261,
+        "sum_squared": 2.8019848771266544,
+        "min": 1.673913043478261,
+        "max": 1.673913043478261,
+        "mean": 1.673913043478261,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 6.336956521739131,
+        "sum_squared": 40.157017958412105,
+        "min": 6.336956521739131,
+        "max": 6.336956521739131,
+        "mean": 6.336956521739131,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.46994253305288464,
+        "sum_squared": 0.22084598437216157,
+        "min": -0.46994253305288464,
+        "max": -0.46994253305288464,
+        "mean": -0.46994253305288464,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8679990768432617,
+        "sum_squared": 0.7534223974007546,
+        "min": 0.8679990768432617,
+        "max": 0.8679990768432617,
+        "mean": 0.8679990768432617,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7841160893440247,
+        "sum_squared": 0.6148380415681665,
+        "min": 0.7841160893440247,
+        "max": 0.7841160893440247,
+        "mean": 0.7841160893440247,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8239281177520752,
+        "sum_squared": 0.6788575432224775,
+        "min": 0.8239281177520752,
+        "max": 0.8239281177520752,
+        "mean": 0.8239281177520752,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id164",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.17515468824369348,
+        "sum_squared": 0.030679164813745458,
+        "min": 0.17515468824369348,
+        "max": 0.17515468824369348,
+        "mean": 0.17515468824369348,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.04001905669366365,
+        "sum_squared": 0.0016015248986506656,
+        "min": 0.04001905669366365,
+        "max": 0.04001905669366365,
+        "mean": 0.04001905669366365,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.1256544502617801,
+        "sum_squared": 0.01578904087059017,
+        "min": 0.1256544502617801,
+        "max": 0.1256544502617801,
+        "mean": 0.1256544502617801,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.9798093101514301,
+        "sum_squared": 0.9600262842594214,
+        "min": 0.9798093101514301,
+        "max": 0.9798093101514301,
+        "mean": 0.9798093101514301,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 4.713965227145261,
+        "sum_squared": 22.22146816273467,
+        "min": 4.713965227145261,
+        "max": 4.713965227145261,
+        "mean": 4.713965227145261,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.616937745372967,
+        "sum_squared": 2.614487672411814,
+        "min": 1.616937745372967,
+        "max": 1.616937745372967,
+        "mean": 1.616937745372967,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.3826672126506937,
+        "sum_squared": 0.14643419563785123,
+        "min": -0.3826672126506937,
+        "max": -0.3826672126506937,
+        "mean": -0.3826672126506937,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8225342631340027,
+        "sum_squared": 0.6765626140293968,
+        "min": 0.8225342631340027,
+        "max": 0.8225342631340027,
+        "mean": 0.8225342631340027,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.762259840965271,
+        "sum_squared": 0.5810400651484002,
+        "min": 0.762259840965271,
+        "max": 0.762259840965271,
+        "mean": 0.762259840965271,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7912508845329285,
+        "sum_squared": 0.6260779622741417,
+        "min": 0.7912508845329285,
+        "max": 0.7912508845329285,
+        "mean": 0.7912508845329285,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id89",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.38855421686746994,
+        "sum_squared": 0.15097437944549286,
+        "min": 0.38855421686746994,
+        "max": 0.38855421686746994,
+        "mean": 0.38855421686746994,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.17522658610271902,
+        "sum_squared": 0.0307043564772136,
+        "min": 0.17522658610271902,
+        "max": 0.17522658610271902,
+        "mean": 0.17522658610271902,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.2650602409638554,
+        "sum_squared": 0.07025693133981709,
+        "min": 0.2650602409638554,
+        "max": 0.2650602409638554,
+        "mean": 0.2650602409638554,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7351778656126482,
+        "sum_squared": 0.540486494086769,
+        "min": 0.7351778656126482,
+        "max": 0.7351778656126482,
+        "mean": 0.7351778656126482,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2.66403162055336,
+        "sum_squared": 7.09706447530816,
+        "min": 2.66403162055336,
+        "max": 2.66403162055336,
+        "mean": 2.66403162055336,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 4.126482213438735,
+        "sum_squared": 17.027855457826245,
+        "min": 4.126482213438735,
+        "max": 4.126482213438735,
+        "mean": 4.126482213438735,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.35166507297092015,
+        "sum_squared": 0.1236683235476426,
+        "min": 0.35166507297092015,
+        "max": 0.35166507297092015,
+        "mean": 0.35166507297092015,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8434369564056396,
+        "sum_squared": 0.7113858994308089,
+        "min": 0.8434369564056396,
+        "max": 0.8434369564056396,
+        "mean": 0.8434369564056396,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7644863128662109,
+        "sum_squared": 0.5844393225597742,
+        "min": 0.7644863128662109,
+        "max": 0.7644863128662109,
+        "mean": 0.7644863128662109,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8020233511924744,
+        "sum_squared": 0.6432414558580071,
+        "min": 0.8020233511924744,
+        "max": 0.8020233511924744,
+        "mean": 0.8020233511924744,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id74",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.44685466377440347,
+        "sum_squared": 0.19967909053693517,
+        "min": 0.44685466377440347,
+        "max": 0.44685466377440347,
+        "mean": 0.44685466377440347,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.17429193899782136,
+        "sum_squared": 0.030377679999620284,
+        "min": 0.17429193899782136,
+        "max": 0.17429193899782136,
+        "mean": 0.17429193899782136,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.2646420824295011,
+        "sum_squared": 0.07003543179262285,
+        "min": 0.2646420824295011,
+        "max": 0.2646420824295011,
+        "mean": 0.2646420824295011,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8432432432432433,
+        "sum_squared": 0.7110591672753835,
+        "min": 0.8432432432432433,
+        "max": 0.8432432432432433,
+        "mean": 0.8432432432432433,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2.810810810810811,
+        "sum_squared": 7.9006574141709285,
+        "min": 2.810810810810811,
+        "max": 2.810810810810811,
+        "mean": 2.810810810810811,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 7.610810810810811,
+        "sum_squared": 57.92444119795472,
+        "min": 7.610810810810811,
+        "max": 7.610810810810811,
+        "mean": 7.610810810810811,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.580078125,
+        "sum_squared": 0.3364906311035156,
+        "min": -0.580078125,
+        "max": -0.580078125,
+        "mean": -0.580078125,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8675636649131775,
+        "sum_squared": 0.7526667126775841,
+        "min": 0.8675636649131775,
+        "max": 0.8675636649131775,
+        "mean": 0.8675636649131775,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7543249130249023,
+        "sum_squared": 0.5690060744100265,
+        "min": 0.7543249130249023,
+        "max": 0.7543249130249023,
+        "mean": 0.7543249130249023,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8069911599159241,
+        "sum_squared": 0.6512347321824485,
+        "min": 0.8069911599159241,
+        "max": 0.8069911599159241,
+        "mean": 0.8069911599159241,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id77",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4288224956063269,
+        "sum_squared": 0.18388873273803827,
+        "min": 0.4288224956063269,
+        "max": 0.4288224956063269,
+        "mean": 0.4288224956063269,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.1728395061728395,
+        "sum_squared": 0.029873494894071023,
+        "min": 0.1728395061728395,
+        "max": 0.1728395061728395,
+        "mean": 0.1728395061728395,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.2565905096660808,
+        "sum_squared": 0.06583868965069911,
+        "min": 0.2565905096660808,
+        "max": 0.2565905096660808,
+        "mean": 0.2565905096660808,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.9591836734693877,
+        "sum_squared": 0.920033319450229,
+        "min": 0.9591836734693877,
+        "max": 0.9591836734693877,
+        "mean": 0.9591836734693877,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 10.43673469387755,
+        "sum_squared": 108.92543107038733,
+        "min": 10.43673469387755,
+        "max": 10.43673469387755,
+        "mean": 10.43673469387755,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 4.43265306122449,
+        "sum_squared": 19.64841316118284,
+        "min": 4.43265306122449,
+        "max": 4.43265306122449,
+        "mean": 4.43265306122449,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.12899017333984375,
+        "sum_squared": 0.016638464818242937,
+        "min": 0.12899017333984375,
+        "max": 0.12899017333984375,
+        "mean": 0.12899017333984375,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8240946531295776,
+        "sum_squared": 0.6791319973167589,
+        "min": 0.8240946531295776,
+        "max": 0.8240946531295776,
+        "mean": 0.8240946531295776,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7421313524246216,
+        "sum_squared": 0.5507589442515979,
+        "min": 0.7421313524246216,
+        "max": 0.7421313524246216,
+        "mean": 0.7421313524246216,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7809683084487915,
+        "sum_squared": 0.6099114988013667,
+        "min": 0.7809683084487915,
+        "max": 0.7809683084487915,
+        "mean": 0.7809683084487915,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id112",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4444444444444444,
+        "sum_squared": 0.19753086419753085,
+        "min": 0.4444444444444444,
+        "max": 0.4444444444444444,
+        "mean": 0.4444444444444444,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.19256017505470457,
+        "sum_squared": 0.03707942101709847,
+        "min": 0.19256017505470457,
+        "max": 0.19256017505470457,
+        "mean": 0.19256017505470457,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.2832244008714597,
+        "sum_squared": 0.08021606124899731,
+        "min": 0.2832244008714597,
+        "max": 0.2832244008714597,
+        "mean": 0.2832244008714597,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8624338624338624,
+        "sum_squared": 0.7437921670725903,
+        "min": 0.8624338624338624,
+        "max": 0.8624338624338624,
+        "mean": 0.8624338624338624,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 4.904761904761905,
+        "sum_squared": 24.056689342403633,
+        "min": 4.904761904761905,
+        "max": 4.904761904761905,
+        "mean": 4.904761904761905,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 6.322751322751323,
+        "sum_squared": 39.9771842893536,
+        "min": 6.322751322751323,
+        "max": 6.322751322751323,
+        "mean": 6.322751322751323,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.6276384989420573,
+        "sum_squared": 0.3939300853542388,
+        "min": -0.6276384989420573,
+        "max": -0.6276384989420573,
+        "mean": -0.6276384989420573,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8537659645080566,
+        "sum_squared": 0.7289163221523722,
+        "min": 0.8537659645080566,
+        "max": 0.8537659645080566,
+        "mean": 0.8537659645080566,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7652631402015686,
+        "sum_squared": 0.5856276737511656,
+        "min": 0.7652631402015686,
+        "max": 0.7652631402015686,
+        "mean": 0.7652631402015686,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8070955872535706,
+        "sum_squared": 0.6514032869641859,
+        "min": 0.8070955872535706,
+        "max": 0.8070955872535706,
+        "mean": 0.8070955872535706,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id156",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4372294372294372,
+        "sum_squared": 0.19116958077997034,
+        "min": 0.4372294372294372,
+        "max": 0.4372294372294372,
+        "mean": 0.4372294372294372,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.2,
+        "sum_squared": 0.04000000000000001,
+        "min": 0.2,
+        "max": 0.2,
+        "mean": 0.2,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.2987012987012987,
+        "sum_squared": 0.08922246584584247,
+        "min": 0.2987012987012987,
+        "max": 0.2987012987012987,
+        "mean": 0.2987012987012987,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.844311377245509,
+        "sum_squared": 0.7128617017462082,
+        "min": 0.844311377245509,
+        "max": 0.844311377245509,
+        "mean": 0.844311377245509,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2.532934131736527,
+        "sum_squared": 6.415755315715874,
+        "min": 2.532934131736527,
+        "max": 2.532934131736527,
+        "mean": 2.532934131736527,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 7.724550898203593,
+        "sum_squared": 59.66868657893794,
+        "min": 7.724550898203593,
+        "max": 7.724550898203593,
+        "mean": 7.724550898203593,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.37773386637369794,
+        "sum_squared": 0.1426828738056227,
+        "min": -0.37773386637369794,
+        "max": -0.37773386637369794,
+        "mean": -0.37773386637369794,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8638795018196106,
+        "sum_squared": 0.7462877936640986,
+        "min": 0.8638795018196106,
+        "max": 0.8638795018196106,
+        "mean": 0.8638795018196106,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7711529731750488,
+        "sum_squared": 0.5946769080367176,
+        "min": 0.7711529731750488,
+        "max": 0.7711529731750488,
+        "mean": 0.7711529731750488,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8148868680000305,
+        "sum_squared": 0.6640406076388992,
+        "min": 0.8148868680000305,
+        "max": 0.8148868680000305,
+        "mean": 0.8148868680000305,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id100",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.38974358974358975,
+        "sum_squared": 0.1519000657462196,
+        "min": 0.38974358974358975,
+        "max": 0.38974358974358975,
+        "mean": 0.38974358974358975,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.13722126929674097,
+        "sum_squared": 0.018829676747408708,
+        "min": 0.13722126929674097,
+        "max": 0.13722126929674097,
+        "mean": 0.13722126929674097,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.211965811965812,
+        "sum_squared": 0.04492950544232596,
+        "min": 0.211965811965812,
+        "max": 0.211965811965812,
+        "mean": 0.211965811965812,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7328990228013029,
+        "sum_squared": 0.5371409776231048,
+        "min": 0.7328990228013029,
+        "max": 0.7328990228013029,
+        "mean": 0.7328990228013029,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.8664495114006514,
+        "sum_squared": 3.4836337786077305,
+        "min": 1.8664495114006514,
+        "max": 1.8664495114006514,
+        "mean": 1.8664495114006514,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 4.703583061889251,
+        "sum_squared": 22.123693620091462,
+        "min": 4.703583061889251,
+        "max": 4.703583061889251,
+        "mean": 4.703583061889251,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.29446775263006036,
+        "sum_squared": 0.08671125733899843,
+        "min": -0.29446775263006036,
+        "max": -0.29446775263006036,
+        "mean": -0.29446775263006036,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8171616792678833,
+        "sum_squared": 0.667753210063907,
+        "min": 0.8171616792678833,
+        "max": 0.8171616792678833,
+        "mean": 0.8171616792678833,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7685825228691101,
+        "sum_squared": 0.5907190944598462,
+        "min": 0.7685825228691101,
+        "max": 0.7685825228691101,
+        "mean": 0.7685825228691101,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7921280264854431,
+        "sum_squared": 0.6274668103437229,
+        "min": 0.7921280264854431,
+        "max": 0.7921280264854431,
+        "mean": 0.7921280264854431,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id117",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.392156862745098,
+        "sum_squared": 0.15378700499807763,
+        "min": 0.392156862745098,
+        "max": 0.392156862745098,
+        "mean": 0.392156862745098,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.12023121387283238,
+        "sum_squared": 0.014455544789334761,
+        "min": 0.12023121387283238,
+        "max": 0.12023121387283238,
+        "mean": 0.12023121387283238,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.17531718569780855,
+        "sum_squared": 0.030736115600999887,
+        "min": 0.17531718569780855,
+        "max": 0.17531718569780855,
+        "mean": 0.17531718569780855,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8787878787878788,
+        "sum_squared": 0.7722681359044995,
+        "min": 0.8787878787878788,
+        "max": 0.8787878787878788,
+        "mean": 0.8787878787878788,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2.813131313131313,
+        "sum_squared": 7.9137077849199065,
+        "min": 2.813131313131313,
+        "max": 2.813131313131313,
+        "mean": 2.813131313131313,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 5.421717171717172,
+        "sum_squared": 29.395017090092853,
+        "min": 5.421717171717172,
+        "max": 5.421717171717172,
+        "mean": 5.421717171717172,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.6478564922626202,
+        "sum_squared": 0.4197180345668265,
+        "min": -0.6478564922626202,
+        "max": -0.6478564922626202,
+        "mean": -0.6478564922626202,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8249852657318115,
+        "sum_squared": 0.6806006886745877,
+        "min": 0.8249852657318115,
+        "max": 0.8249852657318115,
+        "mean": 0.8249852657318115,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7701578140258789,
+        "sum_squared": 0.5931430585051203,
+        "min": 0.7701578140258789,
+        "max": 0.7701578140258789,
+        "mean": 0.7701578140258789,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7966292500495911,
+        "sum_squared": 0.6346181620345739,
+        "min": 0.7966292500495911,
+        "max": 0.7966292500495911,
+        "mean": 0.7966292500495911,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id69",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.46071428571428574,
+        "sum_squared": 0.21225765306122452,
+        "min": 0.46071428571428574,
+        "max": 0.46071428571428574,
+        "mean": 0.46071428571428574,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.13620071684587814,
+        "sum_squared": 0.018550635269331074,
+        "min": 0.13620071684587814,
+        "max": 0.13620071684587814,
+        "mean": 0.13620071684587814,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.21071428571428572,
+        "sum_squared": 0.04440051020408163,
+        "min": 0.21071428571428572,
+        "max": 0.21071428571428572,
+        "mean": 0.21071428571428572,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8271028037383178,
+        "sum_squared": 0.6840990479517862,
+        "min": 0.8271028037383178,
+        "max": 0.8271028037383178,
+        "mean": 0.8271028037383178,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 3.47196261682243,
+        "sum_squared": 12.054524412612455,
+        "min": 3.47196261682243,
+        "max": 3.47196261682243,
+        "mean": 3.47196261682243,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 8.44392523364486,
+        "sum_squared": 71.2998733513844,
+        "min": 8.44392523364486,
+        "max": 8.44392523364486,
+        "mean": 8.44392523364486,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.5769247575239702,
+        "sum_squared": 0.3328421758440918,
+        "min": -0.5769247575239702,
+        "max": -0.5769247575239702,
+        "mean": -0.5769247575239702,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8430595993995667,
+        "sum_squared": 0.7107494881397578,
+        "min": 0.8430595993995667,
+        "max": 0.8430595993995667,
+        "mean": 0.8430595993995667,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7690204381942749,
+        "sum_squared": 0.5913924343605146,
+        "min": 0.7690204381942749,
+        "max": 0.7690204381942749,
+        "mean": 0.7690204381942749,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8043397068977356,
+        "sum_squared": 0.6469623640923352,
+        "min": 0.8043397068977356,
+        "max": 0.8043397068977356,
+        "mean": 0.8043397068977356,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id127",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.44628099173553715,
+        "sum_squared": 0.19916672358445459,
+        "min": 0.44628099173553715,
+        "max": 0.44628099173553715,
+        "mean": 0.44628099173553715,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.17174515235457063,
+        "sum_squared": 0.02949639735729468,
+        "min": 0.17174515235457063,
+        "max": 0.17174515235457063,
+        "mean": 0.17174515235457063,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.24793388429752064,
+        "sum_squared": 0.06147121098285635,
+        "min": 0.24793388429752064,
+        "max": 0.24793388429752064,
+        "mean": 0.24793388429752064,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.6235955056179775,
+        "sum_squared": 0.388871354626941,
+        "min": 0.6235955056179775,
+        "max": 0.6235955056179775,
+        "mean": 0.6235955056179775,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.2078651685393258,
+        "sum_squared": 1.4589382653705338,
+        "min": 1.2078651685393258,
+        "max": 1.2078651685393258,
+        "mean": 1.2078651685393258,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 5.567415730337078,
+        "sum_squared": 30.996117914404742,
+        "min": 5.567415730337078,
+        "max": 5.567415730337078,
+        "mean": 5.567415730337078,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.05489699045817057,
+        "sum_squared": 0.0030136795613644705,
+        "min": 0.05489699045817057,
+        "max": 0.05489699045817057,
+        "mean": 0.05489699045817057,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8509020209312439,
+        "sum_squared": 0.724034249224875,
+        "min": 0.8509020209312439,
+        "max": 0.8509020209312439,
+        "mean": 0.8509020209312439,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.779527485370636,
+        "sum_squared": 0.6076631004482671,
+        "min": 0.779527485370636,
+        "max": 0.779527485370636,
+        "mean": 0.779527485370636,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.813652515411377,
+        "sum_squared": 0.662030415835261,
+        "min": 0.813652515411377,
+        "max": 0.813652515411377,
+        "mean": 0.813652515411377,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id186",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4325396825396825,
+        "sum_squared": 0.1870905769715293,
+        "min": 0.4325396825396825,
+        "max": 0.4325396825396825,
+        "mean": 0.4325396825396825,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.1752988047808765,
+        "sum_squared": 0.03072967095760385,
+        "min": 0.1752988047808765,
+        "max": 0.1752988047808765,
+        "mean": 0.1752988047808765,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.23809523809523808,
+        "sum_squared": 0.056689342403628114,
+        "min": 0.23809523809523808,
+        "max": 0.23809523809523808,
+        "mean": 0.23809523809523808,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7049180327868853,
+        "sum_squared": 0.4969094329481322,
+        "min": 0.7049180327868853,
+        "max": 0.7049180327868853,
+        "mean": 0.7049180327868853,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.2295081967213115,
+        "sum_squared": 1.5116904058048912,
+        "min": 1.2295081967213115,
+        "max": 1.2295081967213115,
+        "mean": 1.2295081967213115,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 6.830601092896175,
+        "sum_squared": 46.65711129027442,
+        "min": 6.830601092896175,
+        "max": 6.830601092896175,
+        "mean": 6.830601092896175,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.16272413730621338,
+        "sum_squared": 0.026479144862051385,
+        "min": 0.16272413730621338,
+        "max": 0.16272413730621338,
+        "mean": 0.16272413730621338,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8534141778945923,
+        "sum_squared": 0.7283157590315028,
+        "min": 0.8534141778945923,
+        "max": 0.8534141778945923,
+        "mean": 0.8534141778945923,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7547454833984375,
+        "sum_squared": 0.5696407447103411,
+        "min": 0.7547454833984375,
+        "max": 0.7547454833984375,
+        "mean": 0.7547454833984375,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8010529279708862,
+        "sum_squared": 0.6416857934107298,
+        "min": 0.8010529279708862,
+        "max": 0.8010529279708862,
+        "mean": 0.8010529279708862,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id141",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.07487684729064038,
+        "sum_squared": 0.00560654226018588,
+        "min": 0.07487684729064038,
+        "max": 0.07487684729064038,
+        "mean": 0.07487684729064038,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.028599605522682446,
+        "sum_squared": 0.0008179374360530483,
+        "min": 0.028599605522682446,
+        "max": 0.028599605522682446,
+        "mean": 0.028599605522682446,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.04532019704433498,
+        "sum_squared": 0.002053920260137349,
+        "min": 0.04532019704433498,
+        "max": 0.04532019704433498,
+        "mean": 0.04532019704433498,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.6681459566074951,
+        "sum_squared": 0.44641901933094474,
+        "min": 0.6681459566074951,
+        "max": 0.6681459566074951,
+        "mean": 0.6681459566074951,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.9442800788954635,
+        "sum_squared": 0.8916648673988228,
+        "min": 0.9442800788954635,
+        "max": 0.9442800788954635,
+        "mean": 0.9442800788954635,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.546844181459566,
+        "sum_squared": 0.2990385587961828,
+        "min": 0.546844181459566,
+        "max": 0.546844181459566,
+        "mean": 0.546844181459566,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.7494859434153935,
+        "sum_squared": 0.5617291793772625,
+        "min": -0.7494859434153935,
+        "max": -0.7494859434153935,
+        "mean": -0.7494859434153935,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7687036395072937,
+        "sum_squared": 0.5909052853917593,
+        "min": 0.7687036395072937,
+        "max": 0.7687036395072937,
+        "mean": 0.7687036395072937,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7585761547088623,
+        "sum_squared": 0.5754377824928838,
+        "min": 0.7585761547088623,
+        "max": 0.7585761547088623,
+        "mean": 0.7585761547088623,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7636062502861023,
+        "sum_squared": 0.5830945054760015,
+        "min": 0.7636062502861023,
+        "max": 0.7636062502861023,
+        "mean": 0.7636062502861023,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id97",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.3413258110014104,
+        "sum_squared": 0.11650330925577054,
+        "min": 0.3413258110014104,
+        "max": 0.3413258110014104,
+        "mean": 0.3413258110014104,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.099009900990099,
+        "sum_squared": 0.009802960494069207,
+        "min": 0.099009900990099,
+        "max": 0.099009900990099,
+        "mean": 0.099009900990099,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.1466854724964739,
+        "sum_squared": 0.0215166278415138,
+        "min": 0.1466854724964739,
+        "max": 0.1466854724964739,
+        "mean": 0.1466854724964739,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7801724137931034,
+        "sum_squared": 0.6086689952437574,
+        "min": 0.7801724137931034,
+        "max": 0.7801724137931034,
+        "mean": 0.7801724137931034,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.2629310344827587,
+        "sum_squared": 1.594994797859691,
+        "min": 1.2629310344827587,
+        "max": 1.2629310344827587,
+        "mean": 1.2629310344827587,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 9.35344827586207,
+        "sum_squared": 87.48699464922711,
+        "min": 9.35344827586207,
+        "max": 9.35344827586207,
+        "mean": 9.35344827586207,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.11318161908318014,
+        "sum_squared": 0.012810078898290087,
+        "min": -0.11318161908318014,
+        "max": -0.11318161908318014,
+        "mean": -0.11318161908318014,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8479635715484619,
+        "sum_squared": 0.7190422186732235,
+        "min": 0.8479635715484619,
+        "max": 0.8479635715484619,
+        "mean": 0.8479635715484619,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7655189037322998,
+        "sum_squared": 0.5860191919715021,
+        "min": 0.7655189037322998,
+        "max": 0.7655189037322998,
+        "mean": 0.7655189037322998,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8046348690986633,
+        "sum_squared": 0.6474372725694231,
+        "min": 0.8046348690986633,
+        "max": 0.8046348690986633,
+        "mean": 0.8046348690986633,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id110",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.39051094890510946,
+        "sum_squared": 0.152498801214769,
+        "min": 0.39051094890510946,
+        "max": 0.39051094890510946,
+        "mean": 0.39051094890510946,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.21245421245421245,
+        "sum_squared": 0.04513679238953964,
+        "min": 0.21245421245421245,
+        "max": 0.21245421245421245,
+        "mean": 0.21245421245421245,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.24087591240875916,
+        "sum_squared": 0.058021205178752214,
+        "min": 0.24087591240875916,
+        "max": 0.24087591240875916,
+        "mean": 0.24087591240875916,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.9308510638297872,
+        "sum_squared": 0.8664837030330466,
+        "min": 0.9308510638297872,
+        "max": 0.9308510638297872,
+        "mean": 0.9308510638297872,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 8.654255319148936,
+        "sum_squared": 74.89613512901765,
+        "min": 8.654255319148936,
+        "max": 8.654255319148936,
+        "mean": 8.654255319148936,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 8.127659574468085,
+        "sum_squared": 66.05885015844274,
+        "min": 8.127659574468085,
+        "max": 8.127659574468085,
+        "mean": 8.127659574468085,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.5147809115323153,
+        "sum_squared": 0.2649993868780414,
+        "min": -0.5147809115323153,
+        "max": -0.5147809115323153,
+        "mean": -0.5147809115323153,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8633511662483215,
+        "sum_squared": 0.7453752362623369,
+        "min": 0.8633511662483215,
+        "max": 0.8633511662483215,
+        "mean": 0.8633511662483215,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7598958015441895,
+        "sum_squared": 0.5774416292044862,
+        "min": 0.7598958015441895,
+        "max": 0.7598958015441895,
+        "mean": 0.7598958015441895,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8083267211914062,
+        "sum_squared": 0.6533920881920494,
+        "min": 0.8083267211914062,
+        "max": 0.8083267211914062,
+        "mean": 0.8083267211914062,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id178",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4547461368653422,
+        "sum_squared": 0.20679404899395254,
+        "min": 0.4547461368653422,
+        "max": 0.4547461368653422,
+        "mean": 0.4547461368653422,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.164079822616408,
+        "sum_squared": 0.026922188189831914,
+        "min": 0.164079822616408,
+        "max": 0.164079822616408,
+        "mean": 0.164079822616408,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.2560706401766005,
+        "sum_squared": 0.06557217276045399,
+        "min": 0.2560706401766005,
+        "max": 0.2560706401766005,
+        "mean": 0.2560706401766005,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.696,
+        "sum_squared": 0.48441599999999996,
+        "min": 0.696,
+        "max": 0.696,
+        "mean": 0.696,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.496,
+        "sum_squared": 2.238016,
+        "min": 1.496,
+        "max": 1.496,
+        "mean": 1.496,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 4.352,
+        "sum_squared": 18.939904000000002,
+        "min": 4.352,
+        "max": 4.352,
+        "mean": 4.352,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.3562225273677281,
+        "sum_squared": 0.1268944890042518,
+        "min": 0.3562225273677281,
+        "max": 0.3562225273677281,
+        "mean": 0.3562225273677281,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8318967819213867,
+        "sum_squared": 0.6920522557711593,
+        "min": 0.8318967819213867,
+        "max": 0.8318967819213867,
+        "mean": 0.8318967819213867,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.7951273918151855,
+        "sum_squared": 0.6322275692148196,
+        "min": 0.7951273918151855,
+        "max": 0.7951273918151855,
+        "mean": 0.7951273918151855,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8130965828895569,
+        "sum_squared": 0.661126053106674,
+        "min": 0.8130965828895569,
+        "max": 0.8130965828895569,
+        "mean": 0.8130965828895569,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id143",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "rouge_1",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.42499999999999993,
+        "sum_squared": 0.18062499999999995,
+        "min": 0.42499999999999993,
+        "max": 0.42499999999999993,
+        "mean": 0.42499999999999993,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_2",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.1809045226130653,
+        "sum_squared": 0.032726446301861056,
+        "min": 0.1809045226130653,
+        "max": 0.1809045226130653,
+        "mean": 0.1809045226130653,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "rouge_l",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.27,
+        "sum_squared": 0.0729,
+        "min": 0.27,
+        "max": 0.27,
+        "mean": 0.27,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_coverage",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.674074074074074,
+        "sum_squared": 0.45437585733882024,
+        "min": 0.674074074074074,
+        "max": 0.674074074074074,
+        "mean": 0.674074074074074,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_density",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.1777777777777778,
+        "sum_squared": 1.3871604938271607,
+        "min": 1.1777777777777778,
+        "max": 1.1777777777777778,
+        "mean": 1.1777777777777778,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summarization_compression",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 8.503703703703703,
+        "sum_squared": 72.31297668038408,
+        "min": 8.503703703703703,
+        "max": 8.503703703703703,
+        "mean": 8.503703703703703,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "summac",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.22566392686631945,
+        "sum_squared": 0.05092420788872757,
+        "min": 0.22566392686631945,
+        "max": 0.22566392686631945,
+        "mean": 0.22566392686631945,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-P",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8644540309906006,
+        "sum_squared": 0.7472807716958982,
+        "min": 0.8644540309906006,
+        "max": 0.8644540309906006,
+        "mean": 0.8644540309906006,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-R",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.769441545009613,
+        "sum_squared": 0.5920402911867804,
+        "min": 0.769441545009613,
+        "max": 0.769441545009613,
+        "mean": 0.769441545009613,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "BERTScore-F",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.8141852021217346,
+        "sum_squared": 0.6628975433540099,
+        "min": 0.8141852021217346,
+        "max": 0.8141852021217346,
+        "mean": 0.8141852021217346,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id115",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1226,
+        "sum_squared": 1503076,
+        "min": 1226,
+        "max": 1226,
+        "mean": 1226.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 146,
+        "sum_squared": 21316,
+        "min": 146,
+        "max": 146,
+        "mean": 146.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 146,
+        "sum_squared": 21316,
+        "min": 146,
+        "max": 146,
+        "mean": 146.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 23.22319197654724,
+        "sum_squared": 539.3166455795681,
+        "min": 23.22319197654724,
+        "max": 23.22319197654724,
+        "mean": 23.22319197654724,
+        "variance": 0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 146,
+        "sum_squared": 21316,
+        "min": 146,
+        "max": 146,
+        "mean": 146.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 631,
+        "sum_squared": 398161,
+        "min": 631,
+        "max": 631,
+        "mean": 631.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id161",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1961,
+        "sum_squared": 3845521,
+        "min": 1961,
+        "max": 1961,
+        "mean": 1961.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 390,
+        "sum_squared": 152100,
+        "min": 390,
+        "max": 390,
+        "mean": 390.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 390,
+        "sum_squared": 152100,
+        "min": 390,
+        "max": 390,
+        "mean": 390.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 59.27192759513855,
+        "sum_squared": 3513.1614008433467,
+        "min": 59.27192759513855,
+        "max": 59.27192759513855,
+        "mean": 59.27192759513855,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4999999990476729,
+        "sum_squared": 0.2499999990476729,
+        "min": 0.4999999990476729,
+        "max": 0.4999999990476729,
+        "mean": 0.4999999990476729,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.6931471824645996,
+        "sum_squared": 0.48045301655861294,
+        "min": -0.6931471824645996,
+        "max": -0.6931471824645996,
+        "mean": -0.6931471824645996,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 390,
+        "sum_squared": 152100,
+        "min": 390,
+        "max": 390,
+        "mean": 390.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1649,
+        "sum_squared": 2719201,
+        "min": 1649,
+        "max": 1649,
+        "mean": 1649.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id162",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1072,
+        "sum_squared": 1149184,
+        "min": 1072,
+        "max": 1072,
+        "mean": 1072.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 182,
+        "sum_squared": 33124,
+        "min": 182,
+        "max": 182,
+        "mean": 182.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 182,
+        "sum_squared": 33124,
+        "min": 182,
+        "max": 182,
+        "mean": 182.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 28.888725996017456,
+        "sum_squared": 834.5584896729747,
+        "min": 28.888725996017456,
+        "max": 28.888725996017456,
+        "mean": 28.888725996017456,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 182,
+        "sum_squared": 33124,
+        "min": 182,
+        "max": 182,
+        "mean": 182.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 794,
+        "sum_squared": 630436,
+        "min": 794,
+        "max": 794,
+        "mean": 794.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id75",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1264,
+        "sum_squared": 1597696,
+        "min": 1264,
+        "max": 1264,
+        "mean": 1264.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 196,
+        "sum_squared": 38416,
+        "min": 196,
+        "max": 196,
+        "mean": 196.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 196,
+        "sum_squared": 38416,
+        "min": 196,
+        "max": 196,
+        "mean": 196.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 30.87147545814514,
+        "sum_squared": 953.0479969628577,
+        "min": 30.87147545814514,
+        "max": 30.87147545814514,
+        "mean": 30.87147545814514,
+        "variance": 0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 196,
+        "sum_squared": 38416,
+        "min": 196,
+        "max": 196,
+        "mean": 196.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 890,
+        "sum_squared": 792100,
+        "min": 890,
+        "max": 890,
+        "mean": 890.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id164",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 3073,
+        "sum_squared": 9443329,
+        "min": 3073,
+        "max": 3073,
+        "mean": 3073.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2048,
+        "sum_squared": 4194304,
+        "min": 2048,
+        "max": 2048,
+        "mean": 2048.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2048,
+        "sum_squared": 4194304,
+        "min": 2048,
+        "max": 2048,
+        "mean": 2048.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 239.11822605133057,
+        "sum_squared": 57177.52602993522,
+        "min": 239.11822605133057,
+        "max": 239.11822605133057,
+        "mean": 239.11822605133057,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4999999990476729,
+        "sum_squared": 0.2499999990476729,
+        "min": 0.4999999990476729,
+        "max": 0.4999999990476729,
+        "mean": 0.4999999990476729,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.6931471824645996,
+        "sum_squared": 0.48045301655861294,
+        "min": -0.6931471824645996,
+        "max": -0.6931471824645996,
+        "mean": -0.6931471824645996,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2048,
+        "sum_squared": 4194304,
+        "min": 2048,
+        "max": 2048,
+        "mean": 2048.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 8724,
+        "sum_squared": 76108176,
+        "min": 8724,
+        "max": 8724,
+        "mean": 8724.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id89",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1231,
+        "sum_squared": 1515361,
+        "min": 1231,
+        "max": 1231,
+        "mean": 1231.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 274,
+        "sum_squared": 75076,
+        "min": 274,
+        "max": 274,
+        "mean": 274.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 274,
+        "sum_squared": 75076,
+        "min": 274,
+        "max": 274,
+        "mean": 274.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 40.375943422317505,
+        "sum_squared": 1630.2168072421841,
+        "min": 40.375943422317505,
+        "max": 40.375943422317505,
+        "mean": 40.375943422317505,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 274,
+        "sum_squared": 75076,
+        "min": 274,
+        "max": 274,
+        "mean": 274.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1149,
+        "sum_squared": 1320201,
+        "min": 1149,
+        "max": 1149,
+        "mean": 1149.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id74",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1552,
+        "sum_squared": 2408704,
+        "min": 1552,
+        "max": 1552,
+        "mean": 1552.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 205,
+        "sum_squared": 42025,
+        "min": 205,
+        "max": 205,
+        "mean": 205.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 205,
+        "sum_squared": 42025,
+        "min": 205,
+        "max": 205,
+        "mean": 205.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 30.064506769180298,
+        "sum_squared": 903.8745672740879,
+        "min": 30.064506769180298,
+        "max": 30.064506769180298,
+        "mean": 30.064506769180298,
+        "variance": 0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 205,
+        "sum_squared": 42025,
+        "min": 205,
+        "max": 205,
+        "mean": 205.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 863,
+        "sum_squared": 744769,
+        "min": 863,
+        "max": 863,
+        "mean": 863.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id77",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1241,
+        "sum_squared": 1540081,
+        "min": 1241,
+        "max": 1241,
+        "mean": 1241.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 262,
+        "sum_squared": 68644,
+        "min": 262,
+        "max": 262,
+        "mean": 262.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 262,
+        "sum_squared": 68644,
+        "min": 262,
+        "max": 262,
+        "mean": 262.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 38.98672366142273,
+        "sum_squared": 1519.9646218521389,
+        "min": 38.98672366142273,
+        "max": 38.98672366142273,
+        "mean": 38.98672366142273,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4999999990476729,
+        "sum_squared": 0.2499999990476729,
+        "min": 0.4999999990476729,
+        "max": 0.4999999990476729,
+        "mean": 0.4999999990476729,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.6931471824645996,
+        "sum_squared": 0.48045301655861294,
+        "min": -0.6931471824645996,
+        "max": -0.6931471824645996,
+        "mean": -0.6931471824645996,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 262,
+        "sum_squared": 68644,
+        "min": 262,
+        "max": 262,
+        "mean": 262.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1111,
+        "sum_squared": 1234321,
+        "min": 1111,
+        "max": 1111,
+        "mean": 1111.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id112",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1326,
+        "sum_squared": 1758276,
+        "min": 1326,
+        "max": 1326,
+        "mean": 1326.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 216,
+        "sum_squared": 46656,
+        "min": 216,
+        "max": 216,
+        "mean": 216.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 216,
+        "sum_squared": 46656,
+        "min": 216,
+        "max": 216,
+        "mean": 216.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 31.570379972457886,
+        "sum_squared": 996.6888916053699,
+        "min": 31.570379972457886,
+        "max": 31.570379972457886,
+        "mean": 31.570379972457886,
+        "variance": 0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4999999990476729,
+        "sum_squared": 0.2499999990476729,
+        "min": 0.4999999990476729,
+        "max": 0.4999999990476729,
+        "mean": 0.4999999990476729,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.6931471824645996,
+        "sum_squared": 0.48045301655861294,
+        "min": -0.6931471824645996,
+        "max": -0.6931471824645996,
+        "mean": -0.6931471824645996,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 216,
+        "sum_squared": 46656,
+        "min": 216,
+        "max": 216,
+        "mean": 216.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 885,
+        "sum_squared": 783225,
+        "min": 885,
+        "max": 885,
+        "mean": 885.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id156",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1417,
+        "sum_squared": 2007889,
+        "min": 1417,
+        "max": 1417,
+        "mean": 1417.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 180,
+        "sum_squared": 32400,
+        "min": 180,
+        "max": 180,
+        "mean": 180.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 180,
+        "sum_squared": 32400,
+        "min": 180,
+        "max": 180,
+        "mean": 180.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 26.40491771697998,
+        "sum_squared": 697.2196796404833,
+        "min": 26.40491771697998,
+        "max": 26.40491771697998,
+        "mean": 26.40491771697998,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 180,
+        "sum_squared": 32400,
+        "min": 180,
+        "max": 180,
+        "mean": 180.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 799,
+        "sum_squared": 638401,
+        "min": 799,
+        "max": 799,
+        "mean": 799.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id100",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1649,
+        "sum_squared": 2719201,
+        "min": 1649,
+        "max": 1649,
+        "mean": 1649.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 346,
+        "sum_squared": 119716,
+        "min": 346,
+        "max": 346,
+        "mean": 346.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 346,
+        "sum_squared": 119716,
+        "min": 346,
+        "max": 346,
+        "mean": 346.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 49.80557155609131,
+        "sum_squared": 2480.5949580289316,
+        "min": 49.80557155609131,
+        "max": 49.80557155609131,
+        "mean": 49.80557155609131,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4999999990476729,
+        "sum_squared": 0.2499999990476729,
+        "min": 0.4999999990476729,
+        "max": 0.4999999990476729,
+        "mean": 0.4999999990476729,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.6931471824645996,
+        "sum_squared": 0.48045301655861294,
+        "min": -0.6931471824645996,
+        "max": -0.6931471824645996,
+        "mean": -0.6931471824645996,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 346,
+        "sum_squared": 119716,
+        "min": 346,
+        "max": 346,
+        "mean": 346.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1481,
+        "sum_squared": 2193361,
+        "min": 1481,
+        "max": 1481,
+        "mean": 1481.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id117",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2297,
+        "sum_squared": 5276209,
+        "min": 2297,
+        "max": 2297,
+        "mean": 2297.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 445,
+        "sum_squared": 198025,
+        "min": 445,
+        "max": 445,
+        "mean": 445.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 445,
+        "sum_squared": 198025,
+        "min": 445,
+        "max": 445,
+        "mean": 445.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 63.56721568107605,
+        "sum_squared": 4040.790909444441,
+        "min": 63.56721568107605,
+        "max": 63.56721568107605,
+        "mean": 63.56721568107605,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 445,
+        "sum_squared": 198025,
+        "min": 445,
+        "max": 445,
+        "mean": 445.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1971,
+        "sum_squared": 3884841,
+        "min": 1971,
+        "max": 1971,
+        "mean": 1971.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id69",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1928,
+        "sum_squared": 3717184,
+        "min": 1928,
+        "max": 1928,
+        "mean": 1928.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 249,
+        "sum_squared": 62001,
+        "min": 249,
+        "max": 249,
+        "mean": 249.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 249,
+        "sum_squared": 62001,
+        "min": 249,
+        "max": 249,
+        "mean": 249.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 35.58936595916748,
+        "sum_squared": 1266.602969375549,
+        "min": 35.58936595916748,
+        "max": 35.58936595916748,
+        "mean": 35.58936595916748,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 249,
+        "sum_squared": 62001,
+        "min": 249,
+        "max": 249,
+        "mean": 249.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1109,
+        "sum_squared": 1229881,
+        "min": 1109,
+        "max": 1109,
+        "mean": 1109.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id127",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1185,
+        "sum_squared": 1404225,
+        "min": 1185,
+        "max": 1185,
+        "mean": 1185.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 197,
+        "sum_squared": 38809,
+        "min": 197,
+        "max": 197,
+        "mean": 197.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 197,
+        "sum_squared": 38809,
+        "min": 197,
+        "max": 197,
+        "mean": 197.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 28.082300186157227,
+        "sum_squared": 788.6155837454462,
+        "min": 28.082300186157227,
+        "max": 28.082300186157227,
+        "mean": 28.082300186157227,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 197,
+        "sum_squared": 38809,
+        "min": 197,
+        "max": 197,
+        "mean": 197.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 872,
+        "sum_squared": 760384,
+        "min": 872,
+        "max": 872,
+        "mean": 872.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id186",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1442,
+        "sum_squared": 2079364,
+        "min": 1442,
+        "max": 1442,
+        "mean": 1442.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 211,
+        "sum_squared": 44521,
+        "min": 211,
+        "max": 211,
+        "mean": 211.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 211,
+        "sum_squared": 44521,
+        "min": 211,
+        "max": 211,
+        "mean": 211.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 30.217195510864258,
+        "sum_squared": 913.078904541795,
+        "min": 30.217195510864258,
+        "max": 30.217195510864258,
+        "mean": 30.217195510864258,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 211,
+        "sum_squared": 44521,
+        "min": 211,
+        "max": 211,
+        "mean": 211.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 860,
+        "sum_squared": 739600,
+        "min": 860,
+        "max": 860,
+        "mean": 860.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id141",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1291,
+        "sum_squared": 1666681,
+        "min": 1291,
+        "max": 1291,
+        "mean": 1291.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2048,
+        "sum_squared": 4194304,
+        "min": 2048,
+        "max": 2048,
+        "mean": 2048.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2048,
+        "sum_squared": 4194304,
+        "min": 2048,
+        "max": 2048,
+        "mean": 2048.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 133.97371673583984,
+        "sum_squared": 17948.956776015053,
+        "min": 133.97371673583984,
+        "max": 133.97371673583984,
+        "mean": 133.97371673583984,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2048,
+        "sum_squared": 4194304,
+        "min": 2048,
+        "max": 2048,
+        "mean": 2048.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 9488,
+        "sum_squared": 90022144,
+        "min": 9488,
+        "max": 9488,
+        "mean": 9488.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id97",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2376,
+        "sum_squared": 5645376,
+        "min": 2376,
+        "max": 2376,
+        "mean": 2376.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 255,
+        "sum_squared": 65025,
+        "min": 255,
+        "max": 255,
+        "mean": 255.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 255,
+        "sum_squared": 65025,
+        "min": 255,
+        "max": 255,
+        "mean": 255.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 36.1040198802948,
+        "sum_squared": 1303.500251516722,
+        "min": 36.1040198802948,
+        "max": 36.1040198802948,
+        "mean": 36.1040198802948,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.24999999904767287,
+        "sum_squared": 0.06249999952383643,
+        "min": 0.24999999904767287,
+        "max": 0.24999999904767287,
+        "mean": 0.24999999904767287,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -1.3862943649291992,
+        "sum_squared": 1.9218120662344518,
+        "min": -1.3862943649291992,
+        "max": -1.3862943649291992,
+        "mean": -1.3862943649291992,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 255,
+        "sum_squared": 65025,
+        "min": 255,
+        "max": 255,
+        "mean": 255.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1072,
+        "sum_squared": 1149184,
+        "min": 1072,
+        "max": 1072,
+        "mean": 1072.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id110",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1694,
+        "sum_squared": 2869636,
+        "min": 1694,
+        "max": 1694,
+        "mean": 1694.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 208,
+        "sum_squared": 43264,
+        "min": 208,
+        "max": 208,
+        "mean": 208.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 208,
+        "sum_squared": 43264,
+        "min": 208,
+        "max": 208,
+        "mean": 208.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 29.335684537887573,
+        "sum_squared": 860.582387306456,
+        "min": 29.335684537887573,
+        "max": 29.335684537887573,
+        "mean": 29.335684537887573,
+        "variance": 0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.4999999990476729,
+        "sum_squared": 0.2499999990476729,
+        "min": 0.4999999990476729,
+        "max": 0.4999999990476729,
+        "mean": 0.4999999990476729,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": -0.6931471824645996,
+        "sum_squared": 0.48045301655861294,
+        "min": -0.6931471824645996,
+        "max": -0.6931471824645996,
+        "mean": -0.6931471824645996,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 208,
+        "sum_squared": 43264,
+        "min": 208,
+        "max": 208,
+        "mean": 208.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 940,
+        "sum_squared": 883600,
+        "min": 940,
+        "max": 940,
+        "mean": 940.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id178",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1270,
+        "sum_squared": 1612900,
+        "min": 1270,
+        "max": 1270,
+        "mean": 1270.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 280,
+        "sum_squared": 78400,
+        "min": 280,
+        "max": 280,
+        "mean": 280.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 280,
+        "sum_squared": 78400,
+        "min": 280,
+        "max": 280,
+        "mean": 280.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 34.65118408203125,
+        "sum_squared": 1200.7045582868159,
+        "min": 34.65118408203125,
+        "max": 34.65118408203125,
+        "mean": 34.65118408203125,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 280,
+        "sum_squared": 78400,
+        "min": 280,
+        "max": 280,
+        "mean": 280.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1269,
+        "sum_squared": 1610361,
+        "min": 1269,
+        "max": 1269,
+        "mean": 1269.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id143",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "num_references",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_trials",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_prompt_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1328,
+        "sum_squared": 1763584,
+        "min": 1328,
+        "max": 1328,
+        "mean": 1328.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_completion_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 151,
+        "sum_squared": 22801,
+        "min": 151,
+        "max": 151,
+        "mean": 151.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_output_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 151,
+        "sum_squared": 22801,
+        "min": 151,
+        "max": 151,
+        "mean": 151.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "training_co2_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "training_energy_cost",
+          "split": "test"
+        },
+        "count": 0,
+        "sum": 0,
+        "sum_squared": 0
+      },
+      {
+        "name": {
+          "name": "inference_runtime",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 21.2260320186615,
+        "sum_squared": 450.54443525724315,
+        "min": 21.2260320186615,
+        "max": 21.2260320186615,
+        "mean": 21.2260320186615,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "batch_size",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_length",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_stop",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_endoftext",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "finish_reason_unknown",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1,
+        "sum_squared": 1,
+        "min": 1,
+        "max": 1,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_train_instances",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "prompt_truncated",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0,
+        "sum_squared": 0,
+        "min": 0,
+        "max": 0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "max_prob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "logprob",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 0.0,
+        "sum_squared": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_perplexity_tokens",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 151,
+        "sum_squared": 22801,
+        "min": 151,
+        "max": 151,
+        "mean": 151.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      },
+      {
+        "name": {
+          "name": "num_bytes",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 674,
+        "sum_squared": 454276,
+        "min": 674,
+        "max": 674,
+        "mean": 674.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id115",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 3.3333333333333335,
+        "sum_squared": 11.111111111111112,
+        "min": 3.3333333333333335,
+        "max": 3.3333333333333335,
+        "mean": 3.3333333333333335,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id161",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2.0,
+        "sum_squared": 4.0,
+        "min": 2.0,
+        "max": 2.0,
+        "mean": 2.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id162",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2.3333333333333335,
+        "sum_squared": 5.4444444444444455,
+        "min": 2.3333333333333335,
+        "max": 2.3333333333333335,
+        "mean": 2.3333333333333335,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id75",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.6666666666666667,
+        "sum_squared": 2.777777777777778,
+        "min": 1.6666666666666667,
+        "max": 1.6666666666666667,
+        "mean": 1.6666666666666667,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id164",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.3333333333333333,
+        "sum_squared": 1.7777777777777777,
+        "min": 1.3333333333333333,
+        "max": 1.3333333333333333,
+        "mean": 1.3333333333333333,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id89",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2.0,
+        "sum_squared": 4.0,
+        "min": 2.0,
+        "max": 2.0,
+        "mean": 2.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id74",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.6666666666666667,
+        "sum_squared": 2.777777777777778,
+        "min": 1.6666666666666667,
+        "max": 1.6666666666666667,
+        "mean": 1.6666666666666667,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id77",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 3.0,
+        "sum_squared": 9.0,
+        "min": 3.0,
+        "max": 3.0,
+        "mean": 3.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id112",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.3333333333333333,
+        "sum_squared": 1.7777777777777777,
+        "min": 1.3333333333333333,
+        "max": 1.3333333333333333,
+        "mean": 1.3333333333333333,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id156",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 3.0,
+        "sum_squared": 9.0,
+        "min": 3.0,
+        "max": 3.0,
+        "mean": 3.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id100",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id117",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.3333333333333333,
+        "sum_squared": 1.7777777777777777,
+        "min": 1.3333333333333333,
+        "max": 1.3333333333333333,
+        "mean": 1.3333333333333333,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id69",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.6666666666666667,
+        "sum_squared": 2.777777777777778,
+        "min": 1.6666666666666667,
+        "max": 1.6666666666666667,
+        "mean": 1.6666666666666667,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id127",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.6666666666666667,
+        "sum_squared": 2.777777777777778,
+        "min": 1.6666666666666667,
+        "max": 1.6666666666666667,
+        "mean": 1.6666666666666667,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id186",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.3333333333333333,
+        "sum_squared": 1.7777777777777777,
+        "min": 1.3333333333333333,
+        "max": 1.3333333333333333,
+        "mean": 1.3333333333333333,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id141",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.0,
+        "sum_squared": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id97",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.6666666666666667,
+        "sum_squared": 2.777777777777778,
+        "min": 1.6666666666666667,
+        "max": 1.6666666666666667,
+        "mean": 1.6666666666666667,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id110",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.6666666666666667,
+        "sum_squared": 2.777777777777778,
+        "min": 1.6666666666666667,
+        "max": 1.6666666666666667,
+        "mean": 1.6666666666666667,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id178",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 1.6666666666666667,
+        "sum_squared": 2.777777777777778,
+        "min": 1.6666666666666667,
+        "max": 1.6666666666666667,
+        "mean": 1.6666666666666667,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  },
+  {
+    "instance_id": "id143",
+    "train_trial_index": 0,
+    "stats": [
+      {
+        "name": {
+          "name": "aci_bench_accuracy",
+          "split": "test"
+        },
+        "count": 1,
+        "sum": 2.0,
+        "sum_squared": 4.0,
+        "min": 2.0,
+        "max": 2.0,
+        "mean": 2.0,
+        "variance": 0.0,
+        "stddev": 0.0
+      }
+    ]
+  }
+]

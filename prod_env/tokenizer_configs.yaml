@@ -1,5 +1,28 @@
 tokenizer_configs:
-  - name: meta/llama-3-8b-instruct
+  - name: google/medgemma-4b-pt
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: google/medgemma-4b-pt
+    prefix_token: "<bos>"
+    end_of_text_token: "<eos>"
+  - name: google/medgemma-4b-it
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: google/medgemma-4b-it
+    prefix_token: "<bos>"
+    end_of_text_token: "<eos>"
+  
+  - name: epfl-llm/meditron-7b
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: epfl-llm/meditron-7b
+    prefix_token: "<s>"
+    end_of_text_token: "</s>"
+
+  - name: meta/llama-3.1-8b-instruct
     tokenizer_spec:
       class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
       args:
@@ -20,5 +43,144 @@ tokenizer_configs:
       class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
       args:
         pretrained_model_name_or_path: meta-llama/Llama-3.2-1B-Instruct
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+    
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf
+    prefix_token: "<|begin_of_text|>"
+    end_of_text_token: "<|eot_id|>"
+  - name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf
+    tokenizer_spec:
+      class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf
     prefix_token: "<|begin_of_text|>"
     end_of_text_token: "<|eot_id|>"

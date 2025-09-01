@@ -9,7 +9,7 @@
       "method": "generation",
       "global_prefix": "",
       "global_suffix": "",
-      "instructions": "Summarize the conversation to generate a clinical note with four sections:\n1. HISTORY OF PRESENT ILLNESS\n2. PHYSICAL EXAM\n3. RESULTS\n4. ASSESSMENT AND PLAN\n\nThe conversation is:\n",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
       "input_prefix": "Conversation: ",
       "input_suffix": "\n",
       "reference_prefix": "A. ",
@@ -21,7 +21,7 @@
       "instance_prefix": "\n",
       "substitutions": [],
       "max_train_instances": 0,
-      "max_eval_instances": 120,
+      "max_eval_instances": 20,
       "num_outputs": 1,
       "num_train_trials": 1,
       "num_trials": 1,
@@ -29,7 +29,91 @@
       "model_deployment": "anthropic/claude-3-7-sonnet-20250219",
       "model": "anthropic/claude-3-7-sonnet-20250219",
       "temperature": 0.0,
-      "max_tokens": 768,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=epfl-llm_meditron-7b,model_deployment=huggingface_meditron-7b",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/meditron-7b",
+      "model": "epfl-llm/meditron-7b",
+      "temperature": 0.0,
+      "max_tokens": 2048,
       "stop_sequences": [],
       "multi_label": false
     },
@@ -93,7 +177,7 @@
       "method": "generation",
       "global_prefix": "",
       "global_suffix": "",
-      "instructions": "Summarize the conversation to generate a clinical note with four sections:\n1. HISTORY OF PRESENT ILLNESS\n2. PHYSICAL EXAM\n3. RESULTS\n4. ASSESSMENT AND PLAN\n\nThe conversation is:\n",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
       "input_prefix": "Conversation: ",
       "input_suffix": "\n",
       "reference_prefix": "A. ",
@@ -105,7 +189,7 @@
       "instance_prefix": "\n",
       "substitutions": [],
       "max_train_instances": 0,
-      "max_eval_instances": 120,
+      "max_eval_instances": 20,
       "num_outputs": 1,
       "num_train_trials": 1,
       "num_trials": 1,
@@ -113,7 +197,7 @@
       "model_deployment": "huggingface/llama-3.1-8b-instruct",
       "model": "meta/llama-3.1-8b-instruct",
       "temperature": 0.0,
-      "max_tokens": 768,
+      "max_tokens": 2048,
       "stop_sequences": [],
       "multi_label": false
     },
@@ -177,7 +261,7 @@
       "method": "generation",
       "global_prefix": "",
       "global_suffix": "",
-      "instructions": "Summarize the conversation to generate a clinical note with four sections:\n1. HISTORY OF PRESENT ILLNESS\n2. PHYSICAL EXAM\n3. RESULTS\n4. ASSESSMENT AND PLAN\n\nThe conversation is:\n",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
       "input_prefix": "Conversation: ",
       "input_suffix": "\n",
       "reference_prefix": "A. ",
@@ -189,7 +273,7 @@
       "instance_prefix": "\n",
       "substitutions": [],
       "max_train_instances": 0,
-      "max_eval_instances": 10,
+      "max_eval_instances": 20,
       "num_outputs": 1,
       "num_train_trials": 1,
       "num_trials": 1,
@@ -197,7 +281,7 @@
       "model_deployment": "huggingface/llama-3.2-1b-instruct",
       "model": "meta/llama-3.2-1b-instruct",
       "temperature": 0.0,
-      "max_tokens": 768,
+      "max_tokens": 2048,
       "stop_sequences": [],
       "multi_label": false
     },
@@ -261,7 +345,7 @@
       "method": "generation",
       "global_prefix": "",
       "global_suffix": "",
-      "instructions": "Summarize the conversation to generate a clinical note with four sections:\n1. HISTORY OF PRESENT ILLNESS\n2. PHYSICAL EXAM\n3. RESULTS\n4. ASSESSMENT AND PLAN\n\nThe conversation is:\n",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
       "input_prefix": "Conversation: ",
       "input_suffix": "\n",
       "reference_prefix": "A. ",
@@ -273,7 +357,7 @@
       "instance_prefix": "\n",
       "substitutions": [],
       "max_train_instances": 0,
-      "max_eval_instances": 120,
+      "max_eval_instances": 20,
       "num_outputs": 1,
       "num_train_trials": 1,
       "num_trials": 1,
@@ -281,7 +365,7 @@
       "model_deployment": "huggingface/llama-3.2-3b-instruct",
       "model": "meta/llama-3.2-3b-instruct",
       "temperature": 0.0,
-      "max_tokens": 768,
+      "max_tokens": 2048,
       "stop_sequences": [],
       "multi_label": false
     },
@@ -345,7 +429,7 @@
       "method": "generation",
       "global_prefix": "",
       "global_suffix": "",
-      "instructions": "Summarize the conversation to generate a clinical note with four sections:\n1. HISTORY OF PRESENT ILLNESS\n2. PHYSICAL EXAM\n3. RESULTS\n4. ASSESSMENT AND PLAN\n\nThe conversation is:\n",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
       "input_prefix": "Conversation: ",
       "input_suffix": "\n",
       "reference_prefix": "A. ",
@@ -357,7 +441,7 @@
       "instance_prefix": "\n",
       "substitutions": [],
       "max_train_instances": 0,
-      "max_eval_instances": 120,
+      "max_eval_instances": 20,
       "num_outputs": 1,
       "num_train_trials": 1,
       "num_trials": 1,
@@ -365,7 +449,7 @@
       "model_deployment": "together/llama-3.3-70b-instruct-turbo",
       "model": "meta/llama-3.3-70b-instruct-turbo",
       "temperature": 0.0,
-      "max_tokens": 768,
+      "max_tokens": 2048,
       "stop_sequences": [],
       "multi_label": false
     },
@@ -429,7 +513,7 @@
       "method": "generation",
       "global_prefix": "",
       "global_suffix": "",
-      "instructions": "Summarize the conversation to generate a clinical note with four sections:\n1. HISTORY OF PRESENT ILLNESS\n2. PHYSICAL EXAM\n3. RESULTS\n4. ASSESSMENT AND PLAN\n\nThe conversation is:\n",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
       "input_prefix": "Conversation: ",
       "input_suffix": "\n",
       "reference_prefix": "A. ",
@@ -441,7 +525,7 @@
       "instance_prefix": "\n",
       "substitutions": [],
       "max_train_instances": 0,
-      "max_eval_instances": 120,
+      "max_eval_instances": 20,
       "num_outputs": 1,
       "num_train_trials": 1,
       "num_trials": 1,
@@ -449,7 +533,7 @@
       "model_deployment": "openai/gpt-4.1-2025-04-14",
       "model": "openai/gpt-4.1-2025-04-14",
       "temperature": 0.0,
-      "max_tokens": 768,
+      "max_tokens": 2048,
       "stop_sequences": [],
       "multi_label": false
     },
@@ -513,7 +597,7 @@
       "method": "generation",
       "global_prefix": "",
       "global_suffix": "",
-      "instructions": "Summarize the conversation to generate a clinical note with four sections:\n1. HISTORY OF PRESENT ILLNESS\n2. PHYSICAL EXAM\n3. RESULTS\n4. ASSESSMENT AND PLAN\n\nThe conversation is:\n",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
       "input_prefix": "Conversation: ",
       "input_suffix": "\n",
       "reference_prefix": "A. ",
@@ -525,7 +609,7 @@
       "instance_prefix": "\n",
       "substitutions": [],
       "max_train_instances": 0,
-      "max_eval_instances": 120,
+      "max_eval_instances": 20,
       "num_outputs": 1,
       "num_train_trials": 1,
       "num_trials": 1,
@@ -533,7 +617,7 @@
       "model_deployment": "openai/gpt-4.1-mini-2025-04-14",
       "model": "openai/gpt-4.1-mini-2025-04-14",
       "temperature": 0.0,
-      "max_tokens": 768,
+      "max_tokens": 2048,
       "stop_sequences": [],
       "multi_label": false
     },
@@ -597,7 +681,7 @@
       "method": "generation",
       "global_prefix": "",
       "global_suffix": "",
-      "instructions": "Summarize the conversation to generate a clinical note with four sections:\n1. HISTORY OF PRESENT ILLNESS\n2. PHYSICAL EXAM\n3. RESULTS\n4. ASSESSMENT AND PLAN\n\nThe conversation is:\n",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
       "input_prefix": "Conversation: ",
       "input_suffix": "\n",
       "reference_prefix": "A. ",
@@ -609,7 +693,7 @@
       "instance_prefix": "\n",
       "substitutions": [],
       "max_train_instances": 0,
-      "max_eval_instances": 120,
+      "max_eval_instances": 20,
       "num_outputs": 1,
       "num_train_trials": 1,
       "num_trials": 1,
@@ -617,7 +701,7 @@
       "model_deployment": "openai/gpt-4.1-nano-2025-04-14",
       "model": "openai/gpt-4.1-nano-2025-04-14",
       "temperature": 0.0,
-      "max_tokens": 768,
+      "max_tokens": 2048,
       "stop_sequences": [],
       "multi_label": false
     },
@@ -672,7 +756,7 @@
     ]
   },
   {
-    "name": "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528",
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif",
     "scenario_spec": {
       "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
       "args": {}
@@ -681,7 +765,7 @@
       "method": "generation",
       "global_prefix": "",
       "global_suffix": "",
-      "instructions": "Summarize the conversation to generate a clinical note with four sections:\n1. HISTORY OF PRESENT ILLNESS\n2. PHYSICAL EXAM\n3. RESULTS\n4. ASSESSMENT AND PLAN\n\nThe conversation is:\n",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
       "input_prefix": "Conversation: ",
       "input_suffix": "\n",
       "reference_prefix": "A. ",
@@ -693,15 +777,15 @@
       "instance_prefix": "\n",
       "substitutions": [],
       "max_train_instances": 0,
-      "max_eval_instances": 120,
+      "max_eval_instances": 20,
       "num_outputs": 1,
       "num_train_trials": 1,
       "num_trials": 1,
       "sample_train": true,
-      "model_deployment": "together/deepseek-r1-0528",
-      "model": "deepseek-ai/deepseek-r1-0528",
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif",
       "temperature": 0.0,
-      "max_tokens": 4000,
+      "max_tokens": 2048,
       "stop_sequences": [],
       "multi_label": false
     },
@@ -756,36 +840,36 @@
     ]
   },
   {
-    "name": "mtsamples_replicate:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14",
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2",
     "scenario_spec": {
-      "class_name": "helm.benchmark.scenarios.mtsamples_replicate_scenario.MTSamplesReplicateScenario",
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
       "args": {}
     },
     "adapter_spec": {
       "method": "generation",
       "global_prefix": "",
       "global_suffix": "",
-      "instructions": "Given various information about a patient, return a reasonable treatment plan for the patient.\n",
-      "input_prefix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
       "input_suffix": "\n",
       "reference_prefix": "A. ",
       "reference_suffix": "\n",
       "chain_of_thought_prefix": "",
       "chain_of_thought_suffix": "\n",
-      "output_prefix": "Answer: ",
+      "output_prefix": "Clinical Note: ",
       "output_suffix": "\n",
       "instance_prefix": "\n",
       "substitutions": [],
       "max_train_instances": 0,
-      "max_eval_instances": 10,
+      "max_eval_instances": 20,
       "num_outputs": 1,
       "num_train_trials": 1,
       "num_trials": 1,
       "sample_train": true,
-      "model_deployment": "openai/gpt-4.1-nano-2025-04-14",
-      "model": "openai/gpt-4.1-nano-2025-04-14",
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2",
       "temperature": 0.0,
-      "max_tokens": 512,
+      "max_tokens": 2048,
       "stop_sequences": [],
       "multi_label": false
     },
@@ -793,7 +877,7 @@
       {
         "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
         "args": {
-          "task": "mtsamples_replicate",
+          "task": "aci_bench",
           "device": "cuda",
           "bertscore_model": "distilbert-base-uncased",
           "rescale_with_baseline": false
@@ -814,7 +898,7 @@
         "args": {}
       },
       {
-        "class_name": "helm.benchmark.metrics.mtsamples_replicate_metrics.MTSamplesReplicateMetric",
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
         "args": {}
       }
     ],
@@ -829,11 +913,1440 @@
       "seeds_per_instance": 1
     },
     "groups": [
-      "mtsamples_replicate"
+      "clinical",
+      "aci_bench"
     ],
     "annotators": [
       {
-        "class_name": "helm.benchmark.annotation.mtsamples_replicate_annotator.MTSamplesReplicateAnnotator",
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-cp",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
+        "args": {}
+      }
+    ]
+  },
+  {
+    "name": "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\\u201dSUBJECTIVE\\\u201d part and \\\u201dASSESSMENT AND PLAN\\\u201d part of note.\\\u201dSUBJECTIVE\\\u201d part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\\u201dASSESSMENT AND PLAN\\\u201d part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n",
+      "input_prefix": "Conversation: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "chain_of_thought_prefix": "",
+      "chain_of_thought_suffix": "\n",
+      "output_prefix": "Clinical Note: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 20,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "num_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3",
+      "model": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3",
+      "temperature": 0.0,
+      "max_tokens": 2048,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.summarization_metrics.SummarizationMetric",
+        "args": {
+          "task": "aci_bench",
+          "device": "cuda",
+          "bertscore_model": "distilbert-base-uncased",
+          "rescale_with_baseline": false
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicGenerationMetric",
+        "args": {
+          "names": []
+        }
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicReferenceMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric",
+        "args": {}
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "clinical",
+      "aci_bench"
+    ],
+    "annotators": [
+      {
+        "class_name": "helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator",
         "args": {}
       }
     ]

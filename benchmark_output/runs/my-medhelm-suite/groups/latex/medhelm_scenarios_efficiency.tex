@@ -1,18 +1,37 @@
 \begin{table*}[htp]
 \resizebox{\textwidth}{!}{
-\begin{tabular}{lrrr}
+\begin{tabular}{lrr}
 \toprule
-Model & Mean win rate & MTSamples - Observed inference time (s) & ACI-Bench - Observed inference time (s) \\
+Model & Mean win rate & ACI-Bench - Observed inference time (s) \\
 \midrule
-Llama 3.1 Instruct (8B) &  &  & 75.93968614141146 \\
-Llama 3.2 Instruct (1.23B) & 0.75 &  & 11.21833381652832 \\
-Llama 3.2 Instruct (3B) & 0.125 &  & 59.51362446546555 \\
-DeepSeek-R1-0528 & 0.375 &  & 18.903887156645457 \\
-Llama 3.3 Instruct Turbo (70B) & 0.25 &  & 29.972085070610046 \\
-Claude 3.7 Sonnet (20250219) & 0.5 &  & 16.05382503668467 \\
-GPT-4.1 (2025-04-14) & 0.625 &  & 13.234592833121617 \\
-GPT-4.1-mini (2025-04-14) & 0.875 &  & 8.03999240597089 \\
-GPT-4.1-nano (2025-04-14) & 1.0 & 6.039678835868836 & 5.970380202929179 \\
+Llama 3.1 Instruct (8B) & 0.25925925925925924 & 87.53998872041703 \\
+Llama 3.2 Instruct (1.23B) & 0.8148148148148148 & 41.638932299613955 \\
+Llama 3.2 Instruct (3B) & 0.6666666666666666 & 51.98329519033432 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif & 0.6296296296296297 & 57.24503012895584 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2 & 0.5185185185185185 & 69.0106678366661 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf & 0.5925925925925926 & 66.08133680820465 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 & 0.4074074074074074 & 81.63973833322525 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf & 0.5555555555555556 & 66.60262700319291 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf & 0.7407407407407407 & 49.09261269569397 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft & 0.2962962962962963 & 86.42685679197311 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif & 0.7777777777777778 & 42.58086234331131 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2 & 0.4444444444444444 & 77.78274549245835 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf & 0.3333333333333333 & 86.17036604881287 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3 & 0.18518518518518517 & 128.63535336256027 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp & 0.037037037037037035 & 253.73146924972534 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif & 0.07407407407407407 & 226.68975834846498 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2 & 0.1111111111111111 & 185.2497973918915 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3 & 0.14814814814814814 & 181.1793191552162 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft & 0.2222222222222222 & 103.48440707921982 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif & 0.7037037037037037 & 50.56641523838043 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2 & 0.48148148148148145 & 71.2290113568306 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3 & 0.37037037037037035 & 82.00865975618362 \\
+Meditron (7B) &  & 294.38211438655856 \\
+Llama 3.3 Instruct Turbo (70B) & 0.8518518518518519 & 17.672924184799193 \\
+Claude 3.7 Sonnet (20250219) & 0.9259259259259259 & 10.64091453552246 \\
+GPT-4.1 (2025-04-14) & 0.9629629629629629 & 10.07893614768982 \\
+GPT-4.1-mini (2025-04-14) & 0.8888888888888888 & 10.725018858909607 \\
+GPT-4.1-nano (2025-04-14) & 1.0 & 3.7709663987159727 \\
 \bottomrule
 \end{tabular}}
 \caption{Results for efficiency (medhelm_scenarios)}

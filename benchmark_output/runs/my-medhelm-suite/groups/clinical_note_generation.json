@@ -83,7 +83,7 @@
           "markdown": false
         },
         {
-          "value": 0.25,
+          "value": 0.8148148148148148,
           "markdown": false
         },
         {
@@ -91,8 +91,8 @@
           "markdown": false
         },
         {
-          "value": 3.719444444444443,
-          "description": "min=3.719, mean=3.719, max=3.719, sum=3.719 (1)",
+          "value": 3.383333333333333,
+          "description": "min=3.383, mean=3.383, max=3.383, sum=3.383 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -123,7 +123,7 @@
           "markdown": false
         },
         {
-          "value": 0.0,
+          "value": 0.4074074074074074,
           "markdown": false
         },
         {
@@ -131,8 +131,8 @@
           "markdown": false
         },
         {
-          "value": 1.9333333333333336,
-          "description": "min=1.933, mean=1.933, max=1.933, sum=1.933 (1)",
+          "value": 2.3166666666666664,
+          "description": "min=2.317, mean=2.317, max=2.317, sum=2.317 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -163,7 +163,7 @@
           "markdown": false
         },
         {
-          "value": 0.125,
+          "value": 0.48148148148148145,
           "markdown": false
         },
         {
@@ -171,8 +171,8 @@
           "markdown": false
         },
         {
-          "value": 3.244444444444444,
-          "description": "min=3.244, mean=3.244, max=3.244, sum=3.244 (1)",
+          "value": 2.7666666666666666,
+          "description": "min=2.767, mean=2.767, max=2.767, sum=2.767 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -198,12 +198,12 @@
       ],
       [
         {
-          "value": "DeepSeek-R1-0528",
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif",
           "description": "",
           "markdown": false
         },
         {
-          "value": 0.75,
+          "value": 0.7407407407407407,
           "markdown": false
         },
         {
@@ -211,12 +211,772 @@
           "markdown": false
         },
         {
-          "value": 4.419444444444446,
-          "description": "min=4.419, mean=4.419, max=4.419, sum=4.419 (1)",
+          "value": 2.933333333333333,
+          "description": "min=2.933, mean=2.933, max=2.933, sum=2.933 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
-            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.7037037037037037,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.8999999999999995,
+          "description": "min=2.9, mean=2.9, max=2.9, sum=2.9 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.6666666666666666,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.8666666666666667,
+          "description": "min=2.867, mean=2.867, max=2.867, sum=2.867 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.5740740740740741,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.85,
+          "description": "min=2.85, mean=2.85, max=2.85, sum=2.85 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.5740740740740741,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.85,
+          "description": "min=2.85, mean=2.85, max=2.85, sum=2.85 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.7777777777777778,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.999999999999999,
+          "description": "min=3.0, mean=3.0, max=3.0, sum=3.0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.35185185185185186,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.3,
+          "description": "min=2.3, mean=2.3, max=2.3, sum=2.3 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.35185185185185186,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.3,
+          "description": "min=2.3, mean=2.3, max=2.3, sum=2.3 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.6296296296296297,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.8500000000000005,
+          "description": "min=2.85, mean=2.85, max=2.85, sum=2.85 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.5185185185185185,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.783333333333333,
+          "description": "min=2.783, mean=2.783, max=2.783, sum=2.783 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.4444444444444444,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.7333333333333334,
+          "description": "min=2.733, mean=2.733, max=2.733, sum=2.733 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.037037037037037035,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 1.0666666666666667,
+          "description": "min=1.067, mean=1.067, max=1.067, sum=1.067 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.07407407407407407,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 1.2833333333333334,
+          "description": "min=1.283, mean=1.283, max=1.283, sum=1.283 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.1111111111111111,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 1.7333333333333332,
+          "description": "min=1.733, mean=1.733, max=1.733, sum=1.733 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.14814814814814814,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 1.8,
+          "description": "min=1.8, mean=1.8, max=1.8, sum=1.8 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.2222222222222222,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.083333333333333,
+          "description": "min=2.083, mean=2.083, max=2.083, sum=2.083 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.18518518518518517,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 1.8333333333333333,
+          "description": "min=1.833, mean=1.833, max=1.833, sum=1.833 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.2962962962962963,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.1333333333333337,
+          "description": "min=2.133, mean=2.133, max=2.133, sum=2.133 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.25925925925925924,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 2.1166666666666667,
+          "description": "min=2.117, mean=2.117, max=2.117, sum=2.117 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Meditron (7B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=epfl-llm_meditron-7b,model_deployment=huggingface_meditron-7b"
           ]
         },
         {
@@ -243,7 +1003,7 @@
           "markdown": false
         },
         {
-          "value": 0.375,
+          "value": 0.8888888888888888,
           "markdown": false
         },
         {
@@ -251,8 +1011,8 @@
           "markdown": false
         },
         {
-          "value": 4.050000000000001,
-          "description": "min=4.05, mean=4.05, max=4.05, sum=4.05 (1)",
+          "value": 3.9500000000000006,
+          "description": "min=3.95, mean=3.95, max=3.95, sum=3.95 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -283,10 +1043,7 @@
           "markdown": false
         },
         {
-          "value": 1.0,
-          "style": {
-            "font-weight": "bold"
-          },
+          "value": 0.9629629629629629,
           "markdown": false
         },
         {
@@ -294,11 +1051,9 @@
           "markdown": false
         },
         {
-          "value": 4.547222222222223,
-          "description": "min=4.547, mean=4.547, max=4.547, sum=4.547 (1)",
-          "style": {
-            "font-weight": "bold"
-          },
+          "value": 4.333333333333334,
+          "description": "min=4.333, mean=4.333, max=4.333, sum=4.333 (1)",
+          "style": {},
           "markdown": false,
           "run_spec_names": [
             "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219"
@@ -328,7 +1083,10 @@
           "markdown": false
         },
         {
-          "value": 0.875,
+          "value": 1.0,
+          "style": {
+            "font-weight": "bold"
+          },
           "markdown": false
         },
         {
@@ -336,9 +1094,11 @@
           "markdown": false
         },
         {
-          "value": 4.477777777777777,
-          "description": "min=4.478, mean=4.478, max=4.478, sum=4.478 (1)",
-          "style": {},
+          "value": 4.45,
+          "description": "min=4.45, mean=4.45, max=4.45, sum=4.45 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
           "markdown": false,
           "run_spec_names": [
             "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14"
@@ -368,7 +1128,7 @@
           "markdown": false
         },
         {
-          "value": 0.625,
+          "value": 0.9259259259259259,
           "markdown": false
         },
         {
@@ -376,8 +1136,8 @@
           "markdown": false
         },
         {
-          "value": 4.366666666666666,
-          "description": "min=4.367, mean=4.367, max=4.367, sum=4.367 (1)",
+          "value": 4.25,
+          "description": "min=4.25, mean=4.25, max=4.25, sum=4.25 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -408,7 +1168,7 @@
           "markdown": false
         },
         {
-          "value": 0.5,
+          "value": 0.8518518518518519,
           "markdown": false
         },
         {
@@ -416,8 +1176,8 @@
           "markdown": false
         },
         {
-          "value": 4.099999999999998,
-          "description": "min=4.1, mean=4.1, max=4.1, sum=4.1 (1)",
+          "value": 3.8,
+          "description": "min=3.8, mean=3.8, max=3.8, sum=3.8 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -538,7 +1298,7 @@
           "markdown": false
         },
         {
-          "value": 0.0,
+          "value": 0.25925925925925924,
           "markdown": false
         },
         {
@@ -546,8 +1306,8 @@
           "markdown": false
         },
         {
-          "value": 75.93968614141146,
-          "description": "min=75.94, mean=75.94, max=75.94, sum=75.94 (1)",
+          "value": 87.53998872041703,
+          "description": "min=87.54, mean=87.54, max=87.54, sum=87.54 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -578,7 +1338,7 @@
           "markdown": false
         },
         {
-          "value": 0.75,
+          "value": 0.8148148148148148,
           "markdown": false
         },
         {
@@ -586,8 +1346,8 @@
           "markdown": false
         },
         {
-          "value": 11.21833381652832,
-          "description": "min=11.218, mean=11.218, max=11.218, sum=11.218 (1)",
+          "value": 41.638932299613955,
+          "description": "min=41.639, mean=41.639, max=41.639, sum=41.639 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -618,7 +1378,7 @@
           "markdown": false
         },
         {
-          "value": 0.125,
+          "value": 0.6666666666666666,
           "markdown": false
         },
         {
@@ -626,8 +1386,8 @@
           "markdown": false
         },
         {
-          "value": 59.51362446546555,
-          "description": "min=59.514, mean=59.514, max=59.514, sum=59.514 (1)",
+          "value": 51.98329519033432,
+          "description": "min=51.983, mean=51.983, max=51.983, sum=51.983 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -653,12 +1413,12 @@
       ],
       [
         {
-          "value": "DeepSeek-R1-0528",
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif",
           "description": "",
           "markdown": false
         },
         {
-          "value": 0.375,
+          "value": 0.6296296296296297,
           "markdown": false
         },
         {
@@ -666,12 +1426,772 @@
           "markdown": false
         },
         {
-          "value": 18.903887156645457,
-          "description": "min=18.904, mean=18.904, max=18.904, sum=18.904 (1)",
+          "value": 57.24503012895584,
+          "description": "min=57.245, mean=57.245, max=57.245, sum=57.245 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
-            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.5185185185185185,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 69.0106678366661,
+          "description": "min=69.011, mean=69.011, max=69.011, sum=69.011 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.5925925925925926,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 66.08133680820465,
+          "description": "min=66.081, mean=66.081, max=66.081, sum=66.081 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.4074074074074074,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 81.63973833322525,
+          "description": "min=81.64, mean=81.64, max=81.64, sum=81.64 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.5555555555555556,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 66.60262700319291,
+          "description": "min=66.603, mean=66.603, max=66.603, sum=66.603 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.7407407407407407,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 49.09261269569397,
+          "description": "min=49.093, mean=49.093, max=49.093, sum=49.093 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.2962962962962963,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 86.42685679197311,
+          "description": "min=86.427, mean=86.427, max=86.427, sum=86.427 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.7777777777777778,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 42.58086234331131,
+          "description": "min=42.581, mean=42.581, max=42.581, sum=42.581 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.4444444444444444,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 77.78274549245835,
+          "description": "min=77.783, mean=77.783, max=77.783, sum=77.783 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.3333333333333333,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 86.17036604881287,
+          "description": "min=86.17, mean=86.17, max=86.17, sum=86.17 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.18518518518518517,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 128.63535336256027,
+          "description": "min=128.635, mean=128.635, max=128.635, sum=128.635 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.037037037037037035,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 253.73146924972534,
+          "description": "min=253.731, mean=253.731, max=253.731, sum=253.731 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.07407407407407407,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 226.68975834846498,
+          "description": "min=226.69, mean=226.69, max=226.69, sum=226.69 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.1111111111111111,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 185.2497973918915,
+          "description": "min=185.25, mean=185.25, max=185.25, sum=185.25 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.14814814814814814,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 181.1793191552162,
+          "description": "min=181.179, mean=181.179, max=181.179, sum=181.179 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.2222222222222222,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 103.48440707921982,
+          "description": "min=103.484, mean=103.484, max=103.484, sum=103.484 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.7037037037037037,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 50.56641523838043,
+          "description": "min=50.566, mean=50.566, max=50.566, sum=50.566 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.48148148148148145,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 71.2290113568306,
+          "description": "min=71.229, mean=71.229, max=71.229, sum=71.229 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.37037037037037035,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 82.00865975618362,
+          "description": "min=82.009, mean=82.009, max=82.009, sum=82.009 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Meditron (7B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 294.38211438655856,
+          "description": "min=294.382, mean=294.382, max=294.382, sum=294.382 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=epfl-llm_meditron-7b,model_deployment=huggingface_meditron-7b"
           ]
         },
         {
@@ -698,7 +2218,7 @@
           "markdown": false
         },
         {
-          "value": 0.25,
+          "value": 0.8518518518518519,
           "markdown": false
         },
         {
@@ -706,8 +2226,8 @@
           "markdown": false
         },
         {
-          "value": 29.972085070610046,
-          "description": "min=29.972, mean=29.972, max=29.972, sum=29.972 (1)",
+          "value": 17.672924184799193,
+          "description": "min=17.673, mean=17.673, max=17.673, sum=17.673 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -738,7 +2258,7 @@
           "markdown": false
         },
         {
-          "value": 0.5,
+          "value": 0.9259259259259259,
           "markdown": false
         },
         {
@@ -746,8 +2266,8 @@
           "markdown": false
         },
         {
-          "value": 16.05382503668467,
-          "description": "min=16.054, mean=16.054, max=16.054, sum=16.054 (1)",
+          "value": 10.64091453552246,
+          "description": "min=10.641, mean=10.641, max=10.641, sum=10.641 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -778,7 +2298,7 @@
           "markdown": false
         },
         {
-          "value": 0.625,
+          "value": 0.9629629629629629,
           "markdown": false
         },
         {
@@ -786,8 +2306,8 @@
           "markdown": false
         },
         {
-          "value": 13.234592833121617,
-          "description": "min=13.235, mean=13.235, max=13.235, sum=13.235 (1)",
+          "value": 10.07893614768982,
+          "description": "min=10.079, mean=10.079, max=10.079, sum=10.079 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -818,7 +2338,7 @@
           "markdown": false
         },
         {
-          "value": 0.875,
+          "value": 0.8888888888888888,
           "markdown": false
         },
         {
@@ -826,8 +2346,8 @@
           "markdown": false
         },
         {
-          "value": 8.03999240597089,
-          "description": "min=8.04, mean=8.04, max=8.04, sum=8.04 (1)",
+          "value": 10.725018858909607,
+          "description": "min=10.725, mean=10.725, max=10.725, sum=10.725 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -869,8 +2389,8 @@
           "markdown": false
         },
         {
-          "value": 5.970380202929179,
-          "description": "min=5.97, mean=5.97, max=5.97, sum=5.97 (1)",
+          "value": 3.7709663987159727,
+          "description": "min=3.771, mean=3.771, max=3.771, sum=3.771 (1)",
           "style": {
             "font-weight": "bold"
           },
@@ -1216,8 +2736,8 @@
           "markdown": false
         },
         {
-          "value": 120.0,
-          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1243,8 +2763,8 @@
           ]
         },
         {
-          "value": 1629.5833333333333,
-          "description": "min=1629.583, mean=1629.583, max=1629.583, sum=1629.583 (1)",
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1252,8 +2772,8 @@
           ]
         },
         {
-          "value": 429.0833333333333,
-          "description": "min=429.083, mean=429.083, max=429.083, sum=429.083 (1)",
+          "value": 508.55,
+          "description": "min=508.55, mean=508.55, max=508.55, sum=508.55 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1368,8 +2888,8 @@
           "markdown": false
         },
         {
-          "value": 10.0,
-          "description": "min=10, mean=10, max=10, sum=10 (1)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1395,8 +2915,8 @@
           ]
         },
         {
-          "value": 1447.3,
-          "description": "min=1447.3, mean=1447.3, max=1447.3, sum=1447.3 (1)",
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1404,8 +2924,8 @@
           ]
         },
         {
-          "value": 216.0,
-          "description": "min=216, mean=216, max=216, sum=216 (1)",
+          "value": 467.05,
+          "description": "min=467.05, mean=467.05, max=467.05, sum=467.05 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1520,8 +3040,8 @@
           "markdown": false
         },
         {
-          "value": 120.0,
-          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1547,8 +3067,8 @@
           ]
         },
         {
-          "value": 1629.5833333333333,
-          "description": "min=1629.583, mean=1629.583, max=1629.583, sum=1629.583 (1)",
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1556,8 +3076,8 @@
           ]
         },
         {
-          "value": 391.3833333333333,
-          "description": "min=391.383, mean=391.383, max=391.383, sum=391.383 (1)",
+          "value": 350.5,
+          "description": "min=350.5, mean=350.5, max=350.5, sum=350.5 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1647,7 +3167,7 @@
       ],
       [
         {
-          "value": "DeepSeek-R1-0528",
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif",
           "description": "",
           "markdown": false
         },
@@ -1672,12 +3192,12 @@
           "markdown": false
         },
         {
-          "value": 120.0,
-          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
-            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif"
           ]
         },
         {
@@ -1686,7 +3206,7 @@
           "style": {},
           "markdown": false,
           "run_spec_names": [
-            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif"
           ]
         },
         {
@@ -1695,16 +3215,141 @@
           "style": {},
           "markdown": false,
           "run_spec_names": [
-            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif"
           ]
         },
         {
-          "value": 1613.1666666666667,
-          "description": "min=1613.167, mean=1613.167, max=1613.167, sum=1613.167 (1)",
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
-            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif"
+          ]
+        },
+        {
+          "value": 397.4,
+          "description": "min=397.4, mean=397.4, max=397.4, sum=397.4 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2"
           ]
         },
         {
@@ -1713,7 +3358,2770 @@
           "style": {},
           "markdown": false,
           "run_spec_names": [
-            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2"
+          ]
+        },
+        {
+          "value": 491.6,
+          "description": "min=491.6, mean=491.6, max=491.6, sum=491.6 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "value": 505.2,
+          "description": "min=505.2, mean=505.2, max=505.2, sum=505.2 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3"
+          ]
+        },
+        {
+          "value": 569.85,
+          "description": "min=569.85, mean=569.85, max=569.85, sum=569.85 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf"
+          ]
+        },
+        {
+          "value": 528.85,
+          "description": "min=528.85, mean=528.85, max=528.85, sum=528.85 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf"
+          ]
+        },
+        {
+          "value": 367.85,
+          "description": "min=367.85, mean=367.85, max=367.85, sum=367.85 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft"
+          ]
+        },
+        {
+          "value": 653.0,
+          "description": "min=653, mean=653, max=653, sum=653 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif"
+          ]
+        },
+        {
+          "value": 321.15,
+          "description": "min=321.15, mean=321.15, max=321.15, sum=321.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2"
+          ]
+        },
+        {
+          "value": 571.5,
+          "description": "min=571.5, mean=571.5, max=571.5, sum=571.5 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "value": 668.1,
+          "description": "min=668.1, mean=668.1, max=668.1, sum=668.1 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3"
+          ]
+        },
+        {
+          "value": 898.5,
+          "description": "min=898.5, mean=898.5, max=898.5, sum=898.5 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "value": 1738.2,
+          "description": "min=1738.2, mean=1738.2, max=1738.2, sum=1738.2 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif"
+          ]
+        },
+        {
+          "value": 1699.65,
+          "description": "min=1699.65, mean=1699.65, max=1699.65, sum=1699.65 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2"
+          ]
+        },
+        {
+          "value": 1379.2,
+          "description": "min=1379.2, mean=1379.2, max=1379.2, sum=1379.2 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3"
+          ]
+        },
+        {
+          "value": 1328.75,
+          "description": "min=1328.75, mean=1328.75, max=1328.75, sum=1328.75 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft"
+          ]
+        },
+        {
+          "value": 800.35,
+          "description": "min=800.35, mean=800.35, max=800.35, sum=800.35 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif"
+          ]
+        },
+        {
+          "value": 424.45,
+          "description": "min=424.45, mean=424.45, max=424.45, sum=424.45 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2"
+          ]
+        },
+        {
+          "value": 486.1,
+          "description": "min=486.1, mean=486.1, max=486.1, sum=486.1 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3"
+          ]
+        },
+        {
+          "value": 589.45,
+          "description": "min=589.45, mean=589.45, max=589.45, sum=589.45 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Meditron (7B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=epfl-llm_meditron-7b,model_deployment=huggingface_meditron-7b"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=epfl-llm_meditron-7b,model_deployment=huggingface_meditron-7b"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=epfl-llm_meditron-7b,model_deployment=huggingface_meditron-7b"
+          ]
+        },
+        {
+          "value": 1866.8,
+          "description": "min=1866.8, mean=1866.8, max=1866.8, sum=1866.8 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=epfl-llm_meditron-7b,model_deployment=huggingface_meditron-7b"
+          ]
+        },
+        {
+          "value": 2048.0,
+          "description": "min=2048, mean=2048, max=2048, sum=2048 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=epfl-llm_meditron-7b,model_deployment=huggingface_meditron-7b"
           ]
         },
         {
@@ -1824,8 +6232,8 @@
           "markdown": false
         },
         {
-          "value": 120.0,
-          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1851,8 +6259,8 @@
           ]
         },
         {
-          "value": 1629.5833333333333,
-          "description": "min=1629.583, mean=1629.583, max=1629.583, sum=1629.583 (1)",
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1860,8 +6268,8 @@
           ]
         },
         {
-          "value": 429.7416666666667,
-          "description": "min=429.742, mean=429.742, max=429.742, sum=429.742 (1)",
+          "value": 434.55,
+          "description": "min=434.55, mean=434.55, max=434.55, sum=434.55 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -1976,8 +6384,8 @@
           "markdown": false
         },
         {
-          "value": 120.0,
-          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2003,8 +6411,8 @@
           ]
         },
         {
-          "value": 1674.0583333333334,
-          "description": "min=1674.058, mean=1674.058, max=1674.058, sum=1674.058 (1)",
+          "value": 1640.7,
+          "description": "min=1640.7, mean=1640.7, max=1640.7, sum=1640.7 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2012,8 +6420,8 @@
           ]
         },
         {
-          "value": 455.95,
-          "description": "min=455.95, mean=455.95, max=455.95, sum=455.95 (1)",
+          "value": 492.55,
+          "description": "min=492.55, mean=492.55, max=492.55, sum=492.55 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2128,8 +6536,8 @@
           "markdown": false
         },
         {
-          "value": 120.0,
-          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2155,8 +6563,8 @@
           ]
         },
         {
-          "value": 1573.6416666666667,
-          "description": "min=1573.642, mean=1573.642, max=1573.642, sum=1573.642 (1)",
+          "value": 1538.2,
+          "description": "min=1538.2, mean=1538.2, max=1538.2, sum=1538.2 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2164,8 +6572,8 @@
           ]
         },
         {
-          "value": 511.8333333333333,
-          "description": "min=511.833, mean=511.833, max=511.833, sum=511.833 (1)",
+          "value": 584.65,
+          "description": "min=584.65, mean=584.65, max=584.65, sum=584.65 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2280,8 +6688,8 @@
           "markdown": false
         },
         {
-          "value": 120.0,
-          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2307,8 +6715,8 @@
           ]
         },
         {
-          "value": 1573.6416666666667,
-          "description": "min=1573.642, mean=1573.642, max=1573.642, sum=1573.642 (1)",
+          "value": 1538.2,
+          "description": "min=1538.2, mean=1538.2, max=1538.2, sum=1538.2 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2316,8 +6724,8 @@
           ]
         },
         {
-          "value": 435.7916666666667,
-          "description": "min=435.792, mean=435.792, max=435.792, sum=435.792 (1)",
+          "value": 535.45,
+          "description": "min=535.45, mean=535.45, max=535.45, sum=535.45 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2432,8 +6840,8 @@
           "markdown": false
         },
         {
-          "value": 120.0,
-          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2459,8 +6867,8 @@
           ]
         },
         {
-          "value": 1573.6416666666667,
-          "description": "min=1573.642, mean=1573.642, max=1573.642, sum=1573.642 (1)",
+          "value": 1538.2,
+          "description": "min=1538.2, mean=1538.2, max=1538.2, sum=1538.2 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [
@@ -2468,8 +6876,8 @@
           ]
         },
         {
-          "value": 426.6666666666667,
-          "description": "min=426.667, mean=426.667, max=426.667, sum=426.667 (1)",
+          "value": 465.2,
+          "description": "min=465.2, mean=465.2, max=465.2, sum=465.2 (1)",
           "style": {},
           "markdown": false,
           "run_spec_names": [

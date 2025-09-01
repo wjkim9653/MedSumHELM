@@ -1,4 +1,210 @@
 model_deployments:
+  - name: huggingface/medgemma-4b-pt
+    model_name: google/medgemma-4b-pt
+    tokenizer_name: google/medgemma-4b-pt
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: google/medgemma-4b-pt
+        torch_dtype: "float16"
+  - name: huggingface/medgemma-4b-it
+    model_name: google/medgemma-4b-it
+    tokenizer_name: google/medgemma-4b-it
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: google/medgemma-4b-it
+        torch_dtype: "float16"
+  
+  - name: huggingface/meditron-7b
+    model_name: epfl-llm/meditron-7b
+    tokenizer_name: epfl-llm/meditron-7b
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: epfl-llm/meditron-7b
+        torch_dtype: "float16"
+
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-cp
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp
+        torch_dtype: "float16"
+  
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft
+        torch_dtype: "float16"
+  
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif
+        torch_dtype: "float16"
+
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2
+        torch_dtype: "float16"
+
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3
+        torch_dtype: "float16"
+
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf
+        torch_dtype: "float16"
+  - name: huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf
+    model_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf
+    tokenizer_name: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf
+    max_sequence_length: 131072
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf
+        torch_dtype: "float16"
+
   - name: huggingface/llama-3.1-8b-instruct
     model_name: meta/llama-3.1-8b-instruct
     tokenizer_name: meta/llama-3.1-8b-instruct

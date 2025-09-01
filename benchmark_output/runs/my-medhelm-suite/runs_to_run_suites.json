@@ -1,5 +1,6 @@
 {
   "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219": "my-medhelm-suite",
+  "aci_bench:model=epfl-llm_meditron-7b,model_deployment=huggingface_meditron-7b": "my-medhelm-suite",
   "aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct": "my-medhelm-suite",
   "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct": "my-medhelm-suite",
   "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct": "my-medhelm-suite",
@@ -7,6 +8,23 @@
   "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14": "my-medhelm-suite",
   "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14": "my-medhelm-suite",
   "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14": "my-medhelm-suite",
-  "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528": "my-medhelm-suite",
-  "mtsamples_replicate:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14": "my-medhelm-suite"
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2": "my-medhelm-suite",
+  "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3": "my-medhelm-suite"
 }

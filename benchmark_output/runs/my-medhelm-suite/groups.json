@@ -65,27 +65,27 @@
           "markdown": false
         },
         {
-          "value": 98.0,
-          "description": "min=10, mean=98, max=120, sum=980 (10)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=560 (28)",
           "markdown": false
         },
         {
           "value": 1.0,
-          "description": "min=1, mean=1, max=1, sum=30 (30)",
+          "description": "min=1, mean=1, max=1, sum=84 (84)",
           "markdown": false
         },
         {
-          "value": 45651.600000000006,
-          "description": "min=873, mean=1521.72, max=1674.058, sum=45651.6 (30)",
+          "value": 134155.64999999976,
+          "description": "min=1538.2, mean=1597.091, max=1866.8, sum=134155.65 (84)",
           "markdown": false
         },
         {
-          "value": 11350.349999999997,
-          "description": "min=0, mean=378.345, max=511.833, sum=11350.35 (30)",
+          "value": 60916.949999999946,
+          "description": "min=321.15, mean=725.202, max=2048, sum=60916.95 (84)",
           "markdown": false
         },
         {
-          "value": 9,
+          "value": 28,
           "markdown": false
         }
       ]
@@ -154,31 +154,23 @@
           "markdown": true
         },
         {
-          "value": "generation",
+          "value": "",
           "markdown": false
         },
         {
-          "value": 10.0,
-          "description": "min=10, mean=10, max=10, sum=10 (1)",
           "markdown": false
         },
         {
-          "value": 1.0,
-          "description": "min=1, mean=1, max=1, sum=3 (3)",
           "markdown": false
         },
         {
-          "value": 2619.0,
-          "description": "min=873, mean=873, max=873, sum=2619 (3)",
           "markdown": false
         },
         {
-          "value": 1461.0,
-          "description": "min=487, mean=487, max=487, sum=1461 (3)",
           "markdown": false
         },
         {
-          "value": 1,
+          "value": 0,
           "markdown": false
         }
       ],
@@ -197,27 +189,27 @@
           "markdown": false
         },
         {
-          "value": 107.77777777777777,
-          "description": "min=10, mean=107.778, max=120, sum=970 (9)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=560 (28)",
           "markdown": false
         },
         {
           "value": 1.0,
-          "description": "min=1, mean=1, max=1, sum=27 (27)",
+          "description": "min=1, mean=1, max=1, sum=84 (84)",
           "markdown": false
         },
         {
-          "value": 43032.6,
-          "description": "min=1447.3, mean=1593.8, max=1674.058, sum=43032.6 (27)",
+          "value": 134155.64999999976,
+          "description": "min=1538.2, mean=1597.091, max=1866.8, sum=134155.65 (84)",
           "markdown": false
         },
         {
-          "value": 9889.349999999999,
-          "description": "min=0, mean=366.272, max=511.833, sum=9889.35 (27)",
+          "value": 60916.949999999946,
+          "description": "min=321.15, mean=725.202, max=2048, sum=60916.95 (84)",
           "markdown": false
         },
         {
-          "value": 9,
+          "value": 28,
           "markdown": false
         }
       ],
@@ -441,31 +433,23 @@
           "markdown": true
         },
         {
-          "value": "generation",
+          "value": "",
           "markdown": false
         },
         {
-          "value": 10.0,
-          "description": "min=10, mean=10, max=10, sum=10 (1)",
           "markdown": false
         },
         {
-          "value": 1.0,
-          "description": "min=1, mean=1, max=1, sum=3 (3)",
           "markdown": false
         },
         {
-          "value": 2619.0,
-          "description": "min=873, mean=873, max=873, sum=2619 (3)",
           "markdown": false
         },
         {
-          "value": 1461.0,
-          "description": "min=487, mean=487, max=487, sum=1461 (3)",
           "markdown": false
         },
         {
-          "value": 1,
+          "value": 0,
           "markdown": false
         }
       ],
@@ -794,27 +778,27 @@
           "markdown": false
         },
         {
-          "value": 107.77777777777777,
-          "description": "min=10, mean=107.778, max=120, sum=970 (9)",
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=560 (28)",
           "markdown": false
         },
         {
           "value": 1.0,
-          "description": "min=1, mean=1, max=1, sum=27 (27)",
+          "description": "min=1, mean=1, max=1, sum=84 (84)",
           "markdown": false
         },
         {
-          "value": 43032.6,
-          "description": "min=1447.3, mean=1593.8, max=1674.058, sum=43032.6 (27)",
+          "value": 134155.64999999976,
+          "description": "min=1538.2, mean=1597.091, max=1866.8, sum=134155.65 (84)",
           "markdown": false
         },
         {
-          "value": 9889.349999999999,
-          "description": "min=0, mean=366.272, max=511.833, sum=9889.35 (27)",
+          "value": 60916.949999999946,
+          "description": "min=321.15, mean=725.202, max=2048, sum=60916.95 (84)",
           "markdown": false
         },
         {
-          "value": 9,
+          "value": 28,
           "markdown": false
         }
       ],

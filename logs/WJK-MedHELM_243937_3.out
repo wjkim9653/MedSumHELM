@@ -1,0 +1,252 @@
+===== Running model: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 =====
+2025-09-01 03:40:14,444 INFO     helm_run {
+2025-09-01 03:40:14,975 INFO       Reading tokenizer configs from /data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/config/tokenizer_configs.yaml...
+2025-09-01 03:40:15,056 INFO       Reading model deployments from /data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/config/model_deployments.yaml...
+2025-09-01 03:40:15,398 INFO       Reading tokenizer configs from prod_env/tokenizer_configs.yaml...
+2025-09-01 03:40:15,411 INFO       Reading model deployments from prod_env/model_deployments.yaml...
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model google/medgemma-4b-pt of model deployment huggingface/medgemma-4b-pt
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model google/medgemma-4b-it of model deployment huggingface/medgemma-4b-it
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3
+2025-09-01 03:40:15,434 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3
+2025-09-01 03:40:15,500 INFO       Read 28 run entries from run_entries_medhelm_public.conf
+2025-09-01 03:40:17,694 INFO       28 entries produced 1 run specs
+2025-09-01 03:40:17,694 INFO       run_specs {
+2025-09-01 03:40:17,695 INFO         RunSpec(name='aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3', scenario_spec=ScenarioSpec(class_name='helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario', args={}), adapter_spec=AdapterSpec(method='generation', global_prefix='', global_suffix='', instructions='You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\”SUBJECTIVE\\” part and \\”ASSESSMENT AND PLAN\\” part of note.\\”SUBJECTIVE\\” part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\”ASSESSMENT AND PLAN\\” part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n', input_prefix='Conversation: ', input_suffix='\n', reference_prefix='A. ', reference_suffix='\n', chain_of_thought_prefix='', chain_of_thought_suffix='\n', output_prefix='Clinical Note: ', output_suffix='\n', instance_prefix='\n', substitutions=[], max_train_instances=0, max_eval_instances=20, num_outputs=1, num_train_trials=1, num_trials=1, sample_train=True, model_deployment='huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3', model='wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3', temperature=0.0, max_tokens=2048, stop_sequences=[], random=None, multi_label=False, image_generation_parameters=None, reeval_parameters=None, eval_splits=None), metric_specs=[MetricSpec(class_name='helm.benchmark.metrics.summarization_metrics.SummarizationMetric', args={'task': 'aci_bench', 'device': 'cuda', 'bertscore_model': 'distilbert-base-uncased', 'rescale_with_baseline': False}), MetricSpec(class_name='helm.benchmark.metrics.basic_metrics.BasicGenerationMetric', args={'names': []}), MetricSpec(class_name='helm.benchmark.metrics.basic_metrics.BasicReferenceMetric', args={}), MetricSpec(class_name='helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric', args={}), MetricSpec(class_name='helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric', args={})], data_augmenter_spec=DataAugmenterSpec(perturbation_specs=[], should_augment_train_instances=False, should_include_original_train=False, should_skip_unchanged_train=False, should_augment_eval_instances=False, should_include_original_eval=False, should_skip_unchanged_eval=False, seeds_per_instance=1), groups=['clinical', 'aci_bench'], annotators=[AnnotatorSpec(class_name='helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator', args={})])
+2025-09-01 03:40:17,695 INFO       } [0.0s]
+2025-09-01 03:40:17,695 INFO       Running in local mode with base path: prod_env
+Looking in path: prod_env
+2025-09-01 03:40:17,705 INFO       AutoTokenizer: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-09-01 03:40:17,705 INFO       AutoClient: file_storage_path = prod_env/cache
+2025-09-01 03:40:17,705 INFO       AutoClient: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-09-01 03:40:17,705 INFO       AutoTokenizer: cache_backend_config = BlackHoleCacheBackendConfig()
+Looking in path: prod_env
+2025-09-01 03:40:17,715 INFO       AnnotatorFactory: file_storage_path = prod_env/cache
+2025-09-01 03:40:17,715 INFO       AnnotatorFactory: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-09-01 03:40:17,717 INFO       Running aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 {
+2025-09-01 03:40:17,718 INFO         scenario.get_instances {
+2025-09-01 03:40:17,718 INFO           ensure_file_downloaded {
+2025-09-01 03:40:17,822 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/train_full.json because benchmark_output/scenarios/aci_bench/aci_bench_train.json already exists
+2025-09-01 03:40:17,822 INFO           } [0.104s]
+2025-09-01 03:40:17,830 INFO           ensure_file_downloaded {
+2025-09-01 03:40:17,832 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/clinicalnlp_taskB_test1_full.json because benchmark_output/scenarios/aci_bench/aci_bench_test_1.json already exists
+2025-09-01 03:40:17,832 INFO           } [0.002s]
+2025-09-01 03:40:17,837 INFO           ensure_file_downloaded {
+2025-09-01 03:40:17,941 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/clef_taskC_test3_full.json because benchmark_output/scenarios/aci_bench/aci_bench_test_2.json already exists
+2025-09-01 03:40:17,942 INFO           } [0.104s]
+2025-09-01 03:40:17,948 INFO           ensure_file_downloaded {
+2025-09-01 03:40:17,949 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/clinicalnlp_taskC_test2_full.json because benchmark_output/scenarios/aci_bench/aci_bench_test_3.json already exists
+2025-09-01 03:40:17,949 INFO           } [0.001s]
+2025-09-01 03:40:17,955 INFO         } [0.237s]
+2025-09-01 03:40:17,958 INFO         187 instances, 67 train instances, 20/120 eval instances
+2025-09-01 03:40:17,958 INFO         DataPreprocessor.preprocess {
+2025-09-01 03:40:17,958 INFO         } [0.0s]
+2025-09-01 03:40:17,960 INFO         GenerationAdapter.adapt {
+2025-09-01 03:40:17,960 INFO           87 instances, choosing 0/67 train instances, 20 eval instances
+2025-09-01 03:40:17,960 INFO           Adapting with train_trial_index=0 {
+2025-09-01 03:40:17,961 INFO             Sampled 0 examples for trial #0.
+2025-09-01 03:40:17,961 INFO             Parallelizing computation on 20 items over 4 threads {
+2025-09-01 03:40:20,367 INFO               Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:40:20,368 INFO               Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:40:20,368 INFO               Loading wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 (kwargs={}) for HELM tokenizer wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 with Hugging Face Transformers {
+2025-09-01 03:40:20,368 INFO               Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:40:20,368 INFO               Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:40:20,370 INFO                 Local files do not exist for HuggingFace tokenizer: wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3. Downloading...
+2025-09-01 03:40:57,197 INFO               } [36.828s]
+2025-09-01 03:40:57,947 INFO             } [39.985s]
+2025-09-01 03:40:57,947 INFO             Sample prompts {
+2025-09-01 03:40:57,947 INFO               reference index = None, request_mode = None {
+2025-09-01 03:40:57,947 INFO                 You are a physician writing a clinical note based on a dialogue with the patient.Write only the \”SUBJECTIVE\” part and \”ASSESSMENT AND PLAN\” part of note.\”SUBJECTIVE\” part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\”ASSESSMENT AND PLAN\” part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.
+2025-09-01 03:40:57,947 INFO                 The conversation is:
+2025-09-01 03:40:57,947 INFO                 
+2025-09-01 03:40:57,947 INFO                 
+2025-09-01 03:40:57,947 INFO                 Conversation: Doctor-patient dialogue:
+2025-09-01 03:40:57,947 INFO                 
+2025-09-01 03:40:57,947 INFO                 [doctor] hi , alexander . how are you ?
+2025-09-01 03:40:57,947 INFO                 [patient] i'm doing really well . thank you .
+2025-09-01 03:40:57,947 INFO                 [doctor] so , i know the nurse told you a little bit about dax . i'd like to tell dax about you . okay ?
+2025-09-01 03:40:57,947 INFO                 [patient] sure .
+2025-09-01 03:40:57,947 INFO                 [doctor] so , alexander is a 62-year-old male , with a past medical history significant for reflux , who presents for follow-up of his chronic problems .
+2025-09-01 03:40:57,947 INFO                 [doctor] so , alexander , what's being going on ?
+2025-09-01 03:40:57,947 INFO                 [patient] well , i am so thankful you put me on that medicine for my , my reflux .
+2025-09-01 03:40:57,947 INFO                 [doctor] the protonix ?
+2025-09-01 03:40:57,947 INFO                 [patient] the protonix . that , i had , w- made an amazing change in my life .
+2025-09-01 03:40:57,947 INFO                 [doctor] yeah .
+2025-09-01 03:40:57,947 INFO                 [patient] i'm really comfortable now . i eat whatever i want , and i feel so much better .
+2025-09-01 03:40:57,947 INFO                 [doctor] okay , great . i'm glad to hear that . i know you were having a lot of discomfort there before , so that's good . okay . and how are you doing , kind of , managing your diet ? i know , you know , you have to do some lifestyle modifications , like cutting back on caffeine and spicy foods and alcohol . how are you doing with that ?
+2025-09-01 03:40:57,947 INFO                 [patient] i'm doing really well . i moved over from caffeine , over to green tea .
+2025-09-01 03:40:57,947 INFO                 [doctor] okay .
+2025-09-01 03:40:57,947 INFO                 [patient] and it , it is so , m- it does n't cause as much problem as it did with , when i was drinking so many energy drinks a day .
+2025-09-01 03:40:57,947 INFO                 [doctor] all right . good . i'm glad to hear that . great . all right .
+2025-09-01 03:40:57,947 INFO                 [patient] uh , i think getting that , rid of that reflux , really helped my attitude improve .
+2025-09-01 03:40:57,947 INFO                 [doctor] okay .
+2025-09-01 03:40:57,948 INFO                 [patient] uh , my job's going great . everything's phenomenal right now .
+2025-09-01 03:40:57,948 INFO                 [doctor] okay .
+2025-09-01 03:40:57,948 INFO                 [doctor] okay . and you have a , a good support system at home ? i know you have a big-
+2025-09-01 03:40:57,948 INFO                 [patient] yeah .
+2025-09-01 03:40:57,948 INFO                 [doctor] . family .
+2025-09-01 03:40:57,948 INFO                 [patient] yes . yes . all my kids-
+2025-09-01 03:40:57,948 INFO                 [doctor] okay .
+2025-09-01 03:40:57,948 INFO                 [patient] . call and check on me every day .
+2025-09-01 03:40:57,948 INFO                 [doctor] okay . great . i'm glad to hear that . now , i know you did a review of systems sheet when you checked in .
+2025-09-01 03:40:57,948 INFO                 [patient] yes .
+2025-09-01 03:40:57,948 INFO                 [doctor] i , are you having any symptoms ? any chest pain , shortness of breath , belly pain , of , nausea or vomiting ? anything like that ?
+2025-09-01 03:40:57,948 INFO                 [patient] no . no symptoms at all .
+2025-09-01 03:40:57,948 INFO                 [doctor] okay , great . um , well , let me go ahead . i wan na do a quick physical exam .
+2025-09-01 03:40:57,948 INFO                 [doctor] hey , dragon . show me the vital signs .
+2025-09-01 03:40:57,948 INFO                 [doctor] so , your vital signs here in the office look really good . so , you're doing a great job managing your , your blood pressure . your heart rate's nice and low . i'm gon na go ahead and take a listen to your heart and lungs .
+2025-09-01 03:40:57,948 INFO                 [patient] okay .
+2025-09-01 03:40:57,948 INFO                 [doctor] and i'll let you know what i find . okay ?
+2025-09-01 03:40:57,948 INFO                 [patient] okay .
+2025-09-01 03:40:57,948 INFO                 [doctor] okay . good . all right . so , on physical examination , i , i do n't hear any carotid bruits in your neck , which is really good . you know , your heart exam , i do hear a slight 2/6 systolic ejection murmur , which i've heard in the past , so that's stable . uh , your lungs are nice and clear , and you do have , you know , 1+ pitting edema bilaterally in your lower extremities .
+2025-09-01 03:40:57,948 INFO                 [patient] okay .
+2025-09-01 03:40:57,948 INFO                 [doctor] so , what does that mean ? you know , i , i think , you know , you're doing a ... it sounds like a doing a good job watching your diet . you could ... you just are retaining a little bit of fluid , maybe just from standing all day .
+2025-09-01 03:40:57,948 INFO                 [patient] okay .
+2025-09-01 03:40:57,948 INFO                 [doctor] okay ? let's take a look at some of your results . okay ?
+2025-09-01 03:40:57,948 INFO                 [patient] okay .
+2025-09-01 03:40:57,948 INFO                 [doctor] hey , dragon . show me the endoscope results .
+2025-09-01 03:40:57,948 INFO                 [doctor] so , this was the endoscopy that you had last year when you were having all that pain . it just showed that you had had some mild gastritis . so , it's good to hear that that , you know , protonix is helping you a lot . okay ?
+2025-09-01 03:40:57,948 INFO                 [patient] okay .
+2025-09-01 03:40:57,948 INFO                 [patient] i'll do a little more exercise too .
+2025-09-01 03:40:57,948 INFO                 [doctor] that sounds great . all right . so , let's talk just a little bit about , you know , my assessment and my plan for you .
+2025-09-01 03:40:57,948 INFO                 [doctor] for your reflux , i want you to continue on the protonix 40 mg a day , and continue with those lifestyle modifications with the dietary stuff-
+2025-09-01 03:40:57,948 INFO                 [patient] okay .
+2025-09-01 03:40:57,948 INFO                 [doctor] . okay ? do you have any questions ?
+2025-09-01 03:40:57,948 INFO                 [patient] no questions .
+2025-09-01 03:40:57,948 INFO                 [doctor] okay . all right . well , the nurse is gon na come in soon , and she's gon na check you , get you checked out . okay ?
+2025-09-01 03:40:57,948 INFO                 [patient] okay . thank you .
+2025-09-01 03:40:57,948 INFO                 [doctor] hey , dragon . finalize the note .
+2025-09-01 03:40:57,948 INFO                 Clinical Note:
+2025-09-01 03:40:57,948 INFO               } [0.001s]
+2025-09-01 03:40:57,948 INFO             } [0.001s]
+2025-09-01 03:40:57,948 INFO           } [39.988s]
+2025-09-01 03:40:57,949 INFO           20 requests
+2025-09-01 03:40:57,949 INFO         } [39.988s]
+2025-09-01 03:40:57,949 INFO         Executor.execute {
+2025-09-01 03:40:57,949 INFO           Parallelizing computation on 20 items over 4 threads {
+2025-09-01 03:40:57,974 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:40:57,974 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:40:57,974 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:40:57,975 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:40:57,975 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:40:57,975 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:40:57,975 WARNING          Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-09-01 03:40:57,976 WARNING          Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-09-01 03:40:57,976 WARNING          Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-09-01 03:40:57,976 WARNING          Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-09-01 03:40:57,995 INFO             Loading wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 (kwargs={'torch_dtype': 'float16'}) for HELM model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 with Hugging Face Transformers {
+2025-09-01 03:40:57,995 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 03:40:57,995 INFO               Loading Hugging Face model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 {
+2025-09-01 03:46:40,389 INFO               } [5m42.394s]
+2025-09-01 03:46:40,390 INFO             } [5m42.395s]
+2025-09-01 03:47:32,974 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:47:41,977 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:47:46,062 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:48:05,312 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:48:52,114 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:48:59,216 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:48:59,601 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:49:00,381 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:49:54,211 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:50:02,887 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:50:18,736 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:50:51,770 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:51:08,569 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:51:31,336 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:51:37,048 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:52:42,893 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:52:51,855 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:53:36,366 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:53:40,059 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:53:46,107 WARNING          truncate_sequence needs to strip "<|eot_id|>"
+2025-09-01 03:53:46,107 INFO           } [12m48.158s]
+2025-09-01 03:53:46,108 INFO           Processed 20 requests
+2025-09-01 03:53:46,108 INFO         } [12m48.159s]
+2025-09-01 03:53:46,108 INFO         AnnotationExecutor.execute {
+2025-09-01 03:53:46,112 INFO           AutoTokenizer: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-09-01 03:53:46,112 INFO           AutoClient: file_storage_path = prod_env/cache
+2025-09-01 03:53:46,112 INFO           AutoClient: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-09-01 03:53:46,112 INFO           Parallelizing computation on 20 items over 4 threads {
+2025-09-01 03:53:46,717 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:53:46,717 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:53:46,717 INFO             Using host_organization api key defined in credentials.conf: openaiApiKey
+2025-09-01 03:53:46,717 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:53:46,718 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:53:46,718 INFO             Using host_organization api key defined in credentials.conf: openaiApiKey
+2025-09-01 03:53:46,718 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:53:46,718 INFO             Using host_organization api key defined in credentials.conf: openaiApiKey
+2025-09-01 03:53:46,718 INFO             Using host_organization api key defined in credentials.conf: openaiApiKey
+2025-09-01 03:53:46,718 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:53:46,719 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:53:46,720 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 03:54:08,411 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:54:17,467 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:54:18,574 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:54:31,780 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:54:48,945 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:54:51,807 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:54:57,211 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:55:01,090 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:55:20,728 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:55:25,418 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:55:32,922 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:55:55,055 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:56:06,400 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:56:30,594 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:56:38,062 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:56:43,482 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:57:02,879 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:57:05,582 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:57:15,655 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:57:25,252 INFO             Failed model annotations: {'gpt-5': 0}
+2025-09-01 03:57:25,253 INFO           } [3m39.141s]
+2025-09-01 03:57:25,254 INFO           Annotated 20 requests
+2025-09-01 03:57:25,254 INFO         } [3m39.145s]
+2025-09-01 03:57:28,452 INFO         5 metrics {
+2025-09-01 03:57:28,452 INFO           <helm.benchmark.metrics.summarization_metrics.SummarizationMetric object at 0x7f9e9e9cd510> {
+2025-09-01 03:57:28,452 INFO             Setting parallelism from 4 to 1, since evaluating faithfulness with parallelism > 1 errors.
+2025-09-01 03:57:28,453 INFO             Parallelizing computation on 20 items over 1 threads {
+2025-09-01 03:57:28,453 INFO               ensure_file_downloaded {
+2025-09-01 03:57:28,454 INFO                 Not downloading https://storage.googleapis.com/crfm-helm-public/source_datasets/metrics/summarization_metrics/qafacteval.pk because benchmark_output/runs/my-medhelm-suite/eval_cache/qafacteval.pk already exists
+2025-09-01 03:57:28,455 INFO               } [0.001s]
+2025-09-01 03:59:30,478 INFO             } [2m2.025s]
+2025-09-01 03:59:30,488 INFO           } [2m2.035s]
+2025-09-01 03:59:30,488 INFO           BasicMetric() {
+2025-09-01 03:59:30,488 INFO             Parallelizing computation on 20 items over 4 threads {
+2025-09-01 03:59:30,709 INFO             } [0.22s]
+2025-09-01 03:59:30,732 INFO           } [0.243s]
+2025-09-01 03:59:30,732 INFO           BasicReferenceMetric {
+2025-09-01 03:59:30,732 INFO             Parallelizing computation on 20 items over 4 threads {
+2025-09-01 03:59:30,734 INFO             } [0.001s]
+2025-09-01 03:59:30,734 INFO           } [0.001s]
+2025-09-01 03:59:30,734 INFO           <helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric object at 0x7f9d8cd45900> {
+2025-09-01 03:59:30,734 INFO           } [0.0s]
+2025-09-01 03:59:30,734 INFO           <helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric object at 0x7f9d8cd478e0> {
+2025-09-01 03:59:30,734 INFO             Parallelizing computation on 20 items over 4 threads {
+2025-09-01 03:59:30,736 INFO             } [0.001s]
+2025-09-01 03:59:30,737 INFO           } [0.002s]
+2025-09-01 03:59:30,737 INFO         } [2m2.284s]
+2025-09-01 03:59:30,737 INFO         Generated 90 stats.
+2025-09-01 03:59:30,737 INFO         Writing 3101 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3/run_spec.json
+2025-09-01 03:59:30,739 INFO         Writing 567 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3/scenario.json
+2025-09-01 03:59:30,849 INFO         Writing 1764675 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3/scenario_state.json
+2025-09-01 03:59:30,860 INFO         Writing 32301 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3/stats.json
+2025-09-01 03:59:30,883 INFO         Writing 189997 characters to benchmark_output/runs/my-medhelm-suite/aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3/per_instance_stats.json
+2025-09-01 03:59:30,886 INFO         CacheStats.print_status {
+2025-09-01 03:59:30,886 INFO           disabled_cache: 140 queries, 140 computes
+2025-09-01 03:59:30,886 INFO         } [0.0s]
+2025-09-01 03:59:30,886 INFO       } [19m13.168s]
+2025-09-01 03:59:30,886 INFO       Done.
+2025-09-01 03:59:30,886 INFO     } [19m16.441s]

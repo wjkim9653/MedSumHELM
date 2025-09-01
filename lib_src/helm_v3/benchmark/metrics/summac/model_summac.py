@@ -169,7 +169,8 @@ class SummaCImager:
                 batch_tokens = self.tokenizer.batch_encode_plus(
                     list(zip(batch_prems, batch_hypos)),
                     padding=True,
-                    truncation="only_first",
+                    # truncation="only_first",
+                    truncation=True,
                     max_length=self.max_input_length,
                     return_tensors="pt",
                 )

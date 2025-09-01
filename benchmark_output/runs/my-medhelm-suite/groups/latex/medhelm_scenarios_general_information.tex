@@ -1,18 +1,37 @@
 \begin{table*}[htp]
 \resizebox{\textwidth}{!}{
-\begin{tabular}{lrrrrrrrrrr}
+\begin{tabular}{lrrrrr}
 \toprule
-Model & MTSamples - # eval & MTSamples - # train & MTSamples - truncated & MTSamples - # prompt tokens & MTSamples - # output tokens & ACI-Bench - # eval & ACI-Bench - # train & ACI-Bench - truncated & ACI-Bench - # prompt tokens & ACI-Bench - # output tokens \\
+Model & ACI-Bench - # eval & ACI-Bench - # train & ACI-Bench - truncated & ACI-Bench - # prompt tokens & ACI-Bench - # output tokens \\
 \midrule
-Llama 3.1 Instruct (8B) &  &  &  &  &  & 120.0 &  &  & 1629.5833333333333 & 429.0833333333333 \\
-Llama 3.2 Instruct (1.23B) &  &  &  &  &  & 10.0 &  &  & 1447.3 & 216.0 \\
-Llama 3.2 Instruct (3B) &  &  &  &  &  & 120.0 &  &  & 1629.5833333333333 & 391.3833333333333 \\
-DeepSeek-R1-0528 &  &  &  &  &  & 120.0 &  &  & 1613.1666666666667 &  \\
-Llama 3.3 Instruct Turbo (70B) &  &  &  &  &  & 120.0 &  &  & 1629.5833333333333 & 429.7416666666667 \\
-Claude 3.7 Sonnet (20250219) &  &  &  &  &  & 120.0 &  &  & 1674.0583333333334 & 455.95 \\
-GPT-4.1 (2025-04-14) &  &  &  &  &  & 120.0 &  &  & 1573.6416666666667 & 511.8333333333333 \\
-GPT-4.1-mini (2025-04-14) &  &  &  &  &  & 120.0 &  &  & 1573.6416666666667 & 435.7916666666667 \\
-GPT-4.1-nano (2025-04-14) & 10.0 &  &  & 873.0 & 487.0 & 120.0 &  &  & 1573.6416666666667 & 426.6666666666667 \\
+Llama 3.1 Instruct (8B) & 20.0 &  &  & 1591.15 & 508.55 \\
+Llama 3.2 Instruct (1.23B) & 20.0 &  &  & 1591.15 & 467.05 \\
+Llama 3.2 Instruct (3B) & 20.0 &  &  & 1591.15 & 350.5 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif & 20.0 &  &  & 1591.15 & 397.4 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2 & 20.0 &  &  & 1591.15 & 491.6 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2-rlhf & 20.0 &  &  & 1591.15 & 505.2 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 & 20.0 &  &  & 1591.15 & 569.85 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3-rlhf & 20.0 &  &  & 1591.15 & 528.85 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-rlhf & 20.0 &  &  & 1591.15 & 367.85 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft & 20.0 &  &  & 1591.15 & 653.0 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif & 20.0 &  &  & 1591.15 & 321.15 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2 & 20.0 &  &  & 1591.15 & 571.5 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2-rlhf & 20.0 &  &  & 1591.15 & 668.1 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3 & 20.0 &  &  & 1591.15 & 898.5 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp & 20.0 &  &  & 1591.15 & 1738.2 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif & 20.0 &  &  & 1591.15 & 1699.65 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2 & 20.0 &  &  & 1591.15 & 1379.2 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3 & 20.0 &  &  & 1591.15 & 1328.75 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft & 20.0 &  &  & 1591.15 & 800.35 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif & 20.0 &  &  & 1591.15 & 424.45 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2 & 20.0 &  &  & 1591.15 & 486.1 \\
+wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3 & 20.0 &  &  & 1591.15 & 589.45 \\
+Meditron (7B) & 20.0 &  &  & 1866.8 & 2048.0 \\
+Llama 3.3 Instruct Turbo (70B) & 20.0 &  &  & 1591.15 & 434.55 \\
+Claude 3.7 Sonnet (20250219) & 20.0 &  &  & 1640.7 & 492.55 \\
+GPT-4.1 (2025-04-14) & 20.0 &  &  & 1538.2 & 584.65 \\
+GPT-4.1-mini (2025-04-14) & 20.0 &  &  & 1538.2 & 535.45 \\
+GPT-4.1-nano (2025-04-14) & 20.0 &  &  & 1538.2 & 465.2 \\
 \bottomrule
 \end{tabular}}
 \caption{Results for general_information (medhelm_scenarios)}

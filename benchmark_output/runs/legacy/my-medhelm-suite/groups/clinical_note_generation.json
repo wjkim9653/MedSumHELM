@@ -1,0 +1,2805 @@
+[
+  {
+    "title": "Accuracy",
+    "header": [
+      {
+        "value": "Model",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Mean win rate",
+        "description": "How many models this model outperforms on average (over columns).",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {}
+      },
+      {
+        "value": "DischargeMe - Jury Score",
+        "description": "DischargeMe is a benchmark designed to evaluate clinical text generation. It pairs discharge summaries and radiology reports from MIMIC-IV with generation tasks such as writing discharge instructions or summarizing the brief hospital course. The benchmark assesses a model's ability to generate patient-facing documentation that is complete, empathetic, and clinically accurate [(Xu, 2024)](https://physionet.org/content/discharge-me/1.3/).\n\nDischargeMe Jury Score: Measures the average score assigned by an LLM-based jury evaluating task performance.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "Jury Score",
+          "run_group": "DischargeMe"
+        }
+      },
+      {
+        "value": "ACI-Bench - Jury Score",
+        "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\nACI-Bench Jury Score: Measures the average score assigned by an LLM-based jury evaluating task performance.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "Jury Score",
+          "run_group": "ACI-Bench"
+        }
+      },
+      {
+        "value": "MTSamples Procedures - Jury Score",
+        "description": "MTSamples Procedures is a benchmark composed of transcribed operative notes, focused on documenting surgical procedures. Each example presents a brief patient case involving a surgical intervention, and the model is tasked with generating a coherent and clinically accurate procedural summary or treatment plan.\n\nMTSamples Procedures Jury Score: Measures the average score assigned by an LLM-based jury evaluating task performance.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "Jury Score",
+          "run_group": "MTSamples Procedures"
+        }
+      },
+      {
+        "value": "MIMIC-RRS - Jury Score",
+        "description": "MIMIC-RRS is a benchmark constructed from radiology reports in the MIMIC-III database. It contains pairs of \u2018Findings\u2018 and \u2018Impression\u2018 sections, enabling evaluation of a model's ability to summarize diagnostic imaging observations into concise, clinically relevant conclusions [(Chen et al., 2023)](https://arxiv.org/abs/2211.08584).\n\nMIMIC-RRS Jury Score: Measures the average score assigned by an LLM-based jury evaluating task performance.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "Jury Score",
+          "run_group": "MIMIC-RRS"
+        }
+      },
+      {
+        "value": "MIMIC-BHC - Jury Score",
+        "description": "MIMIC-BHC is a benchmark focused on summarization of discharge notes into Brief Hospital Course (BHC) sections. It consists of curated discharge notes from MIMIC-IV, each paired with its corresponding BHC summary. The benchmark evaluates a model's ability to condense detailed clinical information into accurate, concise summaries that reflect the patient's hospital stay [(Aali et al., 2024)](https://doi.org/10.1093/jamia/ocae312).\n\nMIMIC-BHC Jury Score: Measures the average score assigned by an LLM-based jury evaluating task performance.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "Jury Score",
+          "run_group": "MIMIC-BHC"
+        }
+      },
+      {
+        "value": "NoteExtract - Jury Score",
+        "description": "NoteExtract is a benchmark that focuses on the structured extraction of information from free-form clinical text. It provides care plan notes authored by health workers and evaluates a model's ability to convert them into a predefined structured format, such as fields for Chief Complaint and History of Present Illness. The benchmark emphasizes faithful extraction without hallucination or inference.\n\nNoteExtract Jury Score: Measures the average score assigned by an LLM-based jury evaluating task performance.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "Jury Score",
+          "run_group": "NoteExtract"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Llama 3.1 Instruct (8B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.3333333333333333,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 3.719444444444443,
+          "description": "min=3.719, mean=3.719, max=3.719, sum=3.719 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 3.2 Instruct (1.23B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.1111111111111111,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 1.9333333333333336,
+          "description": "min=1.933, mean=1.933, max=1.933, sum=1.933 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 3.2 Instruct (3B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.2222222222222222,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 3.244444444444444,
+          "description": "min=3.244, mean=3.244, max=3.244, sum=3.244 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 1.0666666666666664,
+          "description": "min=1.067, mean=1.067, max=1.067, sum=1.067 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "DeepSeek-R1-0528",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.7777777777777778,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 4.419444444444446,
+          "description": "min=4.419, mean=4.419, max=4.419, sum=4.419 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 3.3 Instruct Turbo (70B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.4444444444444444,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 4.050000000000001,
+          "description": "min=4.05, mean=4.05, max=4.05, sum=4.05 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Claude 3.7 Sonnet (20250219)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 4.547222222222223,
+          "description": "min=4.547, mean=4.547, max=4.547, sum=4.547 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-4.1 (2025-04-14)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.8888888888888888,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 4.477777777777777,
+          "description": "min=4.478, mean=4.478, max=4.478, sum=4.478 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-4.1-mini (2025-04-14)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.6666666666666666,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 4.366666666666666,
+          "description": "min=4.367, mean=4.367, max=4.367, sum=4.367 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-4.1-nano (2025-04-14)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.5555555555555556,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 4.099999999999998,
+          "description": "min=4.1, mean=4.1, max=4.1, sum=4.1 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/my-medhelm-suite/groups/latex/clinical_note_generation_accuracy.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/my-medhelm-suite/groups/json/clinical_note_generation_accuracy.json"
+      }
+    ],
+    "name": "accuracy"
+  },
+  {
+    "title": "Efficiency",
+    "header": [
+      {
+        "value": "Model",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Mean win rate",
+        "description": "How many models this model outperforms on average (over columns).",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {}
+      },
+      {
+        "value": "DischargeMe - Observed inference time (s)",
+        "description": "DischargeMe is a benchmark designed to evaluate clinical text generation. It pairs discharge summaries and radiology reports from MIMIC-IV with generation tasks such as writing discharge instructions or summarizing the brief hospital course. The benchmark assesses a model's ability to generate patient-facing documentation that is complete, empathetic, and clinically accurate [(Xu, 2024)](https://physionet.org/content/discharge-me/1.3/).\n\nObserved inference runtime (s): Average observed time to process a request to the model (via an API, and thus depends on particular deployment).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Observed inference time (s)",
+          "run_group": "DischargeMe"
+        }
+      },
+      {
+        "value": "ACI-Bench - Observed inference time (s)",
+        "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\nObserved inference runtime (s): Average observed time to process a request to the model (via an API, and thus depends on particular deployment).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Observed inference time (s)",
+          "run_group": "ACI-Bench"
+        }
+      },
+      {
+        "value": "MTSamples Procedures - Observed inference time (s)",
+        "description": "MTSamples Procedures is a benchmark composed of transcribed operative notes, focused on documenting surgical procedures. Each example presents a brief patient case involving a surgical intervention, and the model is tasked with generating a coherent and clinically accurate procedural summary or treatment plan.\n\nObserved inference runtime (s): Average observed time to process a request to the model (via an API, and thus depends on particular deployment).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Observed inference time (s)",
+          "run_group": "MTSamples Procedures"
+        }
+      },
+      {
+        "value": "MIMIC-RRS - Observed inference time (s)",
+        "description": "MIMIC-RRS is a benchmark constructed from radiology reports in the MIMIC-III database. It contains pairs of \u2018Findings\u2018 and \u2018Impression\u2018 sections, enabling evaluation of a model's ability to summarize diagnostic imaging observations into concise, clinically relevant conclusions [(Chen et al., 2023)](https://arxiv.org/abs/2211.08584).\n\nObserved inference runtime (s): Average observed time to process a request to the model (via an API, and thus depends on particular deployment).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Observed inference time (s)",
+          "run_group": "MIMIC-RRS"
+        }
+      },
+      {
+        "value": "MIMIC-BHC - Observed inference time (s)",
+        "description": "MIMIC-BHC is a benchmark focused on summarization of discharge notes into Brief Hospital Course (BHC) sections. It consists of curated discharge notes from MIMIC-IV, each paired with its corresponding BHC summary. The benchmark evaluates a model's ability to condense detailed clinical information into accurate, concise summaries that reflect the patient's hospital stay [(Aali et al., 2024)](https://doi.org/10.1093/jamia/ocae312).\n\nObserved inference runtime (s): Average observed time to process a request to the model (via an API, and thus depends on particular deployment).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Observed inference time (s)",
+          "run_group": "MIMIC-BHC"
+        }
+      },
+      {
+        "value": "NoteExtract - Observed inference time (s)",
+        "description": "NoteExtract is a benchmark that focuses on the structured extraction of information from free-form clinical text. It provides care plan notes authored by health workers and evaluates a model's ability to convert them into a predefined structured format, such as fields for Chief Complaint and History of Present Illness. The benchmark emphasizes faithful extraction without hallucination or inference.\n\nObserved inference runtime (s): Average observed time to process a request to the model (via an API, and thus depends on particular deployment).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Observed inference time (s)",
+          "run_group": "NoteExtract"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Llama 3.1 Instruct (8B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.1111111111111111,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 75.93968614141146,
+          "description": "min=75.94, mean=75.94, max=75.94, sum=75.94 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 3.2 Instruct (1.23B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.7777777777777778,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 11.21833381652832,
+          "description": "min=11.218, mean=11.218, max=11.218, sum=11.218 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 3.2 Instruct (3B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.2222222222222222,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 59.51362446546555,
+          "description": "min=59.514, mean=59.514, max=59.514, sum=59.514 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 175.0704579949379,
+          "description": "min=175.07, mean=175.07, max=175.07, sum=175.07 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "DeepSeek-R1-0528",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.4444444444444444,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 18.903887156645457,
+          "description": "min=18.904, mean=18.904, max=18.904, sum=18.904 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 3.3 Instruct Turbo (70B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.3333333333333333,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 29.972085070610046,
+          "description": "min=29.972, mean=29.972, max=29.972, sum=29.972 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Claude 3.7 Sonnet (20250219)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.5555555555555556,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 16.05382503668467,
+          "description": "min=16.054, mean=16.054, max=16.054, sum=16.054 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-4.1 (2025-04-14)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.6666666666666666,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 13.234592833121617,
+          "description": "min=13.235, mean=13.235, max=13.235, sum=13.235 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-4.1-mini (2025-04-14)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.8888888888888888,
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 8.03999240597089,
+          "description": "min=8.04, mean=8.04, max=8.04, sum=8.04 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-4.1-nano (2025-04-14)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 5.970380202929179,
+          "description": "min=5.97, mean=5.97, max=5.97, sum=5.97 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/my-medhelm-suite/groups/latex/clinical_note_generation_efficiency.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/my-medhelm-suite/groups/json/clinical_note_generation_efficiency.json"
+      }
+    ],
+    "name": "efficiency"
+  },
+  {
+    "title": "General information",
+    "header": [
+      {
+        "value": "Model",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "DischargeMe - # eval",
+        "description": "DischargeMe is a benchmark designed to evaluate clinical text generation. It pairs discharge summaries and radiology reports from MIMIC-IV with generation tasks such as writing discharge instructions or summarizing the brief hospital course. The benchmark assesses a model's ability to generate patient-facing documentation that is complete, empathetic, and clinically accurate [(Xu, 2024)](https://physionet.org/content/discharge-me/1.3/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "DischargeMe"
+        }
+      },
+      {
+        "value": "DischargeMe - # train",
+        "description": "DischargeMe is a benchmark designed to evaluate clinical text generation. It pairs discharge summaries and radiology reports from MIMIC-IV with generation tasks such as writing discharge instructions or summarizing the brief hospital course. The benchmark assesses a model's ability to generate patient-facing documentation that is complete, empathetic, and clinically accurate [(Xu, 2024)](https://physionet.org/content/discharge-me/1.3/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "DischargeMe"
+        }
+      },
+      {
+        "value": "DischargeMe - truncated",
+        "description": "DischargeMe is a benchmark designed to evaluate clinical text generation. It pairs discharge summaries and radiology reports from MIMIC-IV with generation tasks such as writing discharge instructions or summarizing the brief hospital course. The benchmark assesses a model's ability to generate patient-facing documentation that is complete, empathetic, and clinically accurate [(Xu, 2024)](https://physionet.org/content/discharge-me/1.3/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "DischargeMe"
+        }
+      },
+      {
+        "value": "DischargeMe - # prompt tokens",
+        "description": "DischargeMe is a benchmark designed to evaluate clinical text generation. It pairs discharge summaries and radiology reports from MIMIC-IV with generation tasks such as writing discharge instructions or summarizing the brief hospital course. The benchmark assesses a model's ability to generate patient-facing documentation that is complete, empathetic, and clinically accurate [(Xu, 2024)](https://physionet.org/content/discharge-me/1.3/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "DischargeMe"
+        }
+      },
+      {
+        "value": "DischargeMe - # output tokens",
+        "description": "DischargeMe is a benchmark designed to evaluate clinical text generation. It pairs discharge summaries and radiology reports from MIMIC-IV with generation tasks such as writing discharge instructions or summarizing the brief hospital course. The benchmark assesses a model's ability to generate patient-facing documentation that is complete, empathetic, and clinically accurate [(Xu, 2024)](https://physionet.org/content/discharge-me/1.3/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "DischargeMe"
+        }
+      },
+      {
+        "value": "ACI-Bench - # eval",
+        "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "ACI-Bench"
+        }
+      },
+      {
+        "value": "ACI-Bench - # train",
+        "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "ACI-Bench"
+        }
+      },
+      {
+        "value": "ACI-Bench - truncated",
+        "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "ACI-Bench"
+        }
+      },
+      {
+        "value": "ACI-Bench - # prompt tokens",
+        "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "ACI-Bench"
+        }
+      },
+      {
+        "value": "ACI-Bench - # output tokens",
+        "description": "ACI-Bench is a benchmark of real-world patient-doctor conversations paired with structured clinical notes. The benchmark evaluates a model's ability to understand spoken medical dialogue and convert it into formal clinical documentation, covering sections such as history of present illness, physical exam findings, results, and assessment and plan [(Yim et al., 2024)](https://www.nature.com/articles/s41597-023-02487-3).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "ACI-Bench"
+        }
+      },
+      {
+        "value": "MTSamples Procedures - # eval",
+        "description": "MTSamples Procedures is a benchmark composed of transcribed operative notes, focused on documenting surgical procedures. Each example presents a brief patient case involving a surgical intervention, and the model is tasked with generating a coherent and clinically accurate procedural summary or treatment plan.\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "MTSamples Procedures"
+        }
+      },
+      {
+        "value": "MTSamples Procedures - # train",
+        "description": "MTSamples Procedures is a benchmark composed of transcribed operative notes, focused on documenting surgical procedures. Each example presents a brief patient case involving a surgical intervention, and the model is tasked with generating a coherent and clinically accurate procedural summary or treatment plan.\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "MTSamples Procedures"
+        }
+      },
+      {
+        "value": "MTSamples Procedures - truncated",
+        "description": "MTSamples Procedures is a benchmark composed of transcribed operative notes, focused on documenting surgical procedures. Each example presents a brief patient case involving a surgical intervention, and the model is tasked with generating a coherent and clinically accurate procedural summary or treatment plan.\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "MTSamples Procedures"
+        }
+      },
+      {
+        "value": "MTSamples Procedures - # prompt tokens",
+        "description": "MTSamples Procedures is a benchmark composed of transcribed operative notes, focused on documenting surgical procedures. Each example presents a brief patient case involving a surgical intervention, and the model is tasked with generating a coherent and clinically accurate procedural summary or treatment plan.\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "MTSamples Procedures"
+        }
+      },
+      {
+        "value": "MTSamples Procedures - # output tokens",
+        "description": "MTSamples Procedures is a benchmark composed of transcribed operative notes, focused on documenting surgical procedures. Each example presents a brief patient case involving a surgical intervention, and the model is tasked with generating a coherent and clinically accurate procedural summary or treatment plan.\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "MTSamples Procedures"
+        }
+      },
+      {
+        "value": "MIMIC-RRS - # eval",
+        "description": "MIMIC-RRS is a benchmark constructed from radiology reports in the MIMIC-III database. It contains pairs of \u2018Findings\u2018 and \u2018Impression\u2018 sections, enabling evaluation of a model's ability to summarize diagnostic imaging observations into concise, clinically relevant conclusions [(Chen et al., 2023)](https://arxiv.org/abs/2211.08584).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "MIMIC-RRS"
+        }
+      },
+      {
+        "value": "MIMIC-RRS - # train",
+        "description": "MIMIC-RRS is a benchmark constructed from radiology reports in the MIMIC-III database. It contains pairs of \u2018Findings\u2018 and \u2018Impression\u2018 sections, enabling evaluation of a model's ability to summarize diagnostic imaging observations into concise, clinically relevant conclusions [(Chen et al., 2023)](https://arxiv.org/abs/2211.08584).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "MIMIC-RRS"
+        }
+      },
+      {
+        "value": "MIMIC-RRS - truncated",
+        "description": "MIMIC-RRS is a benchmark constructed from radiology reports in the MIMIC-III database. It contains pairs of \u2018Findings\u2018 and \u2018Impression\u2018 sections, enabling evaluation of a model's ability to summarize diagnostic imaging observations into concise, clinically relevant conclusions [(Chen et al., 2023)](https://arxiv.org/abs/2211.08584).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "MIMIC-RRS"
+        }
+      },
+      {
+        "value": "MIMIC-RRS - # prompt tokens",
+        "description": "MIMIC-RRS is a benchmark constructed from radiology reports in the MIMIC-III database. It contains pairs of \u2018Findings\u2018 and \u2018Impression\u2018 sections, enabling evaluation of a model's ability to summarize diagnostic imaging observations into concise, clinically relevant conclusions [(Chen et al., 2023)](https://arxiv.org/abs/2211.08584).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "MIMIC-RRS"
+        }
+      },
+      {
+        "value": "MIMIC-RRS - # output tokens",
+        "description": "MIMIC-RRS is a benchmark constructed from radiology reports in the MIMIC-III database. It contains pairs of \u2018Findings\u2018 and \u2018Impression\u2018 sections, enabling evaluation of a model's ability to summarize diagnostic imaging observations into concise, clinically relevant conclusions [(Chen et al., 2023)](https://arxiv.org/abs/2211.08584).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "MIMIC-RRS"
+        }
+      },
+      {
+        "value": "MIMIC-BHC - # eval",
+        "description": "MIMIC-BHC is a benchmark focused on summarization of discharge notes into Brief Hospital Course (BHC) sections. It consists of curated discharge notes from MIMIC-IV, each paired with its corresponding BHC summary. The benchmark evaluates a model's ability to condense detailed clinical information into accurate, concise summaries that reflect the patient's hospital stay [(Aali et al., 2024)](https://doi.org/10.1093/jamia/ocae312).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "MIMIC-BHC"
+        }
+      },
+      {
+        "value": "MIMIC-BHC - # train",
+        "description": "MIMIC-BHC is a benchmark focused on summarization of discharge notes into Brief Hospital Course (BHC) sections. It consists of curated discharge notes from MIMIC-IV, each paired with its corresponding BHC summary. The benchmark evaluates a model's ability to condense detailed clinical information into accurate, concise summaries that reflect the patient's hospital stay [(Aali et al., 2024)](https://doi.org/10.1093/jamia/ocae312).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "MIMIC-BHC"
+        }
+      },
+      {
+        "value": "MIMIC-BHC - truncated",
+        "description": "MIMIC-BHC is a benchmark focused on summarization of discharge notes into Brief Hospital Course (BHC) sections. It consists of curated discharge notes from MIMIC-IV, each paired with its corresponding BHC summary. The benchmark evaluates a model's ability to condense detailed clinical information into accurate, concise summaries that reflect the patient's hospital stay [(Aali et al., 2024)](https://doi.org/10.1093/jamia/ocae312).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "MIMIC-BHC"
+        }
+      },
+      {
+        "value": "MIMIC-BHC - # prompt tokens",
+        "description": "MIMIC-BHC is a benchmark focused on summarization of discharge notes into Brief Hospital Course (BHC) sections. It consists of curated discharge notes from MIMIC-IV, each paired with its corresponding BHC summary. The benchmark evaluates a model's ability to condense detailed clinical information into accurate, concise summaries that reflect the patient's hospital stay [(Aali et al., 2024)](https://doi.org/10.1093/jamia/ocae312).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "MIMIC-BHC"
+        }
+      },
+      {
+        "value": "MIMIC-BHC - # output tokens",
+        "description": "MIMIC-BHC is a benchmark focused on summarization of discharge notes into Brief Hospital Course (BHC) sections. It consists of curated discharge notes from MIMIC-IV, each paired with its corresponding BHC summary. The benchmark evaluates a model's ability to condense detailed clinical information into accurate, concise summaries that reflect the patient's hospital stay [(Aali et al., 2024)](https://doi.org/10.1093/jamia/ocae312).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "MIMIC-BHC"
+        }
+      },
+      {
+        "value": "NoteExtract - # eval",
+        "description": "NoteExtract is a benchmark that focuses on the structured extraction of information from free-form clinical text. It provides care plan notes authored by health workers and evaluates a model's ability to convert them into a predefined structured format, such as fields for Chief Complaint and History of Present Illness. The benchmark emphasizes faithful extraction without hallucination or inference.\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "NoteExtract"
+        }
+      },
+      {
+        "value": "NoteExtract - # train",
+        "description": "NoteExtract is a benchmark that focuses on the structured extraction of information from free-form clinical text. It provides care plan notes authored by health workers and evaluates a model's ability to convert them into a predefined structured format, such as fields for Chief Complaint and History of Present Illness. The benchmark emphasizes faithful extraction without hallucination or inference.\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "NoteExtract"
+        }
+      },
+      {
+        "value": "NoteExtract - truncated",
+        "description": "NoteExtract is a benchmark that focuses on the structured extraction of information from free-form clinical text. It provides care plan notes authored by health workers and evaluates a model's ability to convert them into a predefined structured format, such as fields for Chief Complaint and History of Present Illness. The benchmark emphasizes faithful extraction without hallucination or inference.\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "NoteExtract"
+        }
+      },
+      {
+        "value": "NoteExtract - # prompt tokens",
+        "description": "NoteExtract is a benchmark that focuses on the structured extraction of information from free-form clinical text. It provides care plan notes authored by health workers and evaluates a model's ability to convert them into a predefined structured format, such as fields for Chief Complaint and History of Present Illness. The benchmark emphasizes faithful extraction without hallucination or inference.\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "NoteExtract"
+        }
+      },
+      {
+        "value": "NoteExtract - # output tokens",
+        "description": "NoteExtract is a benchmark that focuses on the structured extraction of information from free-form clinical text. It provides care plan notes authored by health workers and evaluates a model's ability to convert them into a predefined structured format, such as fields for Chief Complaint and History of Present Illness. The benchmark emphasizes faithful extraction without hallucination or inference.\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "NoteExtract"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Llama 3.1 Instruct (8B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 120.0,
+          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct"
+          ]
+        },
+        {
+          "value": 1629.5833333333333,
+          "description": "min=1629.583, mean=1629.583, max=1629.583, sum=1629.583 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct"
+          ]
+        },
+        {
+          "value": 429.0833333333333,
+          "description": "min=429.083, mean=429.083, max=429.083, sum=429.083 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.1-8b-instruct,model_deployment=huggingface_llama-3.1-8b-instruct"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 3.2 Instruct (1.23B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=10 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct"
+          ]
+        },
+        {
+          "value": 1447.3,
+          "description": "min=1447.3, mean=1447.3, max=1447.3, sum=1447.3 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct"
+          ]
+        },
+        {
+          "value": 216.0,
+          "description": "min=216, mean=216, max=216, sum=216 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-1b-instruct,model_deployment=huggingface_llama-3.2-1b-instruct"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 3.2 Instruct (3B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 120.0,
+          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct"
+          ]
+        },
+        {
+          "value": 1629.5833333333333,
+          "description": "min=1629.583, mean=1629.583, max=1629.583, sum=1629.583 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct"
+          ]
+        },
+        {
+          "value": 391.3833333333333,
+          "description": "min=391.383, mean=391.383, max=391.383, sum=391.383 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.2-3b-instruct,model_deployment=huggingface_llama-3.2-3b-instruct"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 20.0,
+          "description": "min=20, mean=20, max=20, sum=20 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "value": 1591.15,
+          "description": "min=1591.15, mean=1591.15, max=1591.15, sum=1591.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "value": 1666.15,
+          "description": "min=1666.15, mean=1666.15, max=1666.15, sum=1666.15 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=wjkim9653_llama-3.2-3b-instruct-ldi-clinic-cp,model_deployment=huggingface_llama-3.2-3b-instruct-ldi-clinic-cp"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "DeepSeek-R1-0528",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 120.0,
+          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+          ]
+        },
+        {
+          "value": 1613.1666666666667,
+          "description": "min=1613.167, mean=1613.167, max=1613.167, sum=1613.167 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:num_output_tokens=4000,model=deepseek-ai_deepseek-r1-0528,model_deployment=together_deepseek-r1-0528"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Llama 3.3 Instruct Turbo (70B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 120.0,
+          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo"
+          ]
+        },
+        {
+          "value": 1629.5833333333333,
+          "description": "min=1629.583, mean=1629.583, max=1629.583, sum=1629.583 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo"
+          ]
+        },
+        {
+          "value": 429.7416666666667,
+          "description": "min=429.742, mean=429.742, max=429.742, sum=429.742 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=meta_llama-3.3-70b-instruct-turbo,model_deployment=together_llama-3.3-70b-instruct-turbo"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Claude 3.7 Sonnet (20250219)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 120.0,
+          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219"
+          ]
+        },
+        {
+          "value": 1674.0583333333334,
+          "description": "min=1674.058, mean=1674.058, max=1674.058, sum=1674.058 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219"
+          ]
+        },
+        {
+          "value": 455.95,
+          "description": "min=455.95, mean=455.95, max=455.95, sum=455.95 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=anthropic_claude-3-7-sonnet-20250219,model_deployment=anthropic_claude-3-7-sonnet-20250219"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-4.1 (2025-04-14)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 120.0,
+          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14"
+          ]
+        },
+        {
+          "value": 1573.6416666666667,
+          "description": "min=1573.642, mean=1573.642, max=1573.642, sum=1573.642 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14"
+          ]
+        },
+        {
+          "value": 511.8333333333333,
+          "description": "min=511.833, mean=511.833, max=511.833, sum=511.833 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-2025-04-14,model_deployment=openai_gpt-4.1-2025-04-14"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-4.1-mini (2025-04-14)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 120.0,
+          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14"
+          ]
+        },
+        {
+          "value": 1573.6416666666667,
+          "description": "min=1573.642, mean=1573.642, max=1573.642, sum=1573.642 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14"
+          ]
+        },
+        {
+          "value": 435.7916666666667,
+          "description": "min=435.792, mean=435.792, max=435.792, sum=435.792 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-mini-2025-04-14,model_deployment=openai_gpt-4.1-mini-2025-04-14"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "GPT-4.1-nano (2025-04-14)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "value": 120.0,
+          "description": "min=120, mean=120, max=120, sum=120 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14"
+          ]
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14"
+          ]
+        },
+        {
+          "value": 1573.6416666666667,
+          "description": "min=1573.642, mean=1573.642, max=1573.642, sum=1573.642 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14"
+          ]
+        },
+        {
+          "value": 426.6666666666667,
+          "description": "min=426.667, mean=426.667, max=426.667, sum=426.667 (1)",
+          "style": {},
+          "markdown": false,
+          "run_spec_names": [
+            "aci_bench:model=openai_gpt-4.1-nano-2025-04-14,model_deployment=openai_gpt-4.1-nano-2025-04-14"
+          ]
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        },
+        {
+          "description": "No matching runs",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/my-medhelm-suite/groups/latex/clinical_note_generation_general_information.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/my-medhelm-suite/groups/json/clinical_note_generation_general_information.json"
+      }
+    ],
+    "name": "general_information"
+  }
+]

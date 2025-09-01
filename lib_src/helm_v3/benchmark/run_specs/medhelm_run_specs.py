@@ -490,11 +490,12 @@ def get_aci_bench_run_spec() -> RunSpec:
             "\”SUBJECTIVE\” part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS]."
             "\”ASSESSMENT AND PLAN\” part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note."
             "Only include information contained in the dialogue.\n"
+            "The conversation is:\n"
         ),
         input_noun="Conversation",
         output_noun="Clinical Note",
         # max_tokens=768,  # avg tokens in response is 618.9
-        max_tokens=2048,  # avg tokens in response is 618.9
+        max_tokens=2048,  # raised limit upon consideration - WJK
         max_train_instances=0,
         stop_sequences=[],
     )

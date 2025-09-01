@@ -1,0 +1,16 @@
+usage: helm-run [-h] [--server-url SERVER_URL] [--api-key-path API_KEY_PATH]
+                [-c CONF_PATHS [CONF_PATHS ...]]
+                [--models-to-run MODELS_TO_RUN [MODELS_TO_RUN ...]]
+                [--groups-to-run GROUPS_TO_RUN [GROUPS_TO_RUN ...]]
+                [--exit-on-error] [--skip-completed-runs]
+                [--priority PRIORITY] [--run-specs [RUN_SPECS ...]]
+                [-r [RUN_ENTRIES ...]]
+                [--enable-huggingface-models ENABLE_HUGGINGFACE_MODELS [ENABLE_HUGGINGFACE_MODELS ...]]
+                [--enable-local-huggingface-models ENABLE_LOCAL_HUGGINGFACE_MODELS [ENABLE_LOCAL_HUGGINGFACE_MODELS ...]]
+                [--runner-class-name RUNNER_CLASS_NAME]
+                [--log-config LOG_CONFIG] [-o OUTPUT_PATH] [-n NUM_THREADS]
+                [--skip-instances] [--cache-instances]
+                [--cache-instances-only] [-d] -m MAX_EVAL_INSTANCES
+                [-t NUM_TRAIN_TRIALS] --suite SUITE [--local-path LOCAL_PATH]
+                [--mongo-uri MONGO_URI] [--disable-cache]
+helm-run: error: argument --models-to-run: expected at least one argument

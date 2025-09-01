@@ -1,0 +1,1094 @@
+===== Running model: google/medgemma-4b-it =====
+2025-09-01 04:05:49,697 INFO     helm_run {
+2025-09-01 04:05:50,219 INFO       Reading tokenizer configs from /data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/config/tokenizer_configs.yaml...
+2025-09-01 04:05:50,299 INFO       Reading model deployments from /data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/config/model_deployments.yaml...
+2025-09-01 04:05:50,633 INFO       Reading tokenizer configs from prod_env/tokenizer_configs.yaml...
+2025-09-01 04:05:50,647 INFO       Reading model deployments from prod_env/model_deployments.yaml...
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model google/medgemma-4b-pt of model deployment huggingface/medgemma-4b-pt
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model google/medgemma-4b-it of model deployment huggingface/medgemma-4b-it
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r2
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r2
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r2
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r2
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-rlaif-r3
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-rlaif-r3
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-base-sft-rlaif-r3
+2025-09-01 04:05:50,670 WARNING    Could not find model metadata for model wjkim9653/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3 of model deployment huggingface/llama-3.2-3b-instruct-ldi-clinic-cp-sft-rlaif-r3
+2025-09-01 04:05:50,732 INFO       Read 28 run entries from run_entries_medhelm_public.conf
+2025-09-01 04:05:52,955 INFO       28 entries produced 1 run specs
+2025-09-01 04:05:52,955 INFO       run_specs {
+2025-09-01 04:05:52,955 INFO         RunSpec(name='aci_bench:model=google_medgemma-4b-it,model_deployment=huggingface_medgemma-4b-it', scenario_spec=ScenarioSpec(class_name='helm.benchmark.scenarios.aci_bench_scenario.ACIBenchScenario', args={}), adapter_spec=AdapterSpec(method='generation', global_prefix='', global_suffix='', instructions='You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\”SUBJECTIVE\\” part and \\”ASSESSMENT AND PLAN\\” part of note.\\”SUBJECTIVE\\” part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\”ASSESSMENT AND PLAN\\” part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n', input_prefix='Conversation: ', input_suffix='\n', reference_prefix='A. ', reference_suffix='\n', chain_of_thought_prefix='', chain_of_thought_suffix='\n', output_prefix='Clinical Note: ', output_suffix='\n', instance_prefix='\n', substitutions=[], max_train_instances=0, max_eval_instances=20, num_outputs=1, num_train_trials=1, num_trials=1, sample_train=True, model_deployment='huggingface/medgemma-4b-it', model='google/medgemma-4b-it', temperature=0.0, max_tokens=2048, stop_sequences=[], random=None, multi_label=False, image_generation_parameters=None, reeval_parameters=None, eval_splits=None), metric_specs=[MetricSpec(class_name='helm.benchmark.metrics.summarization_metrics.SummarizationMetric', args={'task': 'aci_bench', 'device': 'cuda', 'bertscore_model': 'distilbert-base-uncased', 'rescale_with_baseline': False}), MetricSpec(class_name='helm.benchmark.metrics.basic_metrics.BasicGenerationMetric', args={'names': []}), MetricSpec(class_name='helm.benchmark.metrics.basic_metrics.BasicReferenceMetric', args={}), MetricSpec(class_name='helm.benchmark.metrics.basic_metrics.InstancesPerSplitMetric', args={}), MetricSpec(class_name='helm.benchmark.metrics.aci_bench_metrics.ACIBenchMetric', args={})], data_augmenter_spec=DataAugmenterSpec(perturbation_specs=[], should_augment_train_instances=False, should_include_original_train=False, should_skip_unchanged_train=False, should_augment_eval_instances=False, should_include_original_eval=False, should_skip_unchanged_eval=False, seeds_per_instance=1), groups=['clinical', 'aci_bench'], annotators=[AnnotatorSpec(class_name='helm.benchmark.annotation.aci_bench_annotator.ACIBenchAnnotator', args={})])
+2025-09-01 04:05:52,955 INFO       } [0.0s]
+2025-09-01 04:05:52,955 INFO       Running in local mode with base path: prod_env
+Looking in path: prod_env
+2025-09-01 04:05:52,966 INFO       AutoTokenizer: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-09-01 04:05:52,966 INFO       AutoClient: file_storage_path = prod_env/cache
+2025-09-01 04:05:52,966 INFO       AutoClient: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-09-01 04:05:52,966 INFO       AutoTokenizer: cache_backend_config = BlackHoleCacheBackendConfig()
+Looking in path: prod_env
+2025-09-01 04:05:52,976 INFO       AnnotatorFactory: file_storage_path = prod_env/cache
+2025-09-01 04:05:52,976 INFO       AnnotatorFactory: cache_backend_config = BlackHoleCacheBackendConfig()
+2025-09-01 04:05:52,979 INFO       Running aci_bench:model=google_medgemma-4b-it,model_deployment=huggingface_medgemma-4b-it {
+2025-09-01 04:05:52,981 INFO         scenario.get_instances {
+2025-09-01 04:05:52,981 INFO           ensure_file_downloaded {
+2025-09-01 04:05:52,982 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/train_full.json because benchmark_output/scenarios/aci_bench/aci_bench_train.json already exists
+2025-09-01 04:05:52,982 INFO           } [0.001s]
+2025-09-01 04:05:52,986 INFO           ensure_file_downloaded {
+2025-09-01 04:05:52,987 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/clinicalnlp_taskB_test1_full.json because benchmark_output/scenarios/aci_bench/aci_bench_test_1.json already exists
+2025-09-01 04:05:52,987 INFO           } [0.001s]
+2025-09-01 04:05:52,990 INFO           ensure_file_downloaded {
+2025-09-01 04:05:52,991 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/clef_taskC_test3_full.json because benchmark_output/scenarios/aci_bench/aci_bench_test_2.json already exists
+2025-09-01 04:05:52,992 INFO           } [0.001s]
+2025-09-01 04:05:52,994 INFO           ensure_file_downloaded {
+2025-09-01 04:05:52,995 INFO             Not downloading https://raw.githubusercontent.com/wyim/aci-bench/e75b383172195414a7a68843ec4876e83e5409f7/data/challenge_data_json/clinicalnlp_taskC_test2_full.json because benchmark_output/scenarios/aci_bench/aci_bench_test_3.json already exists
+2025-09-01 04:05:52,995 INFO           } [0.001s]
+2025-09-01 04:05:52,998 INFO         } [0.016s]
+2025-09-01 04:05:53,000 INFO         187 instances, 67 train instances, 20/120 eval instances
+2025-09-01 04:05:53,000 INFO         DataPreprocessor.preprocess {
+2025-09-01 04:05:53,000 INFO         } [0.0s]
+2025-09-01 04:05:53,002 INFO         GenerationAdapter.adapt {
+2025-09-01 04:05:53,002 INFO           87 instances, choosing 0/67 train instances, 20 eval instances
+2025-09-01 04:05:53,002 INFO           Adapting with train_trial_index=0 {
+2025-09-01 04:05:53,003 INFO             Sampled 0 examples for trial #0.
+2025-09-01 04:05:53,003 INFO             Parallelizing computation on 20 items over 4 threads {
+2025-09-01 04:05:55,809 INFO               Created cache with config: BlackHoleCacheConfig()
+2025-09-01 04:05:55,809 INFO               Created cache with config: BlackHoleCacheConfig()
+2025-09-01 04:05:55,809 INFO               Loading google/medgemma-4b-it (kwargs={}) for HELM tokenizer google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:05:55,810 INFO               Created cache with config: BlackHoleCacheConfig()
+2025-09-01 04:05:55,810 INFO               Created cache with config: BlackHoleCacheConfig()
+2025-09-01 04:05:55,812 INFO                 Local files do not exist for HuggingFace tokenizer: google/medgemma-4b-it. Downloading...
+2025-09-01 04:06:03,434 INFO               } [7.623s]
+2025-09-01 04:06:04,155 INFO             } [11.152s]
+2025-09-01 04:06:04,155 INFO             Sample prompts {
+2025-09-01 04:06:04,155 INFO               reference index = None, request_mode = None {
+2025-09-01 04:06:04,156 INFO                 You are a physician writing a clinical note based on a dialogue with the patient.Write only the \”SUBJECTIVE\” part and \”ASSESSMENT AND PLAN\” part of note.\”SUBJECTIVE\” part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\”ASSESSMENT AND PLAN\” part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.
+2025-09-01 04:06:04,156 INFO                 The conversation is:
+2025-09-01 04:06:04,156 INFO                 
+2025-09-01 04:06:04,156 INFO                 
+2025-09-01 04:06:04,156 INFO                 Conversation: Doctor-patient dialogue:
+2025-09-01 04:06:04,156 INFO                 
+2025-09-01 04:06:04,156 INFO                 [doctor] hi , alexander . how are you ?
+2025-09-01 04:06:04,156 INFO                 [patient] i'm doing really well . thank you .
+2025-09-01 04:06:04,156 INFO                 [doctor] so , i know the nurse told you a little bit about dax . i'd like to tell dax about you . okay ?
+2025-09-01 04:06:04,156 INFO                 [patient] sure .
+2025-09-01 04:06:04,156 INFO                 [doctor] so , alexander is a 62-year-old male , with a past medical history significant for reflux , who presents for follow-up of his chronic problems .
+2025-09-01 04:06:04,156 INFO                 [doctor] so , alexander , what's being going on ?
+2025-09-01 04:06:04,156 INFO                 [patient] well , i am so thankful you put me on that medicine for my , my reflux .
+2025-09-01 04:06:04,156 INFO                 [doctor] the protonix ?
+2025-09-01 04:06:04,156 INFO                 [patient] the protonix . that , i had , w- made an amazing change in my life .
+2025-09-01 04:06:04,156 INFO                 [doctor] yeah .
+2025-09-01 04:06:04,156 INFO                 [patient] i'm really comfortable now . i eat whatever i want , and i feel so much better .
+2025-09-01 04:06:04,156 INFO                 [doctor] okay , great . i'm glad to hear that . i know you were having a lot of discomfort there before , so that's good . okay . and how are you doing , kind of , managing your diet ? i know , you know , you have to do some lifestyle modifications , like cutting back on caffeine and spicy foods and alcohol . how are you doing with that ?
+2025-09-01 04:06:04,156 INFO                 [patient] i'm doing really well . i moved over from caffeine , over to green tea .
+2025-09-01 04:06:04,156 INFO                 [doctor] okay .
+2025-09-01 04:06:04,156 INFO                 [patient] and it , it is so , m- it does n't cause as much problem as it did with , when i was drinking so many energy drinks a day .
+2025-09-01 04:06:04,156 INFO                 [doctor] all right . good . i'm glad to hear that . great . all right .
+2025-09-01 04:06:04,156 INFO                 [patient] uh , i think getting that , rid of that reflux , really helped my attitude improve .
+2025-09-01 04:06:04,156 INFO                 [doctor] okay .
+2025-09-01 04:06:04,156 INFO                 [patient] uh , my job's going great . everything's phenomenal right now .
+2025-09-01 04:06:04,156 INFO                 [doctor] okay .
+2025-09-01 04:06:04,156 INFO                 [doctor] okay . and you have a , a good support system at home ? i know you have a big-
+2025-09-01 04:06:04,157 INFO                 [patient] yeah .
+2025-09-01 04:06:04,157 INFO                 [doctor] . family .
+2025-09-01 04:06:04,157 INFO                 [patient] yes . yes . all my kids-
+2025-09-01 04:06:04,157 INFO                 [doctor] okay .
+2025-09-01 04:06:04,157 INFO                 [patient] . call and check on me every day .
+2025-09-01 04:06:04,157 INFO                 [doctor] okay . great . i'm glad to hear that . now , i know you did a review of systems sheet when you checked in .
+2025-09-01 04:06:04,157 INFO                 [patient] yes .
+2025-09-01 04:06:04,157 INFO                 [doctor] i , are you having any symptoms ? any chest pain , shortness of breath , belly pain , of , nausea or vomiting ? anything like that ?
+2025-09-01 04:06:04,157 INFO                 [patient] no . no symptoms at all .
+2025-09-01 04:06:04,157 INFO                 [doctor] okay , great . um , well , let me go ahead . i wan na do a quick physical exam .
+2025-09-01 04:06:04,157 INFO                 [doctor] hey , dragon . show me the vital signs .
+2025-09-01 04:06:04,157 INFO                 [doctor] so , your vital signs here in the office look really good . so , you're doing a great job managing your , your blood pressure . your heart rate's nice and low . i'm gon na go ahead and take a listen to your heart and lungs .
+2025-09-01 04:06:04,157 INFO                 [patient] okay .
+2025-09-01 04:06:04,157 INFO                 [doctor] and i'll let you know what i find . okay ?
+2025-09-01 04:06:04,157 INFO                 [patient] okay .
+2025-09-01 04:06:04,157 INFO                 [doctor] okay . good . all right . so , on physical examination , i , i do n't hear any carotid bruits in your neck , which is really good . you know , your heart exam , i do hear a slight 2/6 systolic ejection murmur , which i've heard in the past , so that's stable . uh , your lungs are nice and clear , and you do have , you know , 1+ pitting edema bilaterally in your lower extremities .
+2025-09-01 04:06:04,157 INFO                 [patient] okay .
+2025-09-01 04:06:04,157 INFO                 [doctor] so , what does that mean ? you know , i , i think , you know , you're doing a ... it sounds like a doing a good job watching your diet . you could ... you just are retaining a little bit of fluid , maybe just from standing all day .
+2025-09-01 04:06:04,157 INFO                 [patient] okay .
+2025-09-01 04:06:04,157 INFO                 [doctor] okay ? let's take a look at some of your results . okay ?
+2025-09-01 04:06:04,157 INFO                 [patient] okay .
+2025-09-01 04:06:04,157 INFO                 [doctor] hey , dragon . show me the endoscope results .
+2025-09-01 04:06:04,157 INFO                 [doctor] so , this was the endoscopy that you had last year when you were having all that pain . it just showed that you had had some mild gastritis . so , it's good to hear that that , you know , protonix is helping you a lot . okay ?
+2025-09-01 04:06:04,157 INFO                 [patient] okay .
+2025-09-01 04:06:04,157 INFO                 [patient] i'll do a little more exercise too .
+2025-09-01 04:06:04,157 INFO                 [doctor] that sounds great . all right . so , let's talk just a little bit about , you know , my assessment and my plan for you .
+2025-09-01 04:06:04,157 INFO                 [doctor] for your reflux , i want you to continue on the protonix 40 mg a day , and continue with those lifestyle modifications with the dietary stuff-
+2025-09-01 04:06:04,157 INFO                 [patient] okay .
+2025-09-01 04:06:04,158 INFO                 [doctor] . okay ? do you have any questions ?
+2025-09-01 04:06:04,158 INFO                 [patient] no questions .
+2025-09-01 04:06:04,158 INFO                 [doctor] okay . all right . well , the nurse is gon na come in soon , and she's gon na check you , get you checked out . okay ?
+2025-09-01 04:06:04,158 INFO                 [patient] okay . thank you .
+2025-09-01 04:06:04,158 INFO                 [doctor] hey , dragon . finalize the note .
+2025-09-01 04:06:04,158 INFO                 Clinical Note:
+2025-09-01 04:06:04,158 INFO               } [0.002s]
+2025-09-01 04:06:04,158 INFO             } [0.002s]
+2025-09-01 04:06:04,158 INFO           } [11.155s]
+2025-09-01 04:06:04,158 INFO           20 requests
+2025-09-01 04:06:04,158 INFO         } [11.155s]
+2025-09-01 04:06:04,158 INFO         Executor.execute {
+2025-09-01 04:06:04,158 INFO           Parallelizing computation on 20 items over 4 threads {
+2025-09-01 04:06:04,185 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 04:06:04,185 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 04:06:04,185 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 04:06:04,186 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 04:06:04,186 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 04:06:04,186 INFO             Created cache with config: BlackHoleCacheConfig()
+2025-09-01 04:06:04,186 WARNING          Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-09-01 04:06:04,187 WARNING          Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-09-01 04:06:04,187 WARNING          Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-09-01 04:06:04,187 WARNING          Automatically set `apply_chat_template` to True based on whether the tokenizer has a chat template. If this is incorrect, please explicitly set `apply_chat_template`.
+2025-09-01 04:06:04,203 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:04,203 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:04,203 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:04,617 INFO               } [0.414s]
+2025-09-01 04:06:04,618 INFO             } [0.414s]
+2025-09-01 04:06:04,618 INFO             
+2025-09-01 04:06:04,618 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:04,618 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:04,618 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:04,624 INFO                 Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:04,624 INFO                 Request failed. Retrying (attempt #2) in 10 seconds... (See above for error details)
+2025-09-01 04:06:04,877 INFO               } [0.258s]
+2025-09-01 04:06:04,877 INFO             } [0.259s]
+2025-09-01 04:06:04,877 INFO             
+2025-09-01 04:06:04,878 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:04,878 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:04,878 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:04,879 INFO                 Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:04,879 INFO                 Request failed. Retrying (attempt #2) in 10 seconds... (See above for error details)
+2025-09-01 04:06:05,131 INFO               } [0.253s]
+2025-09-01 04:06:05,131 INFO             } [0.253s]
+2025-09-01 04:06:05,131 INFO             
+2025-09-01 04:06:05,132 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:05,132 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:05,132 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:05,133 INFO                 Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:05,133 INFO                 Request failed. Retrying (attempt #2) in 10 seconds... (See above for error details)
+2025-09-01 04:06:05,392 INFO               } [0.259s]
+2025-09-01 04:06:05,392 INFO             } [0.26s]
+2025-09-01 04:06:05,392 INFO             
+2025-09-01 04:06:05,393 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:05,393 INFO             Request failed. Retrying (attempt #2) in 10 seconds... (See above for error details)
+2025-09-01 04:06:14,635 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:14,635 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:14,635 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:14,838 INFO               } [0.202s]
+2025-09-01 04:06:14,838 INFO             } [0.202s]
+2025-09-01 04:06:14,838 INFO             
+2025-09-01 04:06:14,838 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:14,839 INFO             Request failed. Retrying (attempt #3) in 20 seconds... (See above for error details)
+2025-09-01 04:06:14,889 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:14,889 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:14,889 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:15,106 INFO               } [0.216s]
+2025-09-01 04:06:15,106 INFO             } [0.216s]
+2025-09-01 04:06:15,106 INFO             
+2025-09-01 04:06:15,107 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:15,107 INFO             Request failed. Retrying (attempt #3) in 20 seconds... (See above for error details)
+2025-09-01 04:06:15,144 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:15,144 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:15,144 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:15,356 INFO               } [0.212s]
+2025-09-01 04:06:15,357 INFO             } [0.212s]
+2025-09-01 04:06:15,357 INFO             
+2025-09-01 04:06:15,357 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:15,357 INFO             Request failed. Retrying (attempt #3) in 20 seconds... (See above for error details)
+2025-09-01 04:06:15,403 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:15,404 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:15,404 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:15,607 INFO               } [0.203s]
+2025-09-01 04:06:15,608 INFO             } [0.204s]
+2025-09-01 04:06:15,608 INFO             
+2025-09-01 04:06:15,609 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:15,609 INFO             Request failed. Retrying (attempt #3) in 20 seconds... (See above for error details)
+2025-09-01 04:06:34,859 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:34,859 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:34,859 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:35,069 INFO               } [0.209s]
+2025-09-01 04:06:35,070 INFO             } [0.21s]
+2025-09-01 04:06:35,070 INFO             
+2025-09-01 04:06:35,070 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:35,070 INFO             Request failed. Retrying (attempt #4) in 40 seconds... (See above for error details)
+2025-09-01 04:06:35,125 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:35,125 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:35,125 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:35,328 INFO               } [0.202s]
+2025-09-01 04:06:35,329 INFO             } [0.203s]
+2025-09-01 04:06:35,329 INFO             
+2025-09-01 04:06:35,329 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:35,329 INFO             Request failed. Retrying (attempt #4) in 40 seconds... (See above for error details)
+2025-09-01 04:06:35,378 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:35,378 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:35,378 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:35,579 INFO               } [0.2s]
+2025-09-01 04:06:35,579 INFO             } [0.2s]
+2025-09-01 04:06:35,579 INFO             
+2025-09-01 04:06:35,580 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:35,580 INFO             Request failed. Retrying (attempt #4) in 40 seconds... (See above for error details)
+2025-09-01 04:06:35,629 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:06:35,629 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:06:35,630 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:06:35,832 INFO               } [0.202s]
+2025-09-01 04:06:35,832 INFO             } [0.202s]
+2025-09-01 04:06:35,832 INFO             
+2025-09-01 04:06:35,833 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:06:35,833 INFO             Request failed. Retrying (attempt #4) in 40 seconds... (See above for error details)
+2025-09-01 04:07:15,111 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:07:15,112 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:07:15,112 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:07:15,327 INFO               } [0.214s]
+2025-09-01 04:07:15,327 INFO             } [0.215s]
+2025-09-01 04:07:15,327 INFO             
+2025-09-01 04:07:15,328 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:07:15,328 INFO             Request failed. Retrying (attempt #5) in 80 seconds... (See above for error details)
+2025-09-01 04:07:15,345 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:07:15,345 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:07:15,345 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:07:15,549 INFO               } [0.203s]
+2025-09-01 04:07:15,549 INFO             } [0.203s]
+2025-09-01 04:07:15,549 INFO             
+2025-09-01 04:07:15,550 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:07:15,550 INFO             Request failed. Retrying (attempt #5) in 80 seconds... (See above for error details)
+2025-09-01 04:07:15,620 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:07:15,621 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:07:15,621 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:07:15,827 INFO               } [0.206s]
+2025-09-01 04:07:15,827 INFO             } [0.206s]
+2025-09-01 04:07:15,828 INFO             
+2025-09-01 04:07:15,828 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:07:15,828 INFO             Request failed. Retrying (attempt #5) in 80 seconds... (See above for error details)
+2025-09-01 04:07:15,873 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:07:15,874 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:07:15,874 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:07:16,078 INFO               } [0.204s]
+2025-09-01 04:07:16,078 INFO             } [0.204s]
+2025-09-01 04:07:16,079 INFO             
+2025-09-01 04:07:16,079 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:07:16,079 INFO             Request failed. Retrying (attempt #5) in 80 seconds... (See above for error details)
+2025-09-01 04:08:35,377 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:08:35,378 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:08:35,378 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:08:35,681 INFO               } [0.303s]
+2025-09-01 04:08:35,682 INFO             } [0.303s]
+2025-09-01 04:08:35,682 INFO             
+2025-09-01 04:08:35,682 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:08:35,682 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:08:35,682 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:08:35,683 INFO                 Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:08:35,908 INFO               } [0.226s]
+2025-09-01 04:08:35,909 INFO             } [0.226s]
+2025-09-01 04:08:35,909 INFO             
+2025-09-01 04:08:35,909 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:08:35,910 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:08:35,910 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:08:35,910 INFO                 Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:08:36,121 INFO               } [0.211s]
+2025-09-01 04:08:36,121 INFO             } [0.211s]
+2025-09-01 04:08:36,121 INFO             
+2025-09-01 04:08:36,122 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:08:36,122 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:08:36,122 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:08:36,123 INFO                 Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:08:36,123 INFO                 Request failed. Retrying (attempt #2) in 10 seconds... (See above for error details)
+2025-09-01 04:08:36,334 INFO               } [0.211s]
+2025-09-01 04:08:36,334 INFO             } [0.212s]
+2025-09-01 04:08:36,334 INFO             
+2025-09-01 04:08:36,335 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:08:36,335 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:08:36,335 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:08:36,336 INFO                 Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:08:36,558 INFO               } [0.222s]
+2025-09-01 04:08:36,558 INFO             } [0.223s]
+2025-09-01 04:08:36,558 INFO             
+2025-09-01 04:08:36,559 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:08:46,134 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:08:46,134 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:08:46,134 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:08:46,384 INFO               } [0.25s]
+2025-09-01 04:08:46,384 INFO             } [0.25s]
+2025-09-01 04:08:46,385 INFO             
+2025-09-01 04:08:46,386 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:08:46,386 INFO             Request failed. Retrying (attempt #3) in 20 seconds... (See above for error details)
+2025-09-01 04:09:06,405 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:09:06,405 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:09:06,405 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:09:06,615 INFO               } [0.209s]
+2025-09-01 04:09:06,616 INFO             } [0.21s]
+2025-09-01 04:09:06,616 INFO             
+2025-09-01 04:09:06,616 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:09:06,617 INFO             Request failed. Retrying (attempt #4) in 40 seconds... (See above for error details)
+2025-09-01 04:09:46,657 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:09:46,657 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:09:46,657 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:09:47,311 INFO               } [0.653s]
+2025-09-01 04:09:47,311 INFO             } [0.653s]
+2025-09-01 04:09:47,311 INFO             
+2025-09-01 04:09:47,313 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:09:47,313 INFO             Request failed. Retrying (attempt #5) in 80 seconds... (See above for error details)
+2025-09-01 04:11:07,361 INFO             Loading google/medgemma-4b-it (kwargs={'torch_dtype': 'float16'}) for HELM model google/medgemma-4b-it with Hugging Face Transformers {
+2025-09-01 04:11:07,361 INFO               Hugging Face device set to "cuda:0" because CUDA is available.
+2025-09-01 04:11:07,361 INFO               Loading Hugging Face model google/medgemma-4b-it {
+2025-09-01 04:11:07,569 INFO               } [0.207s]
+2025-09-01 04:11:07,570 INFO             } [0.208s]
+2025-09-01 04:11:07,570 INFO             
+2025-09-01 04:11:07,571 INFO             Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+2025-09-01 04:11:07,572 INFO           } [5m3.413s]
+2025-09-01 04:11:07,572 INFO         } [5m3.414s]
+2025-09-01 04:11:07,572 INFO       } [5m14.593s]
+2025-09-01 04:11:07,581 INFO       Error when running aci_bench:model=google_medgemma-4b-it,model_deployment=huggingface_medgemma-4b-it:
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1092, in from_pretrained
+    config_class = CONFIG_MAPPING[config_dict["model_type"]]
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 794, in __getitem__
+    raise KeyError(key)
+KeyError: 'gemma3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/benchmark/executor.py", line 113, in process
+    result: RequestResult = self.context.make_request(state.request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/common/local_context.py", line 89, in make_request
+    return self.client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 123, in make_request
+    return make_request_with_retry(client=client, request=request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/proxy/retry.py", line 77, in <lambda>
+    return lambda f: lambda *args, **kwargs: _retrying.call(f, *args, **kwargs)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 289, in call
+    raise attempt.get()
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 326, in get
+    raise exc.with_traceback(tb)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/retrying.py", line 273, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/auto_client.py", line 118, in make_request_with_retry
+    return client.make_request(request)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 332, in make_request
+    huggingface_model: HuggingFaceServer = HuggingFaceServerFactory.get_server(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 222, in get_server
+    HuggingFaceServerFactory._servers[helm_model_name] = HuggingFaceServer(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/clients/huggingface_client.py", line 100, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path, **kwargs).to(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 526, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 1094, in from_pretrained
+    raise ValueError(
+ValueError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git`
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/benchmark/runner.py", line 216, in run_all
+    self.run_one(run_spec)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/benchmark/runner.py", line 291, in run_one
+    scenario_state = self.executor.execute(scenario_state)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/common/hierarchical_logger.py", line 140, in wrapper
+    return fn(*args, **kwargs)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/benchmark/executor.py", line 98, in execute
+    request_states = parallel_map(
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/common/general.py", line 242, in parallel_map
+    results = list(tqdm(executor.map(process, items), total=len(items), disable=None))
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/tqdm/std.py", line 1169, in __iter__
+    for obj in iterable:
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/data/wjkim9653/anaconda3/envs/HELM/lib/python3.10/site-packages/helm/benchmark/executor.py", line 115, in process
+    raise ExecutorError(f"{str(e)} Request: {state.request}") from e
+helm.benchmark.executor.ExecutorError: The checkpoint you are trying to load has model type `gemma3` but Transformers does not recognize this architecture. This could be because of an issue with the checkpoint, or because your version of Transformers is out of date.
+
+You can update Transformers with the command `pip install --upgrade transformers`. If this does not work, and the checkpoint is very new, then there may not be a release version that supports this model yet. In this case, you can get the most up-to-date code by installing Transformers from source with the command `pip install git+https://github.com/huggingface/transformers.git` Request: Request(model_deployment='huggingface/medgemma-4b-it', model='google/medgemma-4b-it', embedding=False, prompt="You are a physician writing a clinical note based on a dialogue with the patient.Write only the \\”SUBJECTIVE\\” part and \\”ASSESSMENT AND PLAN\\” part of note.\\”SUBJECTIVE\\” part should include the section of [CHIEF COMPLAINT] and [HISTORY OF PRESENT ILLNESS].\\”ASSESSMENT AND PLAN\\” part should list each medical problem separately, while explaining medical reasoning, diagnostic and therapeutic plans for each problems. It may also include a short section of follow up instruction when applicable, at the end of the note.Only include information contained in the dialogue.\nThe conversation is:\n\n\nConversation: Doctor-patient dialogue:\n\n[doctor] hi , alexander . how are you ?\n[patient] i'm doing really well . thank you .\n[doctor] so , i know the nurse told you a little bit about dax . i'd like to tell dax about you . okay ?\n[patient] sure .\n[doctor] so , alexander is a 62-year-old male , with a past medical history significant for reflux , who presents for follow-up of his chronic problems .\n[doctor] so , alexander , what's being going on ?\n[patient] well , i am so thankful you put me on that medicine for my , my reflux .\n[doctor] the protonix ?\n[patient] the protonix . that , i had , w- made an amazing change in my life .\n[doctor] yeah .\n[patient] i'm really comfortable now . i eat whatever i want , and i feel so much better .\n[doctor] okay , great . i'm glad to hear that . i know you were having a lot of discomfort there before , so that's good . okay . and how are you doing , kind of , managing your diet ? i know , you know , you have to do some lifestyle modifications , like cutting back on caffeine and spicy foods and alcohol . how are you doing with that ?\n[patient] i'm doing really well . i moved over from caffeine , over to green tea .\n[doctor] okay .\n[patient] and it , it is so , m- it does n't cause as much problem as it did with , when i was drinking so many energy drinks a day .\n[doctor] all right . good . i'm glad to hear that . great . all right .\n[patient] uh , i think getting that , rid of that reflux , really helped my attitude improve .\n[doctor] okay .\n[patient] uh , my job's going great . everything's phenomenal right now .\n[doctor] okay .\n[doctor] okay . and you have a , a good support system at home ? i know you have a big-\n[patient] yeah .\n[doctor] . family .\n[patient] yes . yes . all my kids-\n[doctor] okay .\n[patient] . call and check on me every day .\n[doctor] okay . great . i'm glad to hear that . now , i know you did a review of systems sheet when you checked in .\n[patient] yes .\n[doctor] i , are you having any symptoms ? any chest pain , shortness of breath , belly pain , of , nausea or vomiting ? anything like that ?\n[patient] no . no symptoms at all .\n[doctor] okay , great . um , well , let me go ahead . i wan na do a quick physical exam .\n[doctor] hey , dragon . show me the vital signs .\n[doctor] so , your vital signs here in the office look really good . so , you're doing a great job managing your , your blood pressure . your heart rate's nice and low . i'm gon na go ahead and take a listen to your heart and lungs .\n[patient] okay .\n[doctor] and i'll let you know what i find . okay ?\n[patient] okay .\n[doctor] okay . good . all right . so , on physical examination , i , i do n't hear any carotid bruits in your neck , which is really good . you know , your heart exam , i do hear a slight 2/6 systolic ejection murmur , which i've heard in the past , so that's stable . uh , your lungs are nice and clear , and you do have , you know , 1+ pitting edema bilaterally in your lower extremities .\n[patient] okay .\n[doctor] so , what does that mean ? you know , i , i think , you know , you're doing a ... it sounds like a doing a good job watching your diet . you could ... you just are retaining a little bit of fluid , maybe just from standing all day .\n[patient] okay .\n[doctor] okay ? let's take a look at some of your results . okay ?\n[patient] okay .\n[doctor] hey , dragon . show me the endoscope results .\n[doctor] so , this was the endoscopy that you had last year when you were having all that pain . it just showed that you had had some mild gastritis . so , it's good to hear that that , you know , protonix is helping you a lot . okay ?\n[patient] okay .\n[patient] i'll do a little more exercise too .\n[doctor] that sounds great . all right . so , let's talk just a little bit about , you know , my assessment and my plan for you .\n[doctor] for your reflux , i want you to continue on the protonix 40 mg a day , and continue with those lifestyle modifications with the dietary stuff-\n[patient] okay .\n[doctor] . okay ? do you have any questions ?\n[patient] no questions .\n[doctor] okay . all right . well , the nurse is gon na come in soon , and she's gon na check you , get you checked out . okay ?\n[patient] okay . thank you .\n[doctor] hey , dragon . finalize the note .\nClinical Note:", temperature=0.0, num_completions=1, top_k_per_token=1, max_tokens=2048, stop_sequences=[], echo_prompt=False, top_p=1, presence_penalty=0, frequency_penalty=0, random=None, messages=None, multimodal_prompt=None, image_generation_parameters=None, response_format=None)
+
+2025-09-01 04:11:07,581 INFO     } [5m17.883s]
